@@ -14,6 +14,10 @@ namespace GestionEmploye_Examen
             Formateur f1 = new Formateur("Hamza", 2001, 2022, 4500, 2, 70);
             Employe p = new Employe("Hamza", 2001, 2022, 90000);
 
+            p.ToStrings();
+
+            
+
 
 
 

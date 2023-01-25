@@ -6,3 +6,11 @@ E:\Workspace\User\Logical Programs\GestionEmploye Examen\obj\Debug\GestionEmploy
 E:\Workspace\User\Logical Programs\GestionEmploye Examen\obj\Debug\GestionEmploye Examen.csproj.CoreCompileInputs.cache
 E:\Workspace\User\Logical Programs\GestionEmploye Examen\obj\Debug\GestionEmploye Examen.exe
 E:\Workspace\User\Logical Programs\GestionEmploye Examen\obj\Debug\GestionEmploye Examen.pdb
+C:\WorSpace\Logical-Programs\GestionEmploye\bin\Debug\GestionEmploye Examen.exe.config
+C:\WorSpace\Logical-Programs\GestionEmploye\bin\Debug\GestionEmploye Examen.exe
+C:\WorSpace\Logical-Programs\GestionEmploye\bin\Debug\GestionEmploye Examen.pdb
+C:\WorSpace\Logical-Programs\GestionEmploye\obj\Debug\GestionEmploye Examen.csproj.AssemblyReference.cache
+C:\WorSpace\Logical-Programs\GestionEmploye\obj\Debug\GestionEmploye Examen.csproj.SuggestedBindingRedirects.cache
+C:\WorSpace\Logical-Programs\GestionEmploye\obj\Debug\GestionEmploye Examen.csproj.CoreCompileInputs.cache
+C:\WorSpace\Logical-Programs\GestionEmploye\obj\Debug\GestionEmploye Examen.exe
+C:\WorSpace\Logical-Programs\GestionEmploye\obj\Debug\GestionEmploye Examen.pdb
