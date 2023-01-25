@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestionEmploye_Examen
 {
-    internal class Employe 
+    internal class Employe : PEmploye
     {
         static int newMatricule = 1;
         static int CurrentYear = DateTime.Now.Year;
@@ -94,7 +94,7 @@ namespace GestionEmploye_Examen
             return CurrentYear - this.anneEmbauche;
         }
 
-        public int DateRetraite(int ageRetraite)
+        public int DateRetrate(int ageRetraite)
         {
             int anneDeTravailleRestant = ageRetraite - this.Age();
             return anneDeTravailleRestant + CurrentYear;
