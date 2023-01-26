@@ -8,8 +8,8 @@ namespace Gestion_De_Stock
 {
     internal interface Susceptible
     {
-        void LancerLeSolde(int Pourcentage);
+        void LancerLeSolde(double Pourcentage);
 
-        void TerminerLeSolde(int Pourcentage);
+        void TerminerLeSolde(double Pourcentage);
     }
 }

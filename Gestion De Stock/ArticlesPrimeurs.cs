@@ -6,20 +6,19 @@ using System.Threading.Tasks;
 
 namespace Gestion_De_Stock
 {
-    internal class ArticlesElectromenagers : Articles, VendableParPiece, Susceptible
+    internal class ArticlesPrimeurs : Articles, VendableParPiece, VendableParKilogramme, Susceptible
     {
         private int nomberDePiecesEnStock = 0;
 
         public int NomberDePiecesEnStock { get => nomberDePiecesEnStock; set => nomberDePiecesEnStock = value; }
 
-        public ArticlesElectromenagers(int nomberDePiecesEnStock, double prixAchat, double prixDeVente, string nom, string fournisseur) : base(prixAchat, prixDeVente, nom,fournisseur)
+        public ArticlesPrimeurs(int nomberDePiecesEnStock, double prixAchat, double prixDeVente, string nom, string fournisseur) : base(prixAchat, prixDeVente, nom, fournisseur)
         {
             this.nomberDePiecesEnStock = nomberDePiecesEnStock;
         }
-
         public override void description()
         {
-            Console.WriteLine("     Articles Electromenagers : ");
+            Console.WriteLine("     Articles Primeurs : ");
             base.description();
             Console.WriteLine($"Nomber de piece en stock : {this.nomberDePiecesEnStock} ");
         }
@@ -27,8 +26,17 @@ namespace Gestion_De_Stock
         public double VenderParPiece(int Quantite)
         {
             this.nomberDePiecesEnStock -= Quantite;
-            return this.PrixDeVente - this.PrixAchat * Convert.ToDouble(Quantite);
+            int VenderParKilogramme = Convert.ToInt32(this.PrixDeVente) - Convert.ToInt32(this.PrixAchat);
+            return VenderParKilogramme * Quantite;
         }
+
+        public double VenderParKilogramme(int Quantite)
+        {
+            this.nomberDePiecesEnStock -= Quantite;
+            int VenderParKilogramme = Convert.ToInt32(this.PrixDeVente) - Convert.ToInt32(this.PrixAchat);
+            return VenderParKilogramme * Quantite;
+        }
+
 
         public void LancerLeSolde(double Pourcentage)
         {

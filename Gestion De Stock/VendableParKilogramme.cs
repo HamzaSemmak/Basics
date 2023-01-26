@@ -8,6 +8,6 @@ namespace Gestion_De_Stock
 {
     internal interface VendableParKilogramme
     {
-        int VenderParKilogramme(int Quantite); 
+        double VenderParKilogramme(int Quantite); 
     }
 }
