@@ -6,3 +6,11 @@ E:\Workspace\User\Logical Programs\Gestion De Stock\obj\Debug\Gestion De Stock.c
 E:\Workspace\User\Logical Programs\Gestion De Stock\obj\Debug\Gestion De Stock.csproj.CoreCompileInputs.cache
 E:\Workspace\User\Logical Programs\Gestion De Stock\obj\Debug\Gestion De Stock.exe
 E:\Workspace\User\Logical Programs\Gestion De Stock\obj\Debug\Gestion De Stock.pdb
+C:\WorSpace\Logical-Programs\Gestion De Stock\bin\Debug\Gestion De Stock.exe.config
+C:\WorSpace\Logical-Programs\Gestion De Stock\bin\Debug\Gestion De Stock.exe
+C:\WorSpace\Logical-Programs\Gestion De Stock\bin\Debug\Gestion De Stock.pdb
+C:\WorSpace\Logical-Programs\Gestion De Stock\obj\Debug\Gestion De Stock.csproj.AssemblyReference.cache
+C:\WorSpace\Logical-Programs\Gestion De Stock\obj\Debug\Gestion De Stock.csproj.SuggestedBindingRedirects.cache
+C:\WorSpace\Logical-Programs\Gestion De Stock\obj\Debug\Gestion De Stock.csproj.CoreCompileInputs.cache
+C:\WorSpace\Logical-Programs\Gestion De Stock\obj\Debug\Gestion De Stock.exe
+C:\WorSpace\Logical-Programs\Gestion De Stock\obj\Debug\Gestion De Stock.pdb

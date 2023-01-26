@@ -41,7 +41,9 @@ namespace Gestion_De_Stock
         public void LancerLeSolde(double Pourcentage)
         {
             Console.WriteLine($"Lancer Le Solde : -{Pourcentage}%");
+            Console.WriteLine($"Prix avant Solde : {this.PrixDeVente} ");
             this.PrixDeVente = (Pourcentage * this.PrixDeVente) / 100;
+            Console.WriteLine($"Prix Apres Solde : {this.PrixDeVente} ");
         }
 
         public void TerminerLeSolde(double Pourcentage)
@@ -49,6 +51,7 @@ namespace Gestion_De_Stock
             Console.WriteLine($"Terminer Le Solde : +{Pourcentage}%");
             double AugmenterLePrix = (Pourcentage * this.PrixDeVente) / 100;
             this.PrixDeVente += AugmenterLePrix;
+            Console.WriteLine($"Prix Apres Solde est Terminer : {this.PrixDeVente} ");
         }
     }
 }
