@@ -1,0 +1,16 @@
+/*
+*   Reverse a String without using predefined function
+*   Input => Hello
+*   Output = olleh
+*/
+Console.WriteLine("Please Provide a String : ");
+string input = Console.ReadLine();
+Console.WriteLine($"The Word : {input} ");
+string reverse = String.Empty;
+int lenght = input.Length - 1;
+while (lenght >= 0)
+{
+    reverse += input[lenght];
+    lenght--;
+}
+Console.WriteLine($"The revesre : {reverse} ");

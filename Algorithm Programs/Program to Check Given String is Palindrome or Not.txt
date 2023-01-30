@@ -1,0 +1,29 @@
+/*
+*    Program to Check Given String is Palindrome or Not
+*    input :
+*           step on no pets
+*    output : 
+*           step on no pets
+*/
+
+Console.WriteLine("Please provide a Word : ");
+string word = Console.ReadLine();
+string reverse = String.Empty;
+int lenght = word.Length - 1;
+
+while (lenght >= 0)
+{
+    reverse += word[lenght];
+    lenght--;
+}
+
+if (word == reverse)
+{
+    Console.WriteLine("The word is palindrome");
+    Console.WriteLine($"word is {word} reverse is {reverse}");
+}
+else
+{
+    Console.WriteLine("The word is not a palindrome");
+    Console.WriteLine($"word is {word} reverse is {reverse}");
+}

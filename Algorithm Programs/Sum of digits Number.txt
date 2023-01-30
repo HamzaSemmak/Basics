@@ -1,0 +1,21 @@
+/*
+ *  Sum of digits of a given Number : 
+ *  For eg : Sum 
+ *  1 + 2 + 3 = 6
+ *  Here we are using modulus(%) and division (/)
+ *  Operators to calculate sum of digits.
+*/
+
+Console.WriteLine("Please Provide input numbers : ");
+int input = Convert.ToInt32(Console.ReadLine());
+
+int backupValue = input;
+int sum = 0, remainder = 0;
+
+while(input != 0)
+{
+    remainder = input % 10;
+    sum += remainder;
+    input /= 10;
+}
+Console.WriteLine($"The Sum of {backupValue} is {sum}");

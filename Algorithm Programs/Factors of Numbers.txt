@@ -1,0 +1,22 @@
+/* 
+    *  Factors of a Given Number
+    *  Factors are the numbers you multiply to get
+    *  Another number
+    *  - Factors of 6
+    *  - 1*6, 6*1, 2*3 , 3*2
+    *  - Factors of 6 are 1,2,3,6
+*/
+Console.WriteLine("Please Provide an Number : ");
+int nbr = Convert.ToInt32(Console.ReadLine());
+
+int sum = 0;
+
+for (int i = 1; i <= nbr; i++)
+{
+    if (nbr % i == 0)
+    {
+        sum += i;
+        Console.WriteLine($"{i} is a factor of {nbr}");
+    }
+}
+Console.WriteLine();

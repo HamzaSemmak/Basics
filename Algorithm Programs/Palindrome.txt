@@ -1,0 +1,35 @@
+/*
+*   Check Palindrome Number : 
+*   A Palindrome number is a number whose 
+*   digits are the same read backward
+*   Exemple : 
+*   4554 =>  4554  (The reverse of number is the same)
+*/
+
+
+using System;
+
+Console.WriteLine("Please Provide a Number : ");
+int input = Convert.ToInt32(Console.ReadLine());
+int backUpOfNumber = input;
+int remainder, reverse = 0;
+
+while (input > 0)
+{
+    remainder = input % 10;
+    reverse = reverse * 10 + remainder;
+    input = input / 10;
+}
+
+if (backUpOfNumber != reverse)
+{
+    Console.WriteLine("Is Not Palindrome number");
+    Console.WriteLine($"The Reverse of {backUpOfNumber} is {reverse}");
+}
+else
+{
+    Console.WriteLine("Is a Palindrome number");
+    Console.WriteLine($"The Reverse of {backUpOfNumber} is {reverse}");
+}
+
+Console.ReadLine();

@@ -1,0 +1,16 @@
+/*
+*  Sum of Natural Numbers with in the range : 
+*  Example : 
+*  1 + 2 + 3 + 4 + 5 = 15
+*/
+Console.WriteLine("Please Provide a number");
+int nbr = Convert.ToInt32(Console.ReadLine());
+int sum = 0;
+
+for(int i = 1; i <= nbr; i++)
+{
+   Console.Write($"{i} ");
+   sum += i;
+}
+Console.Write($"= {sum} ");
+Console.WriteLine();

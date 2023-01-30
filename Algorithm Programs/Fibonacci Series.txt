@@ -1,0 +1,31 @@
+/*
+ *  Fibonacci Series
+ *  The Fibonacci sequence is a series of numbers 
+ *  where the next is the sum of previous tow terms.
+ *  
+ *  - Formula :   fn = f(n-1) + f(n-2)
+ *  - The First Tow terms of thefibonacci sequence is 0 followed by 1.
+ *  - 0 1 1 2 3 5 8 13 23 34..
+*/
+
+int a = 0, b = 1, c;
+int count = 0;
+Console.WriteLine("Please Provide Input Values : ");
+count = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
+Console.Write($" {a} {b}");
+if(count <= 0)
+{
+    return;
+}
+else
+{
+    for (int i = 0; i < count; i++)
+    {
+        c = a + b;
+        Console.Write($" {c}");
+        a = b;
+        b = c;
+    }
+}
+Console.WriteLine();

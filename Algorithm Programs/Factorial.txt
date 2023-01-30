@@ -1,0 +1,18 @@
+/*
+ *   Factorial :
+ *   The Factorial number meansto multiply a series
+ *   of descending natural numbers.
+ *   - Formula: n! = n * (n-1)
+ *   - 5 * 4 * 3 * 2 * 1 => EqualTo 120 
+*/
+
+Console.WriteLine("Please Insert the factorial numbers : ");
+int nbr = Convert.ToInt32(Console.ReadLine());
+int factorial = 1;
+
+for(int i = nbr; i >= 1; i--)
+{
+    factorial *= i;
+    Console.Write($"{i} ");
+}
+Console.Write($" => Equal To {factorial} ");
