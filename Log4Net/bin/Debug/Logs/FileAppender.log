@@ -1,3 +1,0 @@
-04-02-2023-01:05:56 [Log4Net.Form1] [DEBUG] [Form1_Load] - Start Application Hamza
-04-02-2023-01:06:21 [Log4Net.Form1] [DEBUG] [button1_Click] - Clicked button1_Click System.Windows.Forms.Button, Text: button1 - System.Windows.Forms.MouseEventArgs 
-04-02-2023-01:06:37 [Log4Net.Form1] [DEBUG] [button2_Click] - Clicked button2_Click System.Windows.Forms.Button, Text: button2 - System.Windows.Forms.MouseEventArgs 
