@@ -1,0 +1,14 @@
+C:\WorSpace\Logical-Programs\Log4Net\bin\Debug\Log4Net.exe.config
+C:\WorSpace\Logical-Programs\Log4Net\bin\Debug\Log4Net.exe
+C:\WorSpace\Logical-Programs\Log4Net\bin\Debug\Log4Net.pdb
+C:\WorSpace\Logical-Programs\Log4Net\bin\Debug\log4net.dll
+C:\WorSpace\Logical-Programs\Log4Net\bin\Debug\log4net.xml
+C:\WorSpace\Logical-Programs\Log4Net\obj\Debug\Log4Net.csproj.AssemblyReference.cache
+C:\WorSpace\Logical-Programs\Log4Net\obj\Debug\Log4Net.csproj.SuggestedBindingRedirects.cache
+C:\WorSpace\Logical-Programs\Log4Net\obj\Debug\Log4Net.Properties.Resources.resources
+C:\WorSpace\Logical-Programs\Log4Net\obj\Debug\Log4Net.csproj.GenerateResource.cache
+C:\WorSpace\Logical-Programs\Log4Net\obj\Debug\Log4Net.csproj.CoreCompileInputs.cache
+C:\WorSpace\Logical-Programs\Log4Net\obj\Debug\Log4Net.csproj.CopyComplete
+C:\WorSpace\Logical-Programs\Log4Net\obj\Debug\Log4Net.exe
+C:\WorSpace\Logical-Programs\Log4Net\obj\Debug\Log4Net.pdb
+C:\WorSpace\Logical-Programs\Log4Net\obj\Debug\Log4Net.Form1.resources
