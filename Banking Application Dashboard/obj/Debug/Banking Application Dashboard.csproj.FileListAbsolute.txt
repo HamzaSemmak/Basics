@@ -1,0 +1,13 @@
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\bin\Debug\Banking Application Dashboard.exe.config
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\bin\Debug\Banking Application Dashboard.exe
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\bin\Debug\Banking Application Dashboard.pdb
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\obj\Debug\Banking Application Dashboard.csproj.AssemblyReference.cache
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\obj\Debug\Banking Application Dashboard.csproj.SuggestedBindingRedirects.cache
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\obj\Debug\Banking_Application_Dashboard.Form1.resources
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\obj\Debug\Banking_Application_Dashboard.Properties.Resources.resources
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\obj\Debug\Banking Application Dashboard.csproj.GenerateResource.cache
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\obj\Debug\Banking Application Dashboard.csproj.CoreCompileInputs.cache
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\obj\Debug\Banking Application Dashboard.exe
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\obj\Debug\Banking Application Dashboard.pdb
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\bin\Debug\Guna.UI2.dll
+E:\Workspace\User\Logical Programs\Banking Application Dashboard\obj\Debug\Banking Application Dashboard.csproj.CopyComplete
