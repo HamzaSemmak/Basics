@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtnParis_SimpleGagnant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_SimpleGagnant.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionPetit_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionPetit_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEtatImp_NOk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEtatImp_NOk.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Quinte_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Quinte_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionSuiv_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionSuiv_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumelePlace_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumelePlace_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionPetit_Annuler_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionPetit_Annuler_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionPetit_NvClt_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionPetit_NvClt_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre134_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre134_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumeleGagnant_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumeleGagnant_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionPetit_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionPetit_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre134_rouge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre134_rouge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_QuartePlus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_QuartePlus.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_SimplePlace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_SimplePlace.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre204_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre204_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_SimpleGagnantSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_SimpleGagnantSel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre64_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre64_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre64_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre64_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnADroite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnADroite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionSuiv_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionSuiv_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEtatCon_NOk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEtatCon_NOk.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_QuinteSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_QuinteSel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOnglet_Borne_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOnglet_Borne_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_TierceSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_TierceSel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnChevaux_ChampX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnChevaux_ChampX.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre134_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre134_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Trio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Trio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnRang_Desel_edited" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnRang_Desel_edited.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoldeClientBlanc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\SoldeClientBlanc.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOption_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOption_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bouton_Course_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\bouton_Course_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnCourseSuiv_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnCourseSuiv_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_SimpleGP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_SimpleGP.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionPetit_T_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionPetit_T_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnValider_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnValider_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOrangeCarre_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnOrangeCarre_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionGrand_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionGrand_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionPrecPetit_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionPrecPetit_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lblMessageErreur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\lblMessageErreur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_MultiSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_MultiSel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnCourseSuiv_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnCourseSuiv_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnCoursePrec_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnCoursePrec_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOption2_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOption2_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEtatImp_NOKModele" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEtatImp_NOKModele.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumelePlace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumelePlace.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnPetitOrange_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnPetitOrange_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnChevauxPrec_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnChevauxPrec_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Quinte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Quinte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Option_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Option_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOption2_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOption2_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnChevaux_NonPartant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnChevaux_NonPartant.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOrange153_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnOrange153_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionPrec_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionPrec_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumeleGagnant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumeleGagnant.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnChevauxSuiv_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnChevauxSuiv_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionSuivPetit_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionSuivPetit_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Trio_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Trio_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDesignationChevalSpOt_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnDesignationChevalSpOt_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnRang_Sel_edited" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnRang_Sel_edited.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre204_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre204_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnCoursePrec_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnCoursePrec_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOnglet_Terminal_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOnglet_Terminal_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnRetourMenu_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnRetourMenu_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDesignation_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnDesignation_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnRetourMenu_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnRetourMenu_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEnjeu_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEnjeu_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_QuartePlus_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_QuartePlus_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Normal_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Normal_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_SimplePlace_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_SimplePlace_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOrange153_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnOrange153_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre344_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre344_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPariRang_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnPariRang_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Option_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Option_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bouton_check_sans_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\bouton_check_sans_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOrange_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnOrange_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionSuiv_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionSuiv_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bouton_Course_Courante_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\bouton_Course_Courante_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEnjeuMini_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEnjeuMini_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Tierce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Tierce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Eclair_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Eclair_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumeleGP_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumeleGP_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumelePlaceSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumelePlaceSel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSelectionMenu_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnSelectionMenu_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOrange_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnOrange_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionGrand_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionGrand_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOnglet_Terminal_Desel_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOnglet_Terminal_Desel_3.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_TrioSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_TrioSel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFiltres_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFiltres_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnValider_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnValider_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOption2_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOption2_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnRouge_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnRouge_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bouton_NbSpot_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\bouton_NbSpot_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDesignationChevalEclair_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnDesignationChevalEclair_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionPrec_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionPrec_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionSuivPetit_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionSuivPetit_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEnjeu_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEnjeu_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_SimplePlaceSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_SimplePlaceSel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoldeClientVert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\SoldeClientVert.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnValider_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnValider_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnRang_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnRang_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Tierce_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Tierce_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOption_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOption_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDesignationChevalEclair_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnDesignationChevalEclair_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOrangeCarre_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnOrangeCarre_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionSuivPetit_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionSuivPetit_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOnglet_Borne_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOnglet_Borne_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionPetit_Annuler_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionPetit_Annuler_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bouton_NbSpot_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\bouton_NbSpot_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDesignationChevalEclair_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnDesignationChevalEclair_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDesignation_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnDesignation_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumeleGPSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumeleGPSel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Eclair_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Eclair_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumeleGP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumeleGP.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnRang_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnRang_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPariRang_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnPariRang_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDesignationChevalSpOt_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnDesignationChevalSpOt_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi4Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi4Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionPetit_T_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionPetit_T_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFiltres_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFiltres_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionRecupSoldeClient_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionRecupSoldeClient_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOrange_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnOrange_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnChevauxSuiv_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnChevauxSuiv_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnRetourMenu_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnRetourMenu_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_SimpleGP_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_SimpleGP_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEtatCheval_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEtatCheval_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoldeClientJaune" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\SoldeClientJaune.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoldeClientRouge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\SoldeClientRouge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEtatCheval_NonPartant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEtatCheval_NonPartant.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Normal_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Normal_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Normal_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Normal_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre134_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre134_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Onglet_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Onglet_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOrangeCarre_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnOrangeCarre_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEnjeu_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEnjeu_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionPrecPetit_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionPrecPetit_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnPetitOrange_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnPetitOrange_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnCoursePrec_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnCoursePrec_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnChevauxPrec_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnChevauxPrec_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEtatCheval_Partant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEtatCheval_Partant.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lblMessageInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\lblMessageInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionRecupSoldeClient_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionRecupSoldeClient_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Quarte_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Quarte_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEtatCheval_ChampX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEtatCheval_ChampX.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnModeEnjeu_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnModeEnjeu_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnChevauxPrec_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnChevauxPrec_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnChevaux_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnChevaux_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_SimpleGPSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_SimpleGPSel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bouton_Course_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\bouton_Course_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_QuartePlusSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_QuartePlusSel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Quarte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Quarte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre64_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre64_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnAGauche" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnAGauche.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEtatCheval_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEtatCheval_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnOrange153_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnOrange153_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEtatCon_OK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEtatCon_OK.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPariRang_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnPariRang_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOnglet_Terminal_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOnglet_Terminal_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionPrec_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionPrec_Sel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumeleGagnantSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumeleGagnantSel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnChevauxSuiv_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnChevauxSuiv_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bouton_Course_Vente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\bouton_Course_Vente.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_SimpleGagnant_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_SimpleGagnant_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionPetit_NvClt_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionPetit_NvClt_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnPetitVert_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnPetitVert_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnModeEnjeu_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnModeEnjeu_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnRouge_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnRouge_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionGrand_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionGrand_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnPetitVert_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnPetitVert_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre204_Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre204_Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_QuarteSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_QuarteSel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnReunionPrecPetit_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnReunionPrecPetit_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOption_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOption_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSelectionMenu_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnSelectionMenu_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEtatCheval_Compl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEtatCheval_Compl.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnChevaux_Compl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnChevaux_Compl.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre134_Desel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre134_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionPetit_T_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionPetit_T_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumeleOrdre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumeleOrdre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEnjeuMini_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEnjeuMini_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnSelectionMenu_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnSelectionMenu_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDesignationChevalSpOt_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnDesignationChevalSpOt_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnChevaux_Partant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnChevaux_Partant.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnOnglet_Terminal_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnOnglet_Terminal_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre344_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre344_Desel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnCourseSuiv_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnCourseSuiv_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDesignation_Desel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnDesignation_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FormulationClient" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\FormulationClient.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumeleOrdre_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumeleOrdre_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEtatImp_Ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnEtatImp_Ok.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_JumeleOrdreSel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_JumeleOrdreSel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDesignation_Desel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnDesignation_Desel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFonctionPetit_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnFonctionPetit_Inactif.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnChiffre344_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\btnChiffre344_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gamma_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\gamma_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\Logo.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gamma_logo_no_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\gamma_logo_no_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gamma_logo_1bpp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\gamma_logo_1bpp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gamma_logo_no_bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\gamma_logo_no_bw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cheval" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\cheval.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oneFlecheDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\oneFlecheDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oneFlecheToLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\oneFlecheToLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oneFlecheToLeftDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\oneFlecheToLeftDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oneFlecheUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\oneFlecheUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="twoFlecheDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\twoFlecheDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="twoFlecheUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\twoFlecheUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bouton_Course_Inactif_Rapport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\bouton_Course_Inactif_Rapport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bouton_Course_Inactif_Depart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\bouton_Course_Inactif_Depart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="downAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\downAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="downOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\downOne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="downPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\downPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="upAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\upAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="upOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\upOne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="upPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\upPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="journalPrecedent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\journalPrecedent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="journalPrecedentInactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\journalPrecedentInactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="journalSuivant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\journalSuivant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="journalSuivantInactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\journalSuivantInactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bouton_Course_Inactif_Annulee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\bouton_Course_Inactif_Annulee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\alert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi4Sel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi4Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi4_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi4_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi5Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi5Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi5_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi5_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi6Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi6Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi6_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi6_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi7Sel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi7Sel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi7_Inactif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi7_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_MultiSel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_MultiSel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnParis_Multi_Inactif1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Pics\BtnParis_Multi_Inactif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

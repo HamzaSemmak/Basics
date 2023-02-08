@@ -71,6 +71,21 @@ namespace Log4Net
             };
             RollingFileAppender.ActivateOptions();
             return RollingFileAppender;
+/*
+<appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender">
+			<lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
+			<file value="Logs\" />
+			<datePattern value="dd.MM.yyyy'.log'" />
+			<staticLogFileName value="false" />
+			<appendToFile value="true" />
+			<rollingStyle value="Composite" />
+			<maxSizeRollBackups value="1000" />
+			<maximumFileSize value="100MB" />
+			<layout type="log4net.Layout.PatternLayout">
+				<conversionPattern value="%date [%thread] [%-5level] %logger: %message%newline" />
+			</layout>
+		</appender>
+*/
         }
 
         public static ILog GetLogger(Type type)
