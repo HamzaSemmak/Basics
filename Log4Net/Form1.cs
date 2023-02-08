@@ -22,7 +22,7 @@ namespace Log4Net
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Logger.Debug("Start Application Hamza");
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

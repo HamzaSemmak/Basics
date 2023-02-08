@@ -15,9 +15,8 @@ namespace Log4Net
     {
         private static ILog logger;
         private static ConsoleAppender ConsoleAppender;
-        private static FileAppender FileAppender;
         private static RollingFileAppender RollingFileAppender;
-        private static string layout = "%date{dd-MM-yyyy-HH:mm:ss} [%class] [%level] [%method] - %message%newline";
+        private static string layout = "%date [%thread] [%-5level] %logger: %message%newline";
 
         public static string Layout { set => layout = value; }
 
@@ -43,63 +42,33 @@ namespace Log4Net
             return ConsoleAppender;
         }
 
-        private static FileAppender GetFileAppender()
-        {
-            var FileAppender = new FileAppender()
-            {
-                Name = "fileAppender",
-                Layout = GetPatternLayout(),
-                Threshold = Level.All,
-                AppendToFile = false,
-                File = "Logs/FileAppender.log"
-            };
-            FileAppender.ActivateOptions();
-            return FileAppender;
-        }
-
         private static RollingFileAppender GetRollingFileAppender()
         {
             var RollingFileAppender = new RollingFileAppender()
             {
                 Name = "Rolling File Appender",
-                AppendToFile = true,
-                File = "Logs/RollingFileAppender.log",
                 Layout = GetPatternLayout(),
                 Threshold = Level.All,
                 MaximumFileSize = "1MB",
-                MaxSizeRollBackups = 15
+                MaxSizeRollBackups = 15,
+                StaticLogFileName = false,
+                AppendToFile = true,
+                File = "Logs/",
             };
             RollingFileAppender.ActivateOptions();
             return RollingFileAppender;
-/*
-<appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender">
-			<lockingModel type="log4net.Appender.FileAppender+MinimalLock" />
-			<file value="Logs\" />
-			<datePattern value="dd.MM.yyyy'.log'" />
-			<staticLogFileName value="false" />
-			<appendToFile value="true" />
-			<rollingStyle value="Composite" />
-			<maxSizeRollBackups value="1000" />
-			<maximumFileSize value="100MB" />
-			<layout type="log4net.Layout.PatternLayout">
-				<conversionPattern value="%date [%thread] [%-5level] %logger: %message%newline" />
-			</layout>
-		</appender>
-*/
         }
 
         public static ILog GetLogger(Type type)
         {
             if (ConsoleAppender == null)
                 ConsoleAppender = GetConsoleAppender();
-            if(FileAppender == null)
-                FileAppender = GetFileAppender();
             if(RollingFileAppender == null)
                 RollingFileAppender = GetRollingFileAppender();
             if (logger != null)
                 return logger;
 
-            BasicConfigurator.Configure(ConsoleAppender, FileAppender, RollingFileAppender);
+            BasicConfigurator.Configure(ConsoleAppender, RollingFileAppender);
             logger = LogManager.GetLogger(type);
             return logger;
         }
