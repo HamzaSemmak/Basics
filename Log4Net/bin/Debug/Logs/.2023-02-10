@@ -1,0 +1,2 @@
+2023-02-10 23:24:05,060 [1] [DEBUG] Log4Net.Form1: Clicked button1_Click System.Windows.Forms.Button, Text: button1 - System.Windows.Forms.MouseEventArgs 
+2023-02-10 23:24:05,411 [1] [DEBUG] Log4Net.Form1: Clicked button2_Click System.Windows.Forms.Button, Text: button2 - System.Windows.Forms.MouseEventArgs 

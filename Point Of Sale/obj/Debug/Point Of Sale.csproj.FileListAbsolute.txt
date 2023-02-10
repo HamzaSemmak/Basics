@@ -1,0 +1,13 @@
+C:\WorSpace\Logical-Programs\Point Of Sale\bin\Debug\Point Of Sale.exe.config
+C:\WorSpace\Logical-Programs\Point Of Sale\bin\Debug\Point Of Sale.exe
+C:\WorSpace\Logical-Programs\Point Of Sale\bin\Debug\Point Of Sale.pdb
+C:\WorSpace\Logical-Programs\Point Of Sale\bin\Debug\log4net.dll
+C:\WorSpace\Logical-Programs\Point Of Sale\bin\Debug\log4net.xml
+C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.AssemblyReference.cache
+C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.SuggestedBindingRedirects.cache
+C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point_Of_Sale.Properties.Resources.resources
+C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.GenerateResource.cache
+C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.CoreCompileInputs.cache
+C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.CopyComplete
+C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.exe
+C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.pdb
