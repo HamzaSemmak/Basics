@@ -11,3 +11,19 @@ C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.CoreCo
 C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.CopyComplete
 C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.exe
 C:\WorSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.pdb
+E:\Workspace\User\Logical Programs\Point Of Sale\bin\Debug\Point Of Sale.exe.config
+E:\Workspace\User\Logical Programs\Point Of Sale\bin\Debug\Point Of Sale.exe
+E:\Workspace\User\Logical Programs\Point Of Sale\bin\Debug\Point Of Sale.pdb
+E:\Workspace\User\Logical Programs\Point Of Sale\bin\Debug\log4net.dll
+E:\Workspace\User\Logical Programs\Point Of Sale\bin\Debug\log4net.xml
+E:\Workspace\User\Logical Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.AssemblyReference.cache
+E:\Workspace\User\Logical Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.SuggestedBindingRedirects.cache
+E:\Workspace\User\Logical Programs\Point Of Sale\obj\Debug\Point_Of_Sale.Properties.Resources.resources
+E:\Workspace\User\Logical Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.GenerateResource.cache
+E:\Workspace\User\Logical Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.CoreCompileInputs.cache
+E:\Workspace\User\Logical Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.CopyComplete
+E:\Workspace\User\Logical Programs\Point Of Sale\obj\Debug\Point Of Sale.exe
+E:\Workspace\User\Logical Programs\Point Of Sale\obj\Debug\Point Of Sale.pdb
+E:\Workspace\User\Logical Programs\Point Of Sale\bin\Debug\Guna.UI2.dll
+E:\Workspace\User\Logical Programs\Point Of Sale\obj\Debug\Point_Of_Sale.IHM_s.ComposantsGraphique.LoadingForm.resources
+E:\Workspace\User\Logical Programs\Point Of Sale\obj\Debug\Point_Of_Sale.IHM_s.Authentification.resources
