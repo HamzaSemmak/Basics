@@ -49,11 +49,11 @@ namespace Log4Net
                 Name = "Rolling File Appender",
                 Layout = GetPatternLayout(),
                 Threshold = Level.All,
-                MaximumFileSize = "1MB",
+                MaximumFileSize = "10MB",
                 MaxSizeRollBackups = 15,
-                StaticLogFileName = true,
+                StaticLogFileName = false,
                 AppendToFile = true,
-                File = "Logs/logs.log",
+                File = "../Logs/",
             };
             RollingFileAppender.ActivateOptions();
             return RollingFileAppender;

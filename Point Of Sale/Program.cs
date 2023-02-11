@@ -25,19 +25,18 @@ namespace Point_Of_Sale
             Application.SetCompatibleTextRenderingDefault(false);
             LoadingForm _spalsh = new LoadingForm();
             Application.Run(_spalsh);
-            Logger.Info("Exit Application Point Of Sale");
         }
 
         public static void CloseApp()
         {
             System.Windows.Forms.Application.Exit();
+            Logger.Info("Exit Application Point Of Sale");
         }
 
         public static void LaunchAuthentification()
         {
             Authentification _Authentification = new Authentification();
             _Authentification.Show();
-            Logger.Info("Authentification Form...");
         }
     }
 }

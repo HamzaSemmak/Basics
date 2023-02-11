@@ -1,4 +1,7 @@
-﻿using System;
+﻿using log4net;
+using log4net.Repository.Hierarchy;
+using Log4Net;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +16,7 @@ namespace Point_Of_Sale.IHM_s.ComposantsGraphique
     public partial class LoadingForm : Form
     {
         private static readonly BackgroundWorker backgroundWorkerworker = new BackgroundWorker();
+        private static readonly ILog Logger = LoggerHelper.GetLogger(typeof(Program));
         public LoadingForm()
         {
             InitializeComponent();
@@ -31,6 +35,7 @@ namespace Point_Of_Sale.IHM_s.ComposantsGraphique
                 timer1.Stop();
                 this.Hide();
                 Program.LaunchAuthentification();
+                Logger.Info("Authentification Form...");
             }
         }
     }
