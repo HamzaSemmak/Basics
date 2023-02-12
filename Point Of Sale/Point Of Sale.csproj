@@ -68,6 +68,12 @@
     <Compile Include="IHM%27s\ComposantsGraphique\LoadingForm.Designer.cs">
       <DependentUpon>LoadingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="IHM%27s\ComposantsGraphique\UnhandelException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IHM%27s\ComposantsGraphique\UnhandelException.Designer.cs">
+      <DependentUpon>UnhandelException.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Config\PointOfSaleConfig.cs" />
     <Compile Include="Modules\Log4Net\LoggerHelper.cs" />
     <Compile Include="Program.cs" />

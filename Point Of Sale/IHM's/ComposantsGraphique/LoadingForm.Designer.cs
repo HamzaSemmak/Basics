@@ -90,7 +90,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.guna2Button1.Location = new System.Drawing.Point(530, 281);
+            this.guna2Button1.Location = new System.Drawing.Point(542, 295);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.BlanchedAlmond;
             this.guna2Button1.Size = new System.Drawing.Size(115, 33);
