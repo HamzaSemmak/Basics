@@ -14,20 +14,36 @@ namespace Point_Of_Sale.IHM_s
         public Authentification()
         {
             InitializeComponent();
-            guna2Button1.Focus();
+            guna2TextBox3.Focus();
             label4.Text = $"Copyright {DateTime.Now.Year}-{DateTime.Now.Year + 1} All right Reserved";
             label5.Hide();
         }
         private void Authentifications()
         {
-            try
+            string error = string.Empty;
+            if(guna2TextBox2.Text == "" || guna2TextBox3.Text == "")
             {
-                // User Name field is required and cannot be empty
+                label5.Show();
+                ThrowError("Error : There is an empty field");
             }
-            catch
+            else
             {
-                //
+                label5.Show();
+                if (guna2TextBox3.Text.Equals("Hamza Semmak") && guna2TextBox2.Text.Equals("AA102374h"))
+                {
+                    this.Hide();
+                    Program.LanchPrincipalForm(guna2TextBox3.Text);
+                }
+                else
+                {
+                    ThrowError("Error : User Name Or Password is Incorrect Please Try Again");
+                }
             }
+        }
+
+        private void ThrowError(string error)
+        {
+            label5.Text = error; logger.Error(error);
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

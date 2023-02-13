@@ -43,3 +43,4 @@ C:\WorkSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.CoreC
 C:\WorkSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.csproj.CopyComplete
 C:\WorkSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.exe
 C:\WorkSpace\Logical-Programs\Point Of Sale\obj\Debug\Point Of Sale.pdb
+E:\Workspace\User\Logical Programs\Point Of Sale\obj\Debug\Point_Of_Sale.IHM_s.PrincipalForm.resources

@@ -5,6 +5,7 @@ using Point_Of_Sale.IHM_s.ComposantsGraphique;
 using Point_Of_Sale.Modules.Config;
 using System;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Point_Of_Sale
 {
@@ -37,6 +38,12 @@ namespace Point_Of_Sale
         {
             Authentification _Authentification = new Authentification();
             _Authentification.Show();
+        }
+
+        public static void LanchPrincipalForm(string UserName)
+        {
+            PrincipalForm _PrincipalForm = new PrincipalForm(UserName);
+            _PrincipalForm.Show(); 
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Log4Net
         private static ILog logger;
         private static ConsoleAppender ConsoleAppender;
         private static RollingFileAppender RollingFileAppender;
-        private static string layout = "%date{ABSOLUTE} [%class] [%level] [%method] %message%newline";
+        private static string layout = "%date [%level] [%class] [%method - %line] %message%newline";
 
         public static string Layout { set => layout = value; }
 
