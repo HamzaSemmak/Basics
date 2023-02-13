@@ -15,7 +15,7 @@ namespace Point_Of_Sale.IHM_s
         public PrincipalForm(string UserName)
         {
             InitializeComponent();
-            label1.Text = UserName.ToString();
+            //label1.Text = UserName.ToString();
         }
     }
 }
