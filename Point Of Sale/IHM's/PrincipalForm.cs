@@ -23,5 +23,10 @@ namespace Point_Of_Sale.IHM_s
         {
             Program.CloseApp();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
