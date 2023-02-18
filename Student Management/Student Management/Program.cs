@@ -38,12 +38,16 @@ namespace Student_Management
             authentification.Show();
         }
 
+        public static void LaunchPrincipalForm()
+        {
+            PrincipalForm principalForm = new PrincipalForm();
+            principalForm.Show();
+        }
+
         [STAThread]
         static void Main()
         {
             logger.Info("Start Application Student Management System");
-            DB_Connection _ConnectionDB = new DB_Connection();
-            _ConnectionDB.OpenConnection();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(_Splash());

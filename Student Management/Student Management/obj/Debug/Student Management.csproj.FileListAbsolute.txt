@@ -14,3 +14,20 @@ C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\St
 C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student Management.pdb
 C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student_Management.IHM_s.ComposentsGraphique.LoadingForm.resources
 C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student_Management.IHM_s.Authentification.resources
+E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student Management.csproj.AssemblyReference.cache
+E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student Management.csproj.SuggestedBindingRedirects.cache
+E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student_Management.IHM_s.ComposentsGraphique.LoadingForm.resources
+E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student_Management.Properties.Resources.resources
+E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student Management.csproj.GenerateResource.cache
+E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student Management.csproj.CoreCompileInputs.cache
+E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student Management.exe
+E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student Management.pdb
+E:\Workspace\User\Logical Programs\Student Management\Student Management\bin\Debug\Student Management.exe.config
+E:\Workspace\User\Logical Programs\Student Management\Student Management\bin\Debug\Student Management.exe
+E:\Workspace\User\Logical Programs\Student Management\Student Management\bin\Debug\Student Management.pdb
+E:\Workspace\User\Logical Programs\Student Management\Student Management\bin\Debug\Guna.UI2.dll
+E:\Workspace\User\Logical Programs\Student Management\Student Management\bin\Debug\log4net.dll
+E:\Workspace\User\Logical Programs\Student Management\Student Management\bin\Debug\log4net.xml
+E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student Management.csproj.CopyComplete
+E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student_Management.IHM_s.Authentification.resources
+E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student_Management.IHM_s.PrincipalForm.resources

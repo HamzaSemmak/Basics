@@ -15,9 +15,18 @@ namespace Student_Management.IHM_s
         public Authentification()
         {
             InitializeComponent();
+            label2.Text = $"CopyRight © {DateTime.Now.Year} All Right Reserved";
+            label3.Text = String.Empty; //Error Field
+            guna2TextBox1.Select();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.LaunchPrincipalForm();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
         {
             Program.CloseApplication();
         }
