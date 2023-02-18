@@ -1,0 +1,16 @@
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\bin\Debug\Student Management.exe.config
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\bin\Debug\Student Management.exe
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\bin\Debug\Student Management.pdb
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\bin\Debug\Guna.UI2.dll
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\bin\Debug\log4net.dll
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\bin\Debug\log4net.xml
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student Management.csproj.AssemblyReference.cache
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student Management.csproj.SuggestedBindingRedirects.cache
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student_Management.Properties.Resources.resources
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student Management.csproj.GenerateResource.cache
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student Management.csproj.CoreCompileInputs.cache
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student Management.csproj.CopyComplete
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student Management.exe
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student Management.pdb
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student_Management.IHM_s.ComposentsGraphique.LoadingForm.resources
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student_Management.IHM_s.Authentification.resources
