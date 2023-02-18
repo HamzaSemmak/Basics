@@ -35,7 +35,7 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.Principal = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -122,10 +122,10 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Student Management System :";
             // 
-            // guna2Elipse1
+            // Principal
             // 
-            this.guna2Elipse1.BorderRadius = 15;
-            this.guna2Elipse1.TargetControl = this;
+            this.Principal.BorderRadius = 15;
+            this.Principal.TargetControl = this;
             // 
             // timer1
             // 
@@ -159,7 +159,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Elipse Principal;
         private System.Windows.Forms.Timer timer1;
     }
 }
