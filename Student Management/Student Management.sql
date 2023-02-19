@@ -6,10 +6,19 @@ USE Student_Management;
 *	Table : 
 */
 
-CREATE TABLE Admins (
+CREATE TABLE Users (
 	ID INT PRIMARY KEY IDENTITY(1,1),
 	Name VARCHAR(255),
 	Password VARCHAR(255),
+);
+
+CREATE TABLE SuspendAdmins (
+	ID INT PRIMARY KEY IDENTITY(1,1),
+	ID_Admins INT FOREIGN KEY REFERENCES Users(ID),
+	Status VARCHAR(25) DEFAULT 'InLocked',
+	CONSTRAINT CK_Admins_Status CHECK (Status in ('Locked', 'InLocked')),
+	Checks INT DEFAULT 1,
+	CONSTRAINT CK_Cheks CHECK (Checks < 4),
 );
 
 CREATE TABLE Formers (
@@ -55,9 +64,8 @@ CREATE TABLE Teach (
 /* 
 *	Insertion Data : 
 */
-INSERT INTO Admins VALUES('Hamza Semmak', 'AA102374');
-INSERT INTO Admins VALUES('Karim Aissa', 'AA102374');
-
+INSERT INTO Users VALUES('Hamza Semmak', 'AA102374');
+INSERT INTO Users VALUES('Karim Aissa', 'AA102374');
 /* 
 *	Procédure Stockée : 
 */
@@ -66,22 +74,21 @@ CREATE PROCEDURE Authentification
 	@UserName VARCHAR(255), 
 	@Password VARCHAR(255)
 AS
-BEGIN	
-	DECLARE @Bool BIT
-	IF EXISTS (SELECT * FROM Admins WHERE Name LIKE @UserName)
-		IF EXISTS (SELECT * FROM Admins WHERE Name LIKE @UserName AND Password LIKE @Password)
-			BEGIN
-				SET @Bool = 1
-			END
+BEGIN
+	DECLARE @Response INT
+	IF EXISTS (SELECT * FROM Users WHERE Name LIKE @UserName)
+		IF EXISTS (SELECT * FROM Users WHERE Name LIKE @UserName AND Password LIKE @Password)
+			SET @Response = 200
 		ELSE
-			BEGIN
-				SET @Bool = 0
-			END
+			SET @Response = 202
 	ELSE
-		SET @Bool = 0
+		SET @Response = 201
 
-	RETURN @Bool;
+	RETURN @Response;
 END;
-DECLARE @Status BIT;
+DECLARE @Status INT;
 EXECUTE @Status = Authentification 'Hamza Semmak', 'AA102374';
 SELECT @Status;
+/* 200 => Access || 201 => UserName is Incorrect || 202 => Password is Incorect */
+SELECT * FROM Users;
+
