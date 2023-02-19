@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Student_Management.Modules.User.Controller
+namespace Student_Management.Modules.UserModel.Controller
 {
     internal class UsersController
     {

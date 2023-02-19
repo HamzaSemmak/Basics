@@ -1,37 +1,16 @@
-2023-02-19 12:07:10,160 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 12:07:27,731 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 12:32:49,378 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 12:33:07,362 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 12:33:20,434 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 12:33:35,265 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 12:34:13,485 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 12:34:31,457 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 12:35:40,810 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 12:35:57,730 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 12:36:19,316 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 12:36:30,921 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 13:53:41,560 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 13:54:04,471 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 13:54:23,983 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 13:54:38,544 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 13:55:32,048 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 13:55:49,631 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 14:37:07,080 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 14:37:25,360 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 14:38:52,702 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 14:39:06,280 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 14:44:51,083 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 14:45:10,510 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 14:47:33,499 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 14:48:47,125 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 15:44:48,187 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 15:47:08,884 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 15:47:27,909 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 15:48:14,176 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 15:48:31,366 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 15:56:46,569 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 15:56:58,500 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 16:58:36,166 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 17:02:57,025 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-19 17:03:33,261 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-19 17:04:50,667 [1] [INFO ] Student_Management.Program: Start Application Student Management System
+2023-02-19 23:07:18,107 [1] [INFO ] Student_Management.Program: Start Application Student Management System
+2023-02-19 23:07:18,398 [1] [INFO ] Student_Management.Modules.User.Model.Users: This is Test
+2023-02-19 23:09:56,608 [1] [INFO ] Student_Management.Program: Start Application Student Management System
+2023-02-19 23:09:56,981 [1] [ERROR] Student_Management.Modules.User.Model.Users: Procedure or function 'Authentification' expects parameter '@Password', which was not supplied.
+2023-02-19 23:10:14,151 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
+2023-02-19 23:11:54,816 [1] [INFO ] Student_Management.Program: Start Application Student Management System
+2023-02-19 23:11:55,233 [1] [INFO ] Student_Management.Modules.User.Model.Users: (1 row(s) affected) To User Table
+2023-02-19 23:13:38,564 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
+2023-02-19 23:29:28,995 [1] [INFO ] Student_Management.Program: Start Application Student Management System
+2023-02-19 23:29:29,011 [1] [INFO ] Student_Management.Modules.User.Model.Users: Test
+2023-02-19 23:29:35,652 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
+2023-02-19 23:46:16,873 [1] [INFO ] Student_Management.Program: Start Application Student Management System
+2023-02-19 23:46:16,886 [1] [INFO ] Student_Management.Program: {Name : Test, Password : tEST, Email : Test, Phone : tETS, Status : InLocked, Checks : 1}
+2023-02-19 23:46:43,337 [1] [INFO ] Student_Management.Program: Start Application Student Management System
+2023-02-19 23:46:43,347 [1] [INFO ] Student_Management.Program: {Name : Test, Password : tEST, Email : Test, Phone : tETS, Status : InLocked, Checks : 1}
+2023-02-19 23:46:52,211 [1] [INFO ] Student_Management.Program: Exit Application Student Management System

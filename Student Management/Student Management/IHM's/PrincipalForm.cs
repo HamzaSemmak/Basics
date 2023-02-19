@@ -19,15 +19,15 @@ namespace Student_Management.IHM_s
             label1.Text = $"{dateTime.DayOfWeek}, {dateTime.Day} {dateTime.ToString("MMMM")} {dateTime.Year}";
 
             //Test 
-            String[] arr1 = new string[] { "1", "Hamza Semmak", "21", "21" };
-            String[] arr2 = new string[] { "1", "Hamza Semmak", "21", "21" };
-            String[] arr3 = new string[] { "1", "Hamza Semmak", "21", "21" };
-            String[] arr4 = new string[] { "1", "Hamza Semmak", "21", "21" };
-            Object[] rows = new object[] { arr1, arr2, arr3, arr4 };
-            foreach (string[] rowArr in rows)
-            {
-                this.guna2DataGridView1.Rows.Add(rowArr);
-            }
+            //String[] arr1 = new string[] { "1", "Hamza Semmak", "21", "21" };
+            //String[] arr2 = new string[] { "1", "Hamza Semmak", "21", "21" };
+            //String[] arr3 = new string[] { "1", "Hamza Semmak", "21", "21" };
+            //String[] arr4 = new string[] { "1", "Hamza Semmak", "21", "21" };
+            //Object[] rows = new object[] { arr1, arr2, arr3, arr4 };
+            //foreach (string[] rowArr in rows)
+            //{
+            //    this.guna2DataGridView1.Rows.Add(rowArr);
+            //}
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

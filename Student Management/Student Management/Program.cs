@@ -5,6 +5,7 @@ using Student_Management.IHM_s;
 using Student_Management.IHM_s.ComposentsGraphique;
 using Student_Management.Modules.DB_Connection;
 using Student_Management.Modules.LoggerManager;
+using Student_Management.Modules.UserModel.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
