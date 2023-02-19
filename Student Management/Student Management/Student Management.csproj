@@ -77,6 +77,8 @@
     </Compile>
     <Compile Include="Modules\DB Connection\DB Connection.cs" />
     <Compile Include="Modules\Logger Manager\Log4NetManager.cs" />
+    <Compile Include="Modules\User\Controller\UsersController.cs" />
+    <Compile Include="Modules\User\Model\Users.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="IHM%27s\Authentification.resx">
