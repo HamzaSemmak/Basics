@@ -32,3 +32,4 @@ E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Deb
 E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student_Management.IHM_s.Authentification.resources
 E:\Workspace\User\Logical Programs\Student Management\Student Management\obj\Debug\Student_Management.IHM_s.PrincipalForm.resources
 C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student_Management.IHM_s.PrincipalForm.resources
+C:\WorkSpace\Logical-Programs\Student Management\Student Management\obj\Debug\Student_Management.IHM_s.ComposentsGraphique.Alert.resources

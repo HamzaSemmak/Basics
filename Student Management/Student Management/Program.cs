@@ -45,6 +45,12 @@ namespace Student_Management
             principalForm.Show();
         }
 
+        public static void LaunchAlertForm(string message)
+        {
+            Alert _Alert = new Alert(message);
+            _Alert.Show();
+        }
+
         [STAThread]
         static void Main()
         {
