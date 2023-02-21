@@ -68,14 +68,13 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(105, 69);
+            this.label2.Location = new System.Drawing.Point(105, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(273, 20);
+            this.label2.Size = new System.Drawing.Size(413, 55);
             this.label2.TabIndex = 3;
-            this.label2.Text = "xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xx";
+            this.label2.Text = "xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xx\r\n\r\n";
             // 
             // guna2Panel1
             // 
@@ -83,7 +82,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(13, 123);
+            this.guna2Panel1.Size = new System.Drawing.Size(13, 117);
             this.guna2Panel1.TabIndex = 4;
             // 
             // guna2Elipse1
@@ -113,7 +112,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(605, 123);
+            this.ClientSize = new System.Drawing.Size(605, 117);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label2);

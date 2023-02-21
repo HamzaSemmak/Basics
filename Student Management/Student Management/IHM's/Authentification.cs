@@ -28,36 +28,38 @@ namespace Student_Management.IHM_s
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            string message = string.Empty;
             try
             {
-                string msg;
-                if (guna2TextBox1.Text == "" && guna2TextBox2.Text == "")
+                if(guna2TextBox1.Text == "" || guna2TextBox2.Text == "")
                 {
-                    msg = "Please There is an empty field";
-                    Program.LaunchAlertForm(msg);
+                    message = "There is an Empty field";
+                    Program.LaunchAlertForm(message);
                 }
                 else
                 {
-                    string status = User.Authentification(guna2Button1.Text, guna2Button2.Text);
-                    Program.LaunchAlertForm(status);
-                    if (status == "201")
+                    int status = User.Authentification(guna2TextBox1.Text, guna2TextBox2.Text);
+                    if (status == 201)
                     {
-                        msg = "User Name is invalid please try again";
-                        Program.LaunchAlertForm(msg);
+                        message = "User Name is incorrect, Please try again";
+                        Program.LaunchAlertForm(message);
                     }
-                    if (status == "200")
+                    else if(status == 202)
                     {
+                        message = "Password is is incorrect, Please try again";
+                        Program.LaunchAlertForm(message);
+                    }
+                    else
+                    {
+                        this.Hide();
                         Program.LaunchPrincipalForm();
                     }
-                    if (status == "202")
-                    {
-                        msg = "Password is invalid please try again";
-                        Program.LaunchAlertForm(msg);
-                    }
                 }
+
             }
             catch(Exception ex)
             {
+                logger.Error(ex.Message);
                 Program.LaunchAlertForm(ex.Message);
             }
         }

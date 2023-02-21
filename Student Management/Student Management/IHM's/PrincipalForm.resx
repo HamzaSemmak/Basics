@@ -358,12 +358,12 @@
 </value>
   </data>
   <metadata name="SideBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>105, 19</value>
+    <value>132, 19</value>
   </metadata>
   <metadata name="Logo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>188, 22</value>
+    <value>236, 20</value>
   </metadata>
   <metadata name="Search.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>262, 24</value>
+    <value>333, 18</value>
   </metadata>
 </root>

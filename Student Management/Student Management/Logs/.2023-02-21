@@ -1,40 +1,10 @@
-2023-02-21 00:04:20,714 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:05:15,753 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:05:27,156 [1] [ERROR] Student_Management.Program: False
-2023-02-21 00:05:28,480 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-21 00:05:48,224 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:05:58,452 [1] [ERROR] Student_Management.Program: Please There is an empty field
-2023-02-21 00:05:58,452 [1] [ERROR] Student_Management.Program: Error : $Please There is an empty field 
-2023-02-21 00:06:04,865 [1] [ERROR] Student_Management.Program: Please There is an empty field
-2023-02-21 00:06:04,865 [1] [ERROR] Student_Management.Program: Error : $Please There is an empty field 
-2023-02-21 00:06:25,671 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-21 00:07:11,206 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:07:19,722 [1] [ERROR] Student_Management.Program: Error : $Please There is an empty field 
-2023-02-21 00:09:16,317 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:09:26,765 [1] [ERROR] Student_Management.Program: Error : $Please There is an empty field 
-2023-02-21 00:09:35,978 [1] [ERROR] Student_Management.Program: Error : $String[2] : la propriété Size a une taille non valide, 0. 
-2023-02-21 00:10:02,224 [1] [ERROR] Student_Management.Program: Error : $String[2] : la propriété Size a une taille non valide, 0. 
-2023-02-21 00:10:04,357 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-21 00:12:10,878 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:12:19,057 [1] [ERROR] Student_Management.Program: Error : Please There is an empty field 
-2023-02-21 00:12:27,778 [1] [ERROR] Student_Management.Program: Error : String[2] : la propriété Size a une taille non valide, 0. 
-2023-02-21 00:12:31,207 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-21 00:14:34,210 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:14:42,644 [1] [ERROR] Student_Management.Program: Error : Please There is an empty field 
-2023-02-21 00:14:51,572 [1] [ERROR] Student_Management.Program: Error : String[2] : la propriété Size a une taille non valide, 0. 
-2023-02-21 00:14:55,575 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-21 00:15:42,636 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:15:45,239 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-21 00:15:46,878 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:15:55,116 [1] [ERROR] Student_Management.Program: Error : Please There is an empty field 
-2023-02-21 00:16:03,356 [1] [ERROR] Student_Management.Program: Error : String[2] : la propriété Size a une taille non valide, 0. 
-2023-02-21 00:16:08,728 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-21 00:18:25,821 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:18:27,353 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-21 00:20:56,988 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:21:05,963 [1] [ERROR] Student_Management.Program: Error : Please There is an empty field 
-2023-02-21 00:21:15,599 [1] [ERROR] Student_Management.Program: Error : String[2] : la propriété Size a une taille non valide, 0. 
-2023-02-21 00:21:21,164 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
-2023-02-21 00:21:38,825 [1] [INFO ] Student_Management.Program: Start Application Student Management System
-2023-02-21 00:21:51,065 [1] [ERROR] Student_Management.Program: Error : String[2] : la propriété Size a une taille non valide, 0. 
-2023-02-21 00:22:00,946 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
+2023-02-21 19:16:07,513 [1] [INFO ] Student_Management.Program: Start Application Student Management System
+2023-02-21 19:16:27,041 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
+2023-02-21 19:17:07,308 [1] [INFO ] Student_Management.Program: Start Application Student Management System
+2023-02-21 19:17:19,794 [1] [ERROR] Student_Management.Program: Status : 200, UserName : test, Password : test
+2023-02-21 19:30:42,895 [1] [INFO ] Student_Management.Program: Exit Application Student Management System
+2023-02-21 19:40:52,037 [1] [INFO ] Student_Management.Program: Start Application Student Management System
+2023-02-21 19:41:09,080 [1] [ERROR] Student_Management.Program: Error : Password is is incorrect, Please try again 
+2023-02-21 19:49:20,451 [1] [INFO ] Student_Management.Program: Start Application Student Management System
+2023-02-21 19:49:34,415 [1] [ERROR] Student_Management.Program: Error : Password is is incorrect, Please try again 
+2023-02-21 19:49:44,303 [1] [INFO ] Student_Management.Program: Exit Application Student Management System

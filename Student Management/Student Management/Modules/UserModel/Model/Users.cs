@@ -7,16 +7,16 @@ namespace Student_Management.Modules.UserModel.Model
     internal class Users : DB
     {
         public static readonly ILog Logger = LogManager.GetLogger(typeof(Users));
-        protected string name;
+        private string name;
         protected string password;
         protected string email;
         protected string phone;
         protected string status;
         protected int checks;
 
-        public string Name 
-        { 
-            get => name; 
+        public string Name
+        {
+            get => name;
             set => name = value;
         }
         public string Password 
@@ -55,7 +55,7 @@ namespace Student_Management.Modules.UserModel.Model
 
         public Users(string name, string password, string email, string phone)
         {
-            this.name = name;
+            this.Name = name;
             this.password = password;
             this.email = email;
             this.phone = phone;

@@ -4,23 +4,12 @@ using Student_Management.Modules.UserModel.Model;
 using System.Data;
 using System.Data.SqlClient;
 using System.Text;
+using Guna.UI2.WinForms;
 
 namespace Student_Management.Modules.UserModel.Controller
 {
     internal class UsersController : Users
     {
-        public ArrayList User()
-        {
-            ArrayList User = new ArrayList();
-            User.Add($"Name : {this.name}");
-            User.Add($"Password : {this.password}");
-            User.Add($"Email : {this.email}");
-            User.Add($"Phone : {this.phone}");
-            User.Add($"Status : {this.status}");
-            User.Add($"Checks : {this.checks}");
-            return User;
-        }
-
         public string RandomString(int size, bool lowerCase)
         {
             StringBuilder builder = new StringBuilder();
@@ -36,7 +25,7 @@ namespace Student_Management.Modules.UserModel.Controller
             return builder.ToString();
         }
 
-        public string Authentification(string newName, string newPassword)
+        public int Authentification(string newName, string newPassword)
         {
             this.sqlConnection = new SqlConnection(this.ConnectionString);
             this.sqlCommand = new SqlCommand()
@@ -62,7 +51,7 @@ namespace Student_Management.Modules.UserModel.Controller
             SqlParameter Output = new SqlParameter()
             {
                 ParameterName = "@msg",
-                SqlDbType = SqlDbType.VarChar,
+                SqlDbType = SqlDbType.Int,
                 Direction = ParameterDirection.Output
             };
             this.sqlCommand.Parameters.Add(P1);
@@ -71,7 +60,7 @@ namespace Student_Management.Modules.UserModel.Controller
             OpenConnection();
             this.sqlCommand.ExecuteNonQuery();
             CloseConnection();
-            return Output.Value.ToString();
+            return Convert.ToInt32(Output.Value);
         }
 
     }

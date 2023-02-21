@@ -42,9 +42,5 @@ Begin
 End
 
 Declare @status int
-Execute Authentification 'Hamza Semmak4', 'AA102374', @status Output
+Execute Authentification 'test', 'test', @status Output
 Select @status
-
-
-
-
