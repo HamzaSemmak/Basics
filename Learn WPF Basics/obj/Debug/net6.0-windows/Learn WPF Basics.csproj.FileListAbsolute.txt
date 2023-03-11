@@ -1,0 +1,21 @@
+E:\Workspace\User\Basics\Learn WPF Basics\bin\Debug\net6.0-windows\Learn WPF Basics.exe
+E:\Workspace\User\Basics\Learn WPF Basics\bin\Debug\net6.0-windows\Learn WPF Basics.deps.json
+E:\Workspace\User\Basics\Learn WPF Basics\bin\Debug\net6.0-windows\Learn WPF Basics.runtimeconfig.json
+E:\Workspace\User\Basics\Learn WPF Basics\bin\Debug\net6.0-windows\Learn WPF Basics.dll
+E:\Workspace\User\Basics\Learn WPF Basics\bin\Debug\net6.0-windows\Learn WPF Basics.pdb
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\Learn WPF Basics.csproj.AssemblyReference.cache
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\App.g.cs
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\Learn WPF Basics_MarkupCompile.cache
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\Learn WPF Basics_MarkupCompile.lref
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\MainWindow.baml
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\Learn WPF Basics.g.resources
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\Learn WPF Basics.GeneratedMSBuildEditorConfig.editorconfig
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\Learn WPF Basics.AssemblyInfoInputs.cache
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\Learn WPF Basics.AssemblyInfo.cs
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\Learn WPF Basics.csproj.CoreCompileInputs.cache
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\Learn WPF Basics.dll
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\refint\Learn WPF Basics.dll
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\Learn WPF Basics.pdb
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\Learn WPF Basics.genruntimeconfig.cache
+E:\Workspace\User\Basics\Learn WPF Basics\obj\Debug\net6.0-windows\ref\Learn WPF Basics.dll
