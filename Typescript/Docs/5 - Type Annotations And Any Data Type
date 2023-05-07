@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------------------------------------------
+    Type Annotations And Any Data Type
+-------------------------------------------------------------------------------------------------------------------
+/*  
+|   Data Type : 
+|   -Boolean => let isDone: boolean = false;
+|   -Number => let decimal: number = 6;
+|   -String => let firstName: string = "John";
+|   -Array => let numbers: number[] = [1, 2, 3];
+|            let fruits: Array<string> = ["apple", "banana", "orange"];
+|   -Tuple => let person: [string, number] = ["John", 30];
+|            (Tuple: represents an array with a fixed number of elements of different types)
+|   -Enum => enum Color {
+|                Red,
+|                Green,
+|                Blue
+|            }
+|            let c: Color = Color.Green;
+|            (Enum: represents a set of named constants)
+|   -Any => let notSure: any = "this could be a string, number, or any other type";
+|          (Any: represents any type, useful for when the type of a value is not known at compile-time)
+|   -Void => function logMessage(message: string): void {
+|                console.log(message);
+|           }
+|           (Void: represents the absence of a value, often used for functions that don't return a value)
+*/

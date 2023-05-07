@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------------------------------------
+    Create Configuration And Watch Files
+-------------------------------------------------------------------------------------------------------------------
+/*  
+|   *   Run the following command to start the TypeScript compiler in watch mode
+|   tsc --watch file.ts
+|   *   To initialize a TypeScript configuration file, you can use the
+|   tsc --init
+|   *   Enable Some Config Tsk in Config File :
+|   rootDir, sourceMap, outDir, removeComments 
+*/

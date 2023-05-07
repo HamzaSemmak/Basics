@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------------------------------------------
+    Introduction And What Is TypeScript
+-------------------------------------------------------------------------------------------------------------------
+/*  
+|   *   What is TypeScript :
+|   TypeScript is A strongly Typed Programing Language That Builds On Javascript.
+|   TypeScript Developed and Maintained By Microsoft.
+|   TypeScript is JavaScript with Types  
+|   TypeScript add Features To JavaScript whitout Changing it 
+*/
+
+/*
+|   *   Why we need TypeScript :
+|   Detect Errors whitout runing the Code "Stati Type Checkeing" 
+|   Analyze The Code As You Type    
+|   Save Some Unit Tests As the Eror Show While Writing 
+|   Every Js File is Valid TS File 
+|   Will Help You write React, Angular, Vue Apps
+|   Gives You the Missing Features in Js Like "Interface, Generics, Decorators"
+*/
+
+/*
+|   *   Why we need TypeScrip :
+|   TypeScript Compiler Compile TS Code Into Js Code "This Called Transpilation"
+|   How AboutThe New Featurs? Workaround 
+*/
+
+/*
+|   *   What I Need To Know :
+|   JavaScript Concepts
+|   Variables, Arrays, Object, Functions, Condition...
+*/
