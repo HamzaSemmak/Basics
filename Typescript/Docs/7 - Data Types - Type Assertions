@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------------------------------------------
+    Data Types - Type Assertions 
+-------------------------------------------------------------------------------------------------------------------
+/*  
+|   Data Types :
+|   Type Assertions
+|   Sometime Compiler doesn't Know the information We Do.
+|   TypeScript Is Not Performing any Check To make sure Type assertion is Valid.
+|   Example : 
+*/
+
+const Img = document.getElementById('#img') as HTMLImageElement;
+const input = <HTMLInputElement> document.getElementById('#input');
