@@ -1,4 +1,3 @@
 "use strict";
-const Img = document.getElementById('#img');
-const input = document.getElementById('#input');
+console.log('Hello');
 //# sourceMappingURL=index.js.map
