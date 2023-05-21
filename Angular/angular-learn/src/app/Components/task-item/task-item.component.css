@@ -1,0 +1,18 @@
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    padding: 12px 16px;
+    width: 100%;
+    user-select: none !important;
+}
+.task.reminder {
+    border: 2px solid green;
+}
+.task fa-icon {
+    font-weight: 900;
+    font-size: 30px;
+    cursor: pointer;
+}
