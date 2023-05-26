@@ -1,0 +1,28 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "KFC restaurant",
+      "adress": "CYM 1 Rabat HAY YAACOUB EL MANSOUR",
+      "email": "KFC@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "24/24 restaurant",
+      "adress": "Rabat Agdal Rue FRANCE",
+      "email": "24@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Lwalida restaurant",
+      "adress": "CYM 1 Rabat HAY YAACOUB EL MANSOUR",
+      "email": "Lwalida@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "24/24 restaurant",
+      "adress": "Rabat Agdal Rue FRANCE",
+      "email": "24@gmail.com"
+    }
+  ]
+}
