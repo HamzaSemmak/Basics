@@ -23,6 +23,12 @@
       "name": "24/24 restaurant",
       "adress": "Rabat Agdal Rue FRANCE",
       "email": "24@gmail.com"
+    },
+    {
+      "name": "Argana",
+      "adress": "CYM Rabat 1200 Hay Riad",
+      "email": "Argana@gmail.com",
+      "id": 5
     }
   ]
 }

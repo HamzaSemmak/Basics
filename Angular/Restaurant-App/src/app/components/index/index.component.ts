@@ -13,11 +13,18 @@ export class IndexComponent implements OnInit{
   constructor(private RestoService: RestoService) { }
 
   ngOnInit(): void {
-    this.RestoService.getAll().subscribe(
+    this.RestoService.All().subscribe(
         (element) => {
           this.Restaurants = element
         }
     );
   }
-
+  
+  onDelete(Restaurant: Restaurant): void {
+    this.RestoService.Delete(Restaurant).subscribe(() => 
+      this.Restaurants = this.Restaurants.filter(t => 
+        t.id != Restaurant.id
+      ) 
+    )
+  }
 }

@@ -17,7 +17,9 @@
             <td> {{ item.adress }} </td>
             <td> {{ item.email }} </td>
             <td> 
-                Action
+                <button (click)="onDelete(item)" class="btn btn-danger"> Delete </button>
+                &nbsp;
+                <a routerLink="/Update/{{item.id}}" class="btn btn-primary"> Update </a>
             </td>
         </tr>
     </tbody>

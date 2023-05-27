@@ -1,21 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CreateComponent } from './components/create/create.component';
 import { UpdateComponent } from './components/update/update.component';
 import { IndexComponent } from './components/index/index.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 
 const route: Routes = [
-  { path: 'Home', component: IndexComponent },
+  { path: '', component: IndexComponent },
   { path: 'Create', component: CreateComponent },
-  { path: 'Update', component: UpdateComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent }
+  { path: 'Update/:id', component: UpdateComponent }
 ];
 
 @NgModule({
@@ -23,9 +20,7 @@ const route: Routes = [
     AppComponent,
     CreateComponent,
     UpdateComponent,
-    IndexComponent,
-    LoginComponent,
-    RegisterComponent
+    IndexComponent
   ],
   exports: [
     RouterModule
@@ -33,7 +28,9 @@ const route: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(route),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
