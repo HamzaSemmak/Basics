@@ -12,6 +12,16 @@ import { LoginComponent } from './Component/login/login.component';
 import { HomeComponent } from './Component/home/home.component';
 import { UsersComponent } from './Component/users/users.component';
 import { UpdatePopUpComponent } from './Component/update-pop-up/update-pop-up.component';
+import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './Guard/auth.guard';
+
+const Route: Routes = [
+  {path: '', component: HomeComponent, canActivate:[AuthGuard]},
+  {path: 'register', component: RegisterComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'users', component: UsersComponent, canActivate:[AuthGuard]}
+];
+
 
 @NgModule({
   declarations: [
@@ -28,7 +38,8 @@ import { UpdatePopUpComponent } from './Component/update-pop-up/update-pop-up.co
     MaterialModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    RouterModule.forRoot(Route),
   ],
   providers: [],
   bootstrap: [AppComponent]

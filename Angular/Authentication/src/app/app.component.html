@@ -300,6 +300,16 @@
       visibility: hidden;
     }
   }
+  
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .example-full-width {
+    width: 100%;
+  }
 </style>
 
 <!-- Toolbar -->
@@ -325,7 +335,8 @@
     </a>
 </div>
 
-<div class="content" role="main">
+<div class="content" style="width: 100%;display: block;" role="main">
+    <router-outlet></router-outlet>
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

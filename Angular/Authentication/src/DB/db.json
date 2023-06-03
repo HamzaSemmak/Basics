@@ -1,9 +1,40 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Hamza Semmak",
-            "email": "Hamza@gmail.com"
-        }
-    ]
+  "users": [
+    {
+      "name": "Hamza",
+      "password": "AA102374",
+      "email": "Hamza@sorec.ma",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true,
+      "id": 1
+    },
+    {
+      "name": "Tarik",
+      "password": "AA102374ajki@",
+      "email": "Tarik@sorec.ma",
+      "gender": "male",
+      "role": "",
+      "isActive": false,
+      "id": 2
+    },
+    {
+      "name": "Yacine",
+      "password": "AA102374@lmp",
+      "email": "Yacine@sorec.ma",
+      "gender": "male",
+      "role": "",
+      "isActive": false,
+      "id": 3
+    },
+    {
+      "name": "Test",
+      "password": "AA103274@fd",
+      "email": "Test@soerc.ma",
+      "gender": "male",
+      "role": "",
+      "isActive": true,
+      "id": 4
+    }
+  ]
 }
