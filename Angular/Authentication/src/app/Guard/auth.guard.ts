@@ -19,7 +19,8 @@ export class AuthGuard implements CanActivate {
         return true;
       }
       else {
-        this.tostr.error("You Have To logged First");
+        this.tostr.warning("You Have To logged In");
+        this.router.navigate(['login']);
         return false;
       }
   }

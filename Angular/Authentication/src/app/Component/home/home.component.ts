@@ -9,10 +9,14 @@ import { AuthService } from 'src/app/Service/auth.service';
 
 export class HomeComponent implements OnInit {
   User: any;
+  Name: any;
 
   constructor(private Service: AuthService) {}
 
   ngOnInit(): void {
-    
+    this.Service.User().subscribe( res => {
+      this.User = res;
+      this.Name = this.User.name;
+    })
   }
 }
