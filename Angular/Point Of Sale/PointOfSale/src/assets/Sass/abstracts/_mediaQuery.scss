@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the mixin of the site/application.
+// -----------------------------------------------------------------------------
+
+@import "./variables";
+
+/* System Media Queries */
+@mixin x-small {
+    @media only screen and (max-width: map-get($Breakpoints, "x-small")) {
+        @content;
+    }
+}
+@mixin small {
+    @media only screen and (max-width: map-get($Breakpoints, "small")) {
+        @content;
+    }
+}
+@mixin medium {
+    @media only screen and (max-width: map-get($Breakpoints, "medium")) {
+        @content;
+    }
+}
+@mixin large {
+    @media only screen and (max-width: map-get($Breakpoints, "large")) {
+        @content;
+    }
+}
+@mixin x-large {
+    @media only screen and (max-width: map-get($Breakpoints, "x-large")) {
+        @content;
+    }
+}
+@mixin xx-large {
+    @media only screen and (max-width: map-get($Breakpoints, "xx-large")) {
+        @content;
+    }
+}
+@mixin xxx-large {
+    @media only screen and (max-width: map-get($Breakpoints, "xxx-large")) {
+        @content;
+    }
+}
+
+@mixin media-only($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+

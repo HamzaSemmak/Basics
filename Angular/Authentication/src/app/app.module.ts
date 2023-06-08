@@ -13,7 +13,7 @@ import { HomeComponent } from './Component/home/home.component';
 import { UsersComponent } from './Component/users/users.component';
 import { UpdatePopUpComponent } from './Component/update-pop-up/update-pop-up.component';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from './Guard/auth.guard';
+import { AuthGuard } from './Guard/auth.guard'; 
 
 const Route: Routes = [
   {path: '', component: HomeComponent, canActivate:[AuthGuard]},

@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the function of the site/application.
+// -----------------------------------------------------------------------------
+
+/* Grid System */
+$grid-col: 12;
+.row {
+    display: grid;
+    grid-template-columns: repeat($grid-col, 1fr);
+    margin: 0 auto;
+    @for $i from 1 through $grid-col {
+        .col-#{$i} {
+            grid-column: span #{$i};
+            padding: 10px;
+            margin: 5px;
+
+            @include x-large {
+                grid-column: span $grid-col;
+                padding: 0px;
+            }
+        }
+    }
+}

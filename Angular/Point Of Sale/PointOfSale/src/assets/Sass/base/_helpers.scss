@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the base of the site/application.
+// -----------------------------------------------------------------------------
+
+.img-fluid {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
+  overflow: hidden;
+}
+
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
+}
+
+@include x-large {
+  .container,
+  .container-fluid  {
+    max-width: none;
+  }
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
