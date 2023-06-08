@@ -1,0 +1,22 @@
+.authentification {
+    min-height: 100vh;
+    width: 100%;
+    background-color: $light;
+    .authentification-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+        border-radius: 10px;
+        background-color: $white;
+        .auth-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 40px;
+            width: 50% !important;
+            height: 100%;
+            border: 1px solid red;
+        }
+    }
+}

@@ -26,7 +26,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/Sass/main.css"
+              "src/assets/Sass/main.css",
+              "src/assets/icons/style.css"
             ],
             "scripts": []
           },
