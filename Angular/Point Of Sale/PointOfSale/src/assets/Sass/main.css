@@ -1581,6 +1581,9 @@ sup {
   width: 50% !important;
   height: 100%;
 }
+.authentification .authentification-content .auth-section:nth-child(1) {
+  padding: 0 !important;
+}
 .authentification .authentification-content .auth-section h2 {
   font-size: 30px;
   letter-spacing: 1.2px;
@@ -1619,6 +1622,14 @@ sup {
 }
 .authentification .authentification-content .auth-form .auth-link .link:hover {
   text-decoration: underline;
+}
+.authentification .owl-carousel {
+  width: 100%;
+  height: 100%;
+  border-color: red;
+}
+.authentification .owl-carousel .item {
+  width: 600px !important;
 }
 
 .input-floating {
