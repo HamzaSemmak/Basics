@@ -15,11 +15,14 @@ $warning: #ffc107;
 $danger: #dc3545;
 $light: #f8f9fa;
 $dark: #212529;
+$primary: #0d6efd;
+$primary-bold: #2F2EE9;
 
 /* System Media Queries Breakpoints */
 $Breakpoints : (
-    "x-small": 350px,     
-    "small": 400px,       
+    "xx-small": 3500px,     
+    "x-small": 400px,     
+    "small": 500px,       
     "medium": 600px,  
     "large": 768px,    
     "x-large": 997px,     

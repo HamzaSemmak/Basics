@@ -1,0 +1,27 @@
+.btn {
+    position: relative;
+    padding: 10px;
+    border: 1px solid $primary;
+    background-color: $primary;
+    margin-block: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: $white;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    &:hover {
+        opacity: 0.9;
+    }
+    @include x-large {
+        padding: 8px 16px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
