@@ -371,6 +371,12 @@ sup {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
+.img-fluid {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
 /* devanagari */
 @font-face {
   font-family: "Poppins";
@@ -1564,6 +1570,11 @@ sup {
   width: 100%;
   background-color: #f8f9fa;
 }
+@media only screen and (max-width: 1200px) {
+  .authentification {
+    background-color: #fff;
+  }
+}
 .authentification .authentification-content {
   display: flex;
   align-items: center;
@@ -1571,6 +1582,11 @@ sup {
   height: 600px;
   border-radius: 10px;
   background-color: #fff;
+}
+@media only screen and (max-width: 1200px) {
+  .authentification .authentification-content {
+    flex-direction: column;
+  }
 }
 .authentification .authentification-content .auth-section {
   display: flex;
@@ -1581,8 +1597,19 @@ sup {
   width: 50% !important;
   height: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .authentification .authentification-content .auth-section {
+    padding: 10px;
+    width: 80% !important;
+  }
+}
 .authentification .authentification-content .auth-section:nth-child(1) {
   padding: 0 !important;
+}
+@media only screen and (max-width: 1200px) {
+  .authentification .authentification-content .auth-section:nth-child(1) {
+    display: none !important;
+  }
 }
 .authentification .authentification-content .auth-section h2 {
   font-size: 30px;
@@ -1592,6 +1619,11 @@ sup {
 .authentification .authentification-content .auth-section .block-text {
   text-align: center;
   padding: 0px 40px;
+}
+@media only screen and (max-width: 997px) {
+  .authentification .authentification-content .auth-section .block-text {
+    padding: 0;
+  }
 }
 .authentification .authentification-content .auth-section .block-text p {
   font-size: 13px;
@@ -1606,6 +1638,11 @@ sup {
 .authentification .authentification-content .auth-form {
   width: 70%;
   padding: 10px 0px;
+}
+@media only screen and (max-width: 997px) {
+  .authentification .authentification-content .auth-form {
+    width: 100%;
+  }
 }
 .authentification .authentification-content .auth-form .auth-link {
   display: flex;
@@ -1626,10 +1663,11 @@ sup {
 .authentification .owl-carousel {
   width: 100%;
   height: 100%;
-  border-color: red;
 }
 .authentification .owl-carousel .item {
   width: 600px !important;
+  height: 600px;
+  overflow: hidden;
 }
 
 .input-floating {
@@ -1770,7 +1808,7 @@ sup {
   text-align: center;
 }
 .btn:hover {
-  opacity: 0.9;
+  background-color: #2F2EE9;
 }
 @media only screen and (max-width: 997px) {
   .btn {

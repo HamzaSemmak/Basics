@@ -17,7 +17,7 @@
     width: 100%;
     text-align: center;
     &:hover {
-        opacity: 0.9;
+        background-color: $primary-bold;
     }
     @include x-large {
         padding: 8px 16px;

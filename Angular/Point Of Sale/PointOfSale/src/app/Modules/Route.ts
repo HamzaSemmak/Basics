@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from '../app.component';
 import { LoginComponent } from '../Components/Auth/login/login.component';
-import { RegisterComponent } from '../Components/Auth/register/register.component';
+import { ForgetPasswordComponent } from '../Components/Auth/forget-password/forget-password.component';
 
 export const Route: Routes = [
     {
@@ -9,11 +8,7 @@ export const Route: Routes = [
         component: LoginComponent
     },
     {
-        path: 'auth/login',
-        component: LoginComponent
-    },
-    {
-        path: 'auth/register',
-        component: RegisterComponent
+        path: 'auth/forget-password',
+        component: ForgetPasswordComponent
     }
 ];

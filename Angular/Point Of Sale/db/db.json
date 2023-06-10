@@ -1,3 +1,13 @@
 {
-  
+    "Users": [
+        {
+            "id": 1,
+            "name": "Hamza Semmak",
+            "gender": "Male",
+            "email": "Hamza@gmail.com",
+            "password": "AA102374h",
+            "active": true,
+            "Key": "9f59b8e8-f750-4db3-aaea-6882a4ad8188"
+        }
+    ]
 }

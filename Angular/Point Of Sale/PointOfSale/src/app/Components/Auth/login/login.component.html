@@ -3,7 +3,9 @@
         <div class="authentification-content shadow">
             <section class="auth-section authentification-slicder">
                 <div class="owl-carousel">
-                    <div class="item" style="height: 600px;"> Zakaria </div>
+                    <div class="item"> <img class="img-fluid" src="assets/images/SEO_Forum-Size-Guide_Mastead_Teaser-v2-Carousel_tcm221-922058.jpg" alt=""> </div>
+                    <div class="item"> <img class="img-fluid" src="assets/images/350160335_1580445342478036_3483277338621873671_n.jpg" alt=""> </div>
+                    <div class="item"> <img class="img-fluid" src="assets/images/315985203_905005057547211_829645248524820981_n.jpg" alt=""> </div>
                   </div>
             </section>
             <section class="auth-section authentification-form">
@@ -13,27 +15,27 @@
                 <div class="block-text">
                     <h2> Hello Again! </h2>
                     <p>
-                        Welcome to <span>Bella Marina</span>,
+                        Welcome to <span>Planet Shoes</span>,
                         Please enter your credentials to acces your account.
                     </p>
                 </div>
-                <form class="auth-form">
+                <form class="auth-form" [formGroup]="Validators" (ngSubmit)="ngOnSubmit()">
                     <div class="input-floating">
-                        <input type="text" required/>
+                        <input type="text" formControlName="email" required/>
                         <span> E-mail </span>
                         <i class="icon-email"></i>
                     </div>
                     <div class="input-floating">
-                        <input type="password" required/>
+                        <input type="password" formControlName="password" required/>
                         <span> Password </span>
                         <i class="icon-lock"></i>
                     </div>
                     <div class="auth-link">
                         <div class="input-floating checkbox-input">
-                            <input type="checkbox" id="checkbox" required/>
+                            <input type="checkbox" id="checkbox"/>
                             <label for="checkbox"> Remenber Me!</label>
                         </div>
-                        <label class="link"> Recovery Password </label>
+                        <label class="link" routerLink="auth/forget-password"> Recovery Password </label>
                     </div>
                     <br>
                     <button class="btn">
