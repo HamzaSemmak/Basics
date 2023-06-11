@@ -37,7 +37,9 @@
                         </div>
                         <label class="link" routerLink="auth/forget-password"> Recovery Password </label>
                     </div>
-                    <br>
+                    <p>
+                        <app-error *ngIf="error" message="{{ message }}"></app-error>
+                    </p>
                     <button class="btn">
                         Login
                     </button>

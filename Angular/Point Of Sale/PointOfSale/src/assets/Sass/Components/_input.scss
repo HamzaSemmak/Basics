@@ -70,9 +70,9 @@
     color: $primary;
 }
 
-
 .input-floating input:valid,
 .input-floating input:focus{
     border: 1px solid $primary;
     color: $gray;
+    background-color: $white;
 }

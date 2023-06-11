@@ -1746,6 +1746,7 @@ sup {
 .input-floating input:focus {
   border: 1px solid #0d6efd;
   color: #6c757d;
+  background-color: #fff;
 }
 
 .app-logo {
@@ -1816,4 +1817,17 @@ sup {
     font-size: 12px;
     font-weight: 400;
   }
+}
+
+.message {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0px 5px;
+  text-align: center;
+}
+.message.message-error {
+  color: #c2313d;
+  font-weight: 500;
+  font-size: 13px;
 }/*# sourceMappingURL=main.css.map */

@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './Components/Layouts/sidebar/sidebar.component';
 import { NavbarComponent } from './Components/Layouts/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
-import { Route } from './Modules/Route';
+import { Route } from './Modules/Route/Route';
 import { LoginComponent } from './Components/Auth/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ForgetPasswordComponent } from './Components/Auth/forget-password/forget-password.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ErrorComponent } from './Components/Components/error/error.component';
+import { ToastComponent } from './Components/Components/toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     SidebarComponent,
     NavbarComponent,
     LoginComponent,
-    ForgetPasswordComponent
+    ForgetPasswordComponent,
+    ErrorComponent,
+    ToastComponent
   ],
   imports: [
     BrowserModule,

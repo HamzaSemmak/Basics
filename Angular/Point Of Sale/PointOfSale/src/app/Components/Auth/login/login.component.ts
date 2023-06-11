@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/app/Modules/Users';
+import { User } from 'src/app/Modules/Model/Users';
 import { AuthService } from 'src/app/Services/Auth/auth.service';
-import { FormBuilder, Validators } from '@angular/forms'
+import { FormBuilder, Validators, FormGroup } from '@angular/forms'
 import { Router } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
-
+import { Response } from 'src/app/Modules/Response/Response';
 
 declare var $: any;
 
@@ -17,12 +17,14 @@ declare var $: any;
 
 export class LoginComponent implements OnInit {
   User: User;
+  error: boolean = false;
+  message: string;
 
   constructor(
     private formBuilder: FormBuilder,
     private AuthService: AuthService,
     private Router: Router
-  ) {}
+  ) {  }
 
   ngOnInit(): void {
     var owl = $('.owl-carousel');
@@ -57,17 +59,27 @@ export class LoginComponent implements OnInit {
       this.AuthService.login(this.Validators.value.email, this.Validators.value.password).subscribe( 
         response => {
           this.User = response;
-
-          console.log(this.User.Key);
+          if(Object.keys(this.User).length > 0)
+          {
+            console.log(this.User);
+          } 
+          else {
+            this.ThrowError(`${Response.RESPONSE_MSG_AUTH_FAILED}`);
+          }
         },
         (error: HttpErrorResponse) => {
-          console.log(`Error ${error.status} : ${error.message}`);
+          this.ThrowError(`Error ${error.status} : ${error.message}`);
         }
       )
     }
     else {
-
+      this.ThrowError(Response.RESPONSE_MSG_VAILDATION_FORM);
     }
+  }
+
+  ThrowError(Msg: string): void {
+    this.message = Msg;
+    this.error = !this.error;
   }
 
 }
