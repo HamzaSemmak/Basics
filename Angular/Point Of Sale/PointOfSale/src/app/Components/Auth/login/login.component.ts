@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/Modules/Model/Users';
 import { AuthService } from 'src/app/Services/Auth/auth.service';
-import { FormBuilder, Validators, FormGroup } from '@angular/forms'
+import { FormBuilder, Validators } from '@angular/forms'
 import { Router } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Response } from 'src/app/Modules/Response/Response';
@@ -17,7 +17,7 @@ declare var $: any;
 
 export class LoginComponent implements OnInit {
   User: User;
-  error: boolean = false;
+  error: boolean = true;
   message: string;
 
   constructor(
@@ -45,12 +45,13 @@ export class LoginComponent implements OnInit {
             owl.trigger('prev.owl');
         }
         e.preventDefault();
-    });
+    });    
   }
 
   Validators = this.formBuilder.group({
-    email: this.formBuilder.control('', [Validators.required, Validators.email]),
-    password: this.formBuilder.control('', Validators.required)
+    email: this.formBuilder.control('hamza@gmail.com', [Validators.required, Validators.email]),
+    password: this.formBuilder.control('AA102374h', Validators.required),
+    remenber: false
   });
 
   ngOnSubmit(): void {
@@ -59,9 +60,10 @@ export class LoginComponent implements OnInit {
       this.AuthService.login(this.Validators.value.email, this.Validators.value.password).subscribe( 
         response => {
           this.User = response;
+          let email: any = this.Validators.value.email;
           if(Object.keys(this.User).length > 0)
           {
-            console.log(this.User);
+            this.AuthService.guard(email);
           } 
           else {
             this.ThrowError(`${Response.RESPONSE_MSG_AUTH_FAILED}`);
@@ -79,7 +81,6 @@ export class LoginComponent implements OnInit {
 
   ThrowError(Msg: string): void {
     this.message = Msg;
-    this.error = !this.error;
   }
 
 }

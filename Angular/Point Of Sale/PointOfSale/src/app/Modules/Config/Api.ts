@@ -1,1 +1,1 @@
-export const ApiUsers: string = "http://localhost:3000/Usersd";
+export const ApiUsers: string = "http://localhost:3000/Users";
