@@ -5,8 +5,7 @@ import { FormBuilder, Validators } from '@angular/forms'
 import { Router } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Response } from 'src/app/Modules/Response/Response';
-
-declare var $: any;
+import { OwlService } from 'src/app/Services/carousel/owl.service';
 
 @Component({
   selector: 'app-login',
@@ -23,34 +22,21 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private AuthService: AuthService,
+    private Owl: OwlService,
     private Router: Router
   ) {  }
 
   ngOnInit(): void {
-    var owl = $('.owl-carousel');
-    $('.owl-carousel').owlCarousel({
-      loop:true,
-      item:1,
-      dots: false,
-      margin:0,
-      autoWidth:true,
-      autoplay:true,
-      autoplayTimeout:5000,
-      smartSpeed:450
-    });
-    owl.on('mousewheel', '.owl-stage', function (e: any) {
-        if (e.deltaY>0) {
-            owl.trigger('next.owl');
-        } else {
-            owl.trigger('prev.owl');
-        }
-        e.preventDefault();
-    });    
+    if(this.AuthService.Check())
+    {
+      this.Router.navigate(['/']);
+    }
+    this.Owl.owl();
   }
 
   Validators = this.formBuilder.group({
-    email: this.formBuilder.control('hamza@gmail.com', [Validators.required, Validators.email]),
-    password: this.formBuilder.control('AA102374h', Validators.required),
+    email: this.formBuilder.control('', [Validators.required, Validators.email]),
+    password: this.formBuilder.control('', Validators.required),
     remenber: false
   });
 
@@ -62,7 +48,7 @@ export class LoginComponent implements OnInit {
           this.User = response;
           let email: any = this.Validators.value.email;
           if(Object.keys(this.User).length > 0)
-          {
+          {           
             this.AuthService.guard(email);
           } 
           else {

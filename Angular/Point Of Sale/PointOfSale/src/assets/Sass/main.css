@@ -1588,6 +1588,15 @@ sup {
     flex-direction: column;
   }
 }
+.authentification .authentification-content .owl-carousel {
+  width: 100%;
+  height: 100%;
+}
+.authentification .authentification-content .owl-carousel .item {
+  width: 600px !important;
+  height: 600px;
+  overflow: hidden;
+}
 .authentification .authentification-content .auth-section {
   display: flex;
   align-items: center;
@@ -1659,15 +1668,6 @@ sup {
 }
 .authentification .authentification-content .auth-form .auth-link .link:hover {
   text-decoration: underline;
-}
-.authentification .owl-carousel {
-  width: 100%;
-  height: 100%;
-}
-.authentification .owl-carousel .item {
-  width: 600px !important;
-  height: 600px;
-  overflow: hidden;
 }
 
 .input-floating {
