@@ -56,13 +56,22 @@ export class LoginComponent implements OnInit {
           }
         },
         (error: HttpErrorResponse) => {
-          this.ThrowError(`Error ${error.status} : ${error.message}`);
+          if(error.status == 0)
+          {
+              this.ThrowError(Response.RESPONSE_MSG_AUTH_CONNEXION);
+          } else {
+            this.ThrowError(`Error ${error.status} : ${error.message}`);
+          }
         }
       )
     }
     else {
       this.ThrowError(Response.RESPONSE_MSG_VAILDATION_FORM);
     }
+  }
+
+  ngOnForgotPassword(): void {
+    ///auth/forget-password/email : route
   }
 
   ThrowError(Msg: string): void {
