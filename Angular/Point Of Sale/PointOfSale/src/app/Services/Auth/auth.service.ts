@@ -47,4 +47,8 @@ export class AuthService {
       return false;
     }
   }
+
+  forgotPassword(email: any): Observable<User> {
+    return this.HttpClient.get<User>(`${ApiUsers}?email=${email}`, httpOptions);
+  }
 }

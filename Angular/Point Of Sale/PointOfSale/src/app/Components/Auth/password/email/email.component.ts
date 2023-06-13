@@ -52,6 +52,7 @@ export class EmailComponent implements OnInit {
         this.email = this.Validators.value.email;
         this.MailService.sendEmail(this.email, EMAIL_CODE_VEREFICATION.toString(), this.name);
         // this.Router.navigate(['/']);
+        //To be Continued
       }
     }
   }

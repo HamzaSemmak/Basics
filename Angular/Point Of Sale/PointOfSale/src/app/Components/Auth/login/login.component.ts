@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
   User: User;
   error: boolean = true;
   message: string;
+  email: string;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -58,7 +59,7 @@ export class LoginComponent implements OnInit {
         (error: HttpErrorResponse) => {
           if(error.status == 0)
           {
-              this.ThrowError(Response.RESPONSE_MSG_AUTH_CONNEXION);
+            this.ThrowError(Response.RESPONSE_MSG_AUTH_CONNEXION);
           } else {
             this.ThrowError(`Error ${error.status} : ${error.message}`);
           }
@@ -72,6 +73,38 @@ export class LoginComponent implements OnInit {
 
   ngOnForgotPassword(): void {
     ///auth/forget-password/email : route
+    if(this.Validators.value.email == "" || this.Validators.value.email == null)
+    {
+      this.ThrowError(Response.RESPONSE_MSG_VAILDATION_REQUIRED);
+    }
+    else {
+      if(this.Validators.controls.email.errors) {
+        this.ThrowError(Response.RESPONSE_MSG_VAILDATION_EMAIL);
+      }
+      else {
+        this.email = this.Validators.value.email;
+        this.AuthService.forgotPassword(this.email).subscribe(
+          response => {
+            if(Object.keys(response).length > 0)
+            {
+              console.log(response);
+              console.log("h");
+            } else {
+              console.log(response);
+            }
+          },
+          (error: HttpErrorResponse) => {
+            if(error.status == 0)
+            {
+              this.ThrowError(Response.RESPONSE_MSG_AUTH_CONNEXION);
+            } else {
+              this.ThrowError(`Error ${error.status} : ${error.message}`);
+            }
+          }
+        )
+      }
+    }
+
   }
 
   ThrowError(Msg: string): void {

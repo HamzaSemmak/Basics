@@ -25,8 +25,10 @@ export class ResponseCode {
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
-   
+
     static readonly RESPONSE_CODE_VAILDATION_FORM: number = 9000;
     static readonly RESPONSE_CODE_VAILDATION_EMPTY: number = 9001;
     static readonly RESPONSE_CODE_VAILDATION_EMAIL: number = 9002;
+    static readonly RESPONSE_CODE_VAILDATION_REQUIRED: number = 9003;
+
 }
