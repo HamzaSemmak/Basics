@@ -19,6 +19,8 @@ export class Response {
     static readonly RESPONSE_MSG_AUTH_FAILED: string = `Error : ${Code.RESPONSE_CODE_AUTH_FAILED}, These credentials do not match our records.`;
     static readonly RESPONSE_MSG_AUTH_PASSWORD: string = `Error : ${Code.RESPONSE_CODE_AUTH_PASSWORD}, The provided password is incorrect.`;
     static readonly RESPONSE_MSG_AUTH_CONNEXION: string = `Error : ${Code.RESPONSE_CODE_AUTH_CONNEXION}, Aucune connexion n’a pu être établie.`;
+    static readonly RESPONSE_MSG_AUTH_EMAIL_INCORRECT: string = `Error : ${Code.RESPONSE_CODE_AUTH_EMAIL_INCORRECT}, The provided email is incorrect.`;
+
 
     /*
     |--------------------------------------------------------------------------

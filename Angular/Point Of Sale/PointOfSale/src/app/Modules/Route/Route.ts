@@ -15,7 +15,7 @@ export const Route: Routes = [
         component: LoginComponent
     },
     {
-        path: 'auth/forget-password/email',
+        path: 'auth/forget-password/email/:email',
         component: EmailComponent
     }
 ];
