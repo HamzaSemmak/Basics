@@ -9,17 +9,18 @@ export class EmailService {
 
   constructor() { }
 
-  sendEmail(To: string, Msg: string) {
+  sendEmail(To: string, Code: string, Name: string) {
     const Params = {
       to_email: To,
-      message: Msg
+      message: Code,
+      name: Name
     };
   
     emailjs.send(EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, Params, EMAIL_USER_ID)
       .then((response: EmailJSResponseStatus) => {
-        console.log('Email sent successfully');
+        console.log(response);
       }, (error) => {
-        console.log('Error sending email:', error);
+        console.log(error);
       });
   }
 }

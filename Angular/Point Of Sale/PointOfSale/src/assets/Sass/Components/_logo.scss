@@ -27,5 +27,8 @@
         @include medium {
             font-size: 25px;
         }
+        &.sm {
+            font-size: 40px;
+        }
     }
 }

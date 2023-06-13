@@ -367,6 +367,10 @@ sup {
   justify-content: space-between;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .shadow {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
@@ -1597,6 +1601,9 @@ sup {
   height: 600px;
   overflow: hidden;
 }
+.authentification .authentification-content .w-100 {
+  width: 100% !important;
+}
 .authentification .authentification-content .auth-section {
   display: flex;
   align-items: center;
@@ -1643,6 +1650,21 @@ sup {
   font-weight: 700;
   font-size: 12.5px;
   letter-spacing: 1.3px;
+}
+.authentification .authentification-content .auth-section .block-text .link {
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+.authentification .authentification-content .auth-section .block-text .icon {
+  margin: 0 12px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.authentification .authentification-content .auth-section .block-text .text-primary {
+  color: #2F2EE9;
 }
 .authentification .authentification-content .auth-form {
   width: 70%;
@@ -1787,6 +1809,9 @@ sup {
   .app-logo i {
     font-size: 25px;
   }
+}
+.app-logo i.sm {
+  font-size: 40px;
 }
 
 .btn {

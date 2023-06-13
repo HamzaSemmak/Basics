@@ -9,10 +9,13 @@ import { RouterModule } from '@angular/router';
 import { Route } from './Modules/Route/Route';
 import { LoginComponent } from './Components/Auth/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ForgetPasswordComponent } from './Components/Auth/forget-password/forget-password.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorComponent } from './Components/Components/error/error.component';
 import { ToastComponent } from './Components/Components/toast/toast.component';
+import { EmailComponent } from './Components/Auth/password/email/email.component';
+import { ConfirmComponent } from './Components/Auth/password/confirm/confirm.component';
+import { ResetComponent } from './Components/Auth/password/reset/reset.component';
+import { EmailConfirmComponent } from './Components/Auth/password/email-confirm/email-confirm.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +23,12 @@ import { ToastComponent } from './Components/Components/toast/toast.component';
     SidebarComponent,
     NavbarComponent,
     LoginComponent,
-    ForgetPasswordComponent,
     ErrorComponent,
-    ToastComponent
+    ToastComponent,
+    EmailComponent,
+    ConfirmComponent,
+    ResetComponent,
+    EmailConfirmComponent
   ],
   imports: [
     BrowserModule,
