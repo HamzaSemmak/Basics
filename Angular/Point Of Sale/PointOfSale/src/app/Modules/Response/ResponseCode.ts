@@ -14,7 +14,7 @@ export class ResponseCode {
     static readonly RESPONSE_CODE_AUTH_FAILED: number = 8000;
     static readonly RESPONSE_CODE_AUTH_PASSWORD: number = 8001;
     static readonly RESPONSE_CODE_AUTH_CONNEXION: number = 8002;
-
+    static readonly RESPONSE_CODE_AUTH_EMAIL_INCORRECT: number = 8003;
     /*
     |--------------------------------------------------------------------------
     | Validation Language Lines

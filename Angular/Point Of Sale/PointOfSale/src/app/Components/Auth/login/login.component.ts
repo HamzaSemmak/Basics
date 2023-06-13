@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Response } from 'src/app/Modules/Response/Response';
 import { OwlService } from 'src/app/Services/carousel/owl.service';
+import { Route } from 'src/app/Modules/Route/Route';
 
 @Component({
   selector: 'app-login',
@@ -72,7 +73,6 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnForgotPassword(): void {
-    ///auth/forget-password/email : route
     if(this.Validators.value.email == "" || this.Validators.value.email == null)
     {
       this.ThrowError(Response.RESPONSE_MSG_VAILDATION_REQUIRED);
@@ -87,10 +87,9 @@ export class LoginComponent implements OnInit {
           response => {
             if(Object.keys(response).length > 0)
             {
-              console.log(response);
-              console.log("h");
+              this.Router.navigate([`/auth/forget-password/email/${this.email}`])
             } else {
-              console.log(response);
+              this.ThrowError(Response.RESPONSE_MSG_AUTH_EMAIL_INCORRECT);
             }
           },
           (error: HttpErrorResponse) => {
