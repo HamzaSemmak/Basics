@@ -1850,6 +1850,7 @@ sup {
   height: auto;
   padding: 0px 5px;
   text-align: center;
+  transition: 0.3s ease;
 }
 .message.message-error {
   color: #c2313d;

@@ -21,6 +21,6 @@ export class EmailService {
         console.log(response);
       }, (error) => {
         console.log(error);
-      });
+    });
   }
 }

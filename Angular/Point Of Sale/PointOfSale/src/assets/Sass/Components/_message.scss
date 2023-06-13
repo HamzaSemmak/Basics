@@ -4,6 +4,7 @@
     height: auto;
     padding: 0px 5px;
     text-align: center;
+    transition: 0.3s ease;
     &.message-error {
         color: $danger;
         font-weight: 500;

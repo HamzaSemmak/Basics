@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/Services/Auth/auth.service';
 import { FormBuilder, Validators } from '@angular/forms'
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute  } from '@angular/router';
 import { OwlService } from 'src/app/Services/carousel/owl.service';
 import { Response  } from 'src/app/Modules/Response/Response';
 import { EmailService } from 'src/app/Services/Email/email.service';
 import { EMAIL_CODE_VEREFICATION } from 'src/app/Modules/Config/Config';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-email',
@@ -23,7 +24,8 @@ export class EmailComponent implements OnInit {
     private AuthService: AuthService,
     private MailService: EmailService,
     private Owl: OwlService,
-    private Router: Router
+    private Router: Router,
+    private ActivateRoute: ActivatedRoute
   ) {  }
 
   ngOnInit(): void {
@@ -32,7 +34,21 @@ export class EmailComponent implements OnInit {
       this.Router.navigate(['/']);
     }
     this.Owl.owl();
-    // Get User
+
+    this.email = this.ActivateRoute.snapshot.params['email'];
+    this.AuthService.forgotPassword(this.email).subscribe(
+      response => {
+        if(Object.keys(response).length > 0)
+        {
+          console.log(response);
+        } else {
+          console.log("Empty");
+        }
+      },
+      (error: HttpErrorResponse) => {
+       console.log(error);
+      }
+    )
   }
 
   Validators = this.formBuilder.group({
@@ -51,8 +67,7 @@ export class EmailComponent implements OnInit {
       else {
         this.email = this.Validators.value.email;
         this.MailService.sendEmail(this.email, EMAIL_CODE_VEREFICATION.toString(), this.name);
-        // this.Router.navigate(['/']);
-        //To be Continued
+        this.Router.navigate(['/']);
       }
     }
   }

@@ -16,6 +16,7 @@ import { EmailComponent } from './Components/Auth/password/email/email.component
 import { ConfirmComponent } from './Components/Auth/password/confirm/confirm.component';
 import { ResetComponent } from './Components/Auth/password/reset/reset.component';
 import { EmailConfirmComponent } from './Components/Auth/password/email-confirm/email-confirm.component';
+import { ErrorsComponent } from './Components/errors/errors.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { EmailConfirmComponent } from './Components/Auth/password/email-confirm/
     EmailComponent,
     ConfirmComponent,
     ResetComponent,
-    EmailConfirmComponent
+    EmailConfirmComponent,
+    ErrorsComponent
   ],
   imports: [
     BrowserModule,
