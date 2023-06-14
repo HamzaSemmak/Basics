@@ -36,13 +36,13 @@ export class EmailComponent implements OnInit {
     this.Owl.owl();
 
     this.email = this.ActivateRoute.snapshot.params['email'];
-    this.AuthService.forgotPassword(this.email).subscribe(
+    this.AuthService.ForgotPassword(this.email).subscribe(
       response => {
         if(Object.keys(response).length > 0)
         {
-          console.log(response);
+          console.warn(response);
         } else {
-          console.log("Empty");
+          console.warn("Empty");
         }
       },
       (error: HttpErrorResponse) => {

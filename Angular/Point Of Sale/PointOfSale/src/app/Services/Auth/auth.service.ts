@@ -48,7 +48,12 @@ export class AuthService {
     }
   }
 
-  forgotPassword(email: any): Observable<User> {
+  ForgotPassword(email: any): Observable<User> {
     return this.HttpClient.get<User>(`${ApiUsers}?email=${email}`, httpOptions);
   }
+
+  FindByColumn(Colmun: string, value: string): Observable<User> {
+    return this.HttpClient.get<User>(`${ApiUsers}?${Colmun}=${value}`, httpOptions);
+  }
+  
 }

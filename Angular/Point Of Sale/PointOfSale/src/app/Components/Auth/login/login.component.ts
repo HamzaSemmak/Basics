@@ -82,7 +82,7 @@ export class LoginComponent implements OnInit {
       }
       else {
         this.email = this.Validators.value.email;
-        this.AuthService.forgotPassword(this.email).subscribe(
+        this.AuthService.ForgotPassword(this.email).subscribe(
           response => {
             if(Object.keys(response).length > 0)
             {
@@ -108,5 +108,4 @@ export class LoginComponent implements OnInit {
   ThrowError(Msg: string): void {
     this.message = Msg;
   }
-
 }
