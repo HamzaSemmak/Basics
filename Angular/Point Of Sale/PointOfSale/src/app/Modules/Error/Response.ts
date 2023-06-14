@@ -33,7 +33,7 @@ export class Response {
     |
     */
 
-    static readonly RESPONSE_MSG_VAILDATION_FORM: string = `Error : ${Code.RESPONSE_CODE_AUTH_PASSWORD}, The Form is invalid, Please Try again.`;
+    static readonly RESPONSE_MSG_VAILDATION_FORM: string = `Error : ${Code.RESPONSE_CODE_VAILDATION_FORM}, The Form is invalid, Please Try again.`;
     static readonly RESPONSE_MSG_VAILDATION_EMPTY: string = `Error : ${Code.RESPONSE_CODE_VAILDATION_EMPTY}, The Form is invalid, Please Try again.`;
     static readonly RESPONSE_MSG_VAILDATION_EMAIL: string = `Error : ${Code.RESPONSE_CODE_VAILDATION_EMAIL}, The attribute must be a valid email address.`;
     static readonly RESPONSE_MSG_VAILDATION_REQUIRED: string = `Error : ${Code.RESPONSE_CODE_VAILDATION_REQUIRED}, The email attribute field is required`;

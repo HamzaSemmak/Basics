@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/Services/Auth/auth.service';
 import { FormBuilder, Validators } from '@angular/forms'
 import { Router, ActivatedRoute  } from '@angular/router';
-import { OwlService } from 'src/app/Services/carousel/owl.service';
-import { Response  } from 'src/app/Modules/Response/Response';
+import { OwlService } from 'src/app/Services/Carousel/owl.service';
+import { Response  } from 'src/app/Modules/Error/Response';
 import { EmailService } from 'src/app/Services/Email/email.service';
 import { EMAIL_CODE_VEREFICATION } from 'src/app/Modules/Config/Config';
 import { HttpErrorResponse } from '@angular/common/http';
@@ -36,6 +36,7 @@ export class EmailComponent implements OnInit {
     this.Owl.owl();
 
     this.email = this.ActivateRoute.snapshot.params['email'];
+
     this.AuthService.ForgotPassword(this.email).subscribe(
       response => {
         if(Object.keys(response).length > 0)

@@ -4,8 +4,8 @@ import { AuthService } from 'src/app/Services/Auth/auth.service';
 import { FormBuilder, Validators } from '@angular/forms'
 import { Router } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
-import { Response } from 'src/app/Modules/Response/Response';
-import { OwlService } from 'src/app/Services/carousel/owl.service';
+import { Response } from 'src/app/Modules/Error/Response';
+import { OwlService } from 'src/app/Services/Carousel/owl.service';
 
 @Component({
   selector: 'app-login',

@@ -11,12 +11,12 @@ import { LoginComponent } from './Components/Auth/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ErrorComponent } from './Components/Components/error/error.component';
-import { ToastComponent } from './Components/Components/toast/toast.component';
 import { EmailComponent } from './Components/Auth/password/email/email.component';
 import { ConfirmComponent } from './Components/Auth/password/confirm/confirm.component';
 import { ResetComponent } from './Components/Auth/password/reset/reset.component';
 import { EmailConfirmComponent } from './Components/Auth/password/email-confirm/email-confirm.component';
 import { ErrorsComponent } from './Components/errors/errors.component';
+import { ToastsComponent } from './Components/Components/toasts/toasts.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +25,12 @@ import { ErrorsComponent } from './Components/errors/errors.component';
     NavbarComponent,
     LoginComponent,
     ErrorComponent,
-    ToastComponent,
     EmailComponent,
     ConfirmComponent,
     ResetComponent,
     EmailConfirmComponent,
-    ErrorsComponent
+    ErrorsComponent,
+    ToastsComponent
   ],
   imports: [
     BrowserModule,
