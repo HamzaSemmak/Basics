@@ -6,12 +6,19 @@
     top: 2% !important;
     z-index: 10 !important;
     .alert {
+        display: none;
         width: 350px;
         height: auto;
         padding: 10px 10px 28px 10px;
         margin: 15px 0px;
         border-radius: 5px;
         position: relative;
+        overflow: hidden;
+        transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+        -webkit-animation-name: popupAlert;
+        -webkit-animation-duration: 0.9s;
+        animation-name: popupAlert;
+        animation-duration: 0.9s;
         .alert-content {
             display: flex;
             align-items: flex-start;
@@ -50,6 +57,22 @@
             color: $gray;
         }
     }
+    .progress {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: transparent;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            animation: progress 7s linear forwards;
+        }
+    }
     .alert-danger {
         border-left: 4px solid $danger;
         .alert-content {
@@ -58,6 +81,11 @@
                 i {
                     color: $danger;
                 }
+            }
+        }
+        .progress {
+            &:before {
+                background-color: $danger;
             }
         }
     }
@@ -71,6 +99,11 @@
                 }
             }
         }
+        .progress {
+            &:before {
+                background-color: $success;
+            }
+        }
     }
     .alert-info {
         border-left: 4px solid $info;
@@ -80,6 +113,11 @@
                 i {
                     color: $info;
                 }
+            }
+        }
+        .progress {
+            &:before {
+                background-color: $info;
             }
         }
     }
@@ -93,5 +131,39 @@
                 }
             }
         }
+        .progress {
+            &:before {
+                background-color: $warning;
+            }
+        }
     }
+    .active {
+        display: block !important;
+    }
+    
+    @-webkit-keyframes popupAlert {
+        from {
+            right: -350px;
+        }
+        to {
+            right: 0;
+        }
+    }
+    @keyframes popupAlert {
+        from {
+            right: -350px;
+        }
+        to {
+            right: 0;
+        }
+    }
+
+    @keyframes progress {
+        from {
+            right: 0%
+        }
+        to {
+            right: 100%;
+        }
+    }    
 }

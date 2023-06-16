@@ -7,6 +7,8 @@ import { Response  } from 'src/app/Modules/Error/Response';
 import { EmailService } from 'src/app/Services/Email/email.service';
 import { EMAIL_CODE_VEREFICATION } from 'src/app/Modules/Config/Config';
 import { HttpErrorResponse } from '@angular/common/http';
+import { ToastService } from 'src/app/Services/Toast/toast.service';
+import { User } from 'src/app/Modules/Model/Users';
 
 @Component({
   selector: 'app-email',
@@ -18,6 +20,7 @@ export class EmailComponent implements OnInit {
   message: string;
   email: string;
   name: string;
+  User: User;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -25,7 +28,8 @@ export class EmailComponent implements OnInit {
     private MailService: EmailService,
     private Owl: OwlService,
     private Router: Router,
-    private ActivateRoute: ActivatedRoute
+    private ActivateRoute: ActivatedRoute,
+    private ToastService: ToastService
   ) {  }
 
   ngOnInit(): void {
@@ -41,9 +45,9 @@ export class EmailComponent implements OnInit {
       response => {
         if(Object.keys(response).length > 0)
         {
-          console.warn(response);
+          this.User = response;
         } else {
-          console.warn("Empty");
+          this.Router.navigate(['/auth/login']);
         }
       },
       (error: HttpErrorResponse) => {
@@ -68,7 +72,7 @@ export class EmailComponent implements OnInit {
       else {
         this.email = this.Validators.value.email;
         this.MailService.sendEmail(this.email, EMAIL_CODE_VEREFICATION.toString(), this.name);
-        this.Router.navigate(['/']);
+        this.Router.navigate([`/auth/forget-password/email-confirm/${this.email}`]);
       }
     }
   }

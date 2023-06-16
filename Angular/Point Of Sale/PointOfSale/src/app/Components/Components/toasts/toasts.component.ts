@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit  } from '@angular/core';
 
 @Component({
   selector: 'app-toasts',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toasts.component.css']
 })
 export class ToastsComponent implements OnInit {
-  
+
+  @Input() message: string;
+
   constructor() { }
 
   ngOnInit(): void {
-
+    return;
   }
+  
 }

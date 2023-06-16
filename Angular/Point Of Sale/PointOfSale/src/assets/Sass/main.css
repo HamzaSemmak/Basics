@@ -147,6 +147,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   background-color: #fff;
+  overflow: hidden;
 }
 
 * {
@@ -1867,12 +1868,19 @@ sup {
   z-index: 10 !important;
 }
 .alert-components .alert {
+  display: none;
   width: 350px;
   height: auto;
   padding: 10px 10px 28px 10px;
   margin: 15px 0px;
   border-radius: 5px;
   position: relative;
+  overflow: hidden;
+  transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  -webkit-animation-name: popupAlert;
+  -webkit-animation-duration: 0.9s;
+  animation-name: popupAlert;
+  animation-duration: 0.9s;
 }
 .alert-components .alert .alert-content {
   display: flex;
@@ -1909,6 +1917,22 @@ sup {
   cursor: pointer;
   color: #6c757d;
 }
+.alert-components .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: transparent;
+}
+.alert-components .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  animation: progress 7s linear forwards;
+}
 .alert-components .alert-danger {
   border-left: 4px solid #E53935;
 }
@@ -1917,6 +1941,9 @@ sup {
 }
 .alert-components .alert-danger .alert-content .alert-icon i {
   color: #E53935;
+}
+.alert-components .alert-danger .progress:before {
+  background-color: #E53935;
 }
 .alert-components .alert-success {
   border-left: 4px solid #4CAF50;
@@ -1927,14 +1954,20 @@ sup {
 .alert-components .alert-success .alert-content .alert-icon i {
   color: #4CAF50;
 }
+.alert-components .alert-success .progress:before {
+  background-color: #4CAF50;
+}
 .alert-components .alert-info {
-  border-left: 4px solid #2196F3;
+  border-left: 4px solid #91caf9;
 }
 .alert-components .alert-info .alert-content .alert-icon {
   cursor: pointer;
 }
 .alert-components .alert-info .alert-content .alert-icon i {
-  color: #2196F3;
+  color: #91caf9;
+}
+.alert-components .alert-info .progress:before {
+  background-color: #91caf9;
 }
 .alert-components .alert-warning {
   border-left: 4px solid #FFC107;
@@ -1944,4 +1977,26 @@ sup {
 }
 .alert-components .alert-warning .alert-content .alert-icon i {
   color: #FFC107;
+}
+.alert-components .alert-warning .progress:before {
+  background-color: #FFC107;
+}
+.alert-components .active {
+  display: block !important;
+}
+@keyframes popupAlert {
+  from {
+    right: -350px;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes progress {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
