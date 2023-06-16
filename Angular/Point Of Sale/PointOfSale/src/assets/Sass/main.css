@@ -1667,6 +1667,10 @@ sup {
 .authentification .authentification-content .auth-section .block-text .text-primary {
   color: #2F2EE9;
 }
+.authentification .authentification-content .auth-section .block-text .color-primery {
+  color: #2F2EE9;
+  cursor: pointer;
+}
 .authentification .authentification-content .auth-form {
   width: 70%;
   padding: 10px 0px;

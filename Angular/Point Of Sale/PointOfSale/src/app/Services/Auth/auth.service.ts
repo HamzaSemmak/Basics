@@ -17,6 +17,8 @@ const httpOptions = {
 })
 
 export class AuthService {
+  Users: User;
+
   constructor(private HttpClient: HttpClient, private router: Router) { }
 
   login(name: any, password: any): Observable<User> {
@@ -52,8 +54,12 @@ export class AuthService {
     return this.HttpClient.get<User>(`${ApiUsers}?email=${email}`, httpOptions);
   }
 
-  FindByColumn(Colmun: string, value: string): Observable<User> {
+  FindByColumn(Colmun: string, value: any): Observable<User>{
     return this.HttpClient.get<User>(`${ApiUsers}?${Colmun}=${value}`, httpOptions);
+  }
+
+  ResetPassword(id: any, User: any): Observable<User> {
+    return this.HttpClient.put<User>(`${ApiUsers}/${id}`, User);
   }
   
 }

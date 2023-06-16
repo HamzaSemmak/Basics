@@ -70,8 +70,8 @@ export class EmailComponent implements OnInit {
         this.ThrowError(Response.RESPONSE_MSG_VAILDATION_EMAIL);
       }
       else {
-        this.email = this.Validators.value.email;
-        this.MailService.sendEmail(this.email, EMAIL_CODE_VEREFICATION.toString(), this.name);
+        var mail: string = this.Validators.value.email;
+        this.MailService.sendEmail(mail, EMAIL_CODE_VEREFICATION.toString(), this.name);
         this.Router.navigate([`/auth/forget-password/email-confirm/${this.email}`]);
       }
     }

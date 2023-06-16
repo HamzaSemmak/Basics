@@ -82,6 +82,11 @@
                 .text-primary {
                     color: $primary-bold;
                 }
+                .color-primery {
+                    color: $primary-bold;
+                    cursor: pointer;
+
+                }
             }
         }
         .auth-form {

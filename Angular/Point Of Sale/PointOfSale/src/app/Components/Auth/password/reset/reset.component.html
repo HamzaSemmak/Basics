@@ -1,7 +1,43 @@
 <section class="authentification d-flex-center">
     <div class="container">
         <div class="authentification-content shadow">
-            Reset Password Form
+            <section class="auth-section d-none">
+            </section>
+            <section class="auth-section authentification-form">
+                <div class="app-logo">
+                    <i class="icon-key"></i>
+                </div>
+                <div class="block-text">
+                    <h2> Set new password </h2>
+                    <p>
+                        Your new password must be diffrent to previously used password.
+                    </p>
+                </div>
+                <form class="auth-form" [formGroup]="Validators" (ngSubmit)="ngOnSubmit()">
+                    <div class="input-floating">
+                        <input type="password" formControlName="password" required/>
+                        <span> Password </span>
+                        <i class="icon-mail"></i>
+                    </div>
+                    <div class="input-floating">
+                        <input type="password" formControlName="confirmPassword" required/>
+                        <span> Confirm Password </span>
+                        <i class="icon-mail"></i>
+                    </div>
+                    <p>
+                        <app-error *ngIf="error" message="{{ message }}"></app-error>
+                    </p>
+                    <button class="btn">
+                        Rsest Password
+                    </button>
+                </form>
+                <div class="block-text">
+                    <div class="d-flex" routerLink="/auth/login">
+                        <i class="icon icon-arrow-left text-primary"></i>
+                        <a class="link text-primary"> Back to log in </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </section>

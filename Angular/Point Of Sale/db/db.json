@@ -1,20 +1,20 @@
 {
-    "Users": [
-        {
-            "id": 1,
-            "name": "hamza semmak",
-            "gender": "Male",
-            "email": "hamza@gmail.com",
-            "password": "AA102374h",
-            "Key": "9f59b8e8-f750-4db3-aaea-6882a4ad8188"
-        },
-        {
-            "id": 2,
-            "name": "tarik oulkhabou",
-            "gender": "Male",
-            "email": "tarik@gmail.com",
-            "password": "AA102374h",
-            "Key": "9fm9b8s8-f7m0-4dm3-mae8-6882a4ad8188"
-        }
-    ]
+  "Users": [
+    {
+      "id": 1,
+      "name": "hamza semmak",
+      "gender": "Male",
+      "email": "hamza@gmail.com",
+      "password": "AA102374h",
+      "Key": "9f59b8e8-f750-4db3-aaea-6882a4ad8188"
+    },
+    {
+      "id": 2,
+      "name": "tarik oulkhabou",
+      "gender": "Male",
+      "email": "tarik@gmail.com",
+      "password": "AA102374h",
+      "Key": "9fm9b8s8-f7m0-4dm3-mae8-6882a4ad8188"
+    }
+  ]
 }

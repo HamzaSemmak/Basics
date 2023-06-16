@@ -1,7 +1,41 @@
 <section class="authentification d-flex-center">
     <div class="container">
         <div class="authentification-content shadow">
-            Email Confirm
+            <section class="auth-section d-none">
+            </section>
+            <section class="auth-section authentification-form">
+                <div class="app-logo">
+                    <i class="icon-mail"></i>
+                </div>
+                <div class="block-text">
+                    <h2> Check your email </h2>
+                    <p>
+                        We sent a code reset link to your email,
+                    </p>
+                </div>
+                <form class="auth-form" [formGroup]="Validators" (ngSubmit)="ngOnSubmit()">
+                    <div class="input-floating">
+                        <input type="text" formControlName="code" required/>
+                        <span> Verefication Code </span>
+                        <i class="icon-mail"></i>
+                    </div>
+                    <p>
+                        <app-error *ngIf="error" message="{{ message }}"></app-error>
+                    </p>
+                    <button class="btn">
+                        Confirm
+                    </button>
+                </form>
+                <div class="block-text">
+                    <p> Didn't receive the email? <span (click)="ngSendEmail()" class="color-primery"> Click to resend </span> </p>
+                </div>
+                <div class="block-text">
+                    <div class="d-flex" routerLink="/auth/login">
+                        <i class="icon icon-arrow-left text-primary"></i>
+                        <a class="link text-primary"> Back to log in </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </section>
