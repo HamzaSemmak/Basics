@@ -6,6 +6,7 @@ import { EmailComponent } from 'src/app/Components/Auth/password/email/email.com
 import { ErrorsComponent } from 'src/app/Components/errors/errors.component';
 import { EmailConfirmComponent } from 'src/app/Components/Auth/password/email-confirm/email-confirm.component';
 import { ResetComponent } from 'src/app/Components/Auth/password/reset/reset.component';
+import { ConfirmComponent } from 'src/app/Components/Auth/password/confirm/confirm.component';
 
 export const Route: Routes = [
     {
@@ -13,6 +14,7 @@ export const Route: Routes = [
         component: HomeComponent,
         canActivate: [AuthGuard]
     },
+    // Authentification
     {
         path: 'auth/login',
         component: LoginComponent
@@ -29,6 +31,11 @@ export const Route: Routes = [
         path: 'auth/forget-password/password/reset',
         component: ResetComponent
     },
+    {
+        path: 'auth/forget-password/password/confirm/:key',
+        component: ConfirmComponent
+    },
+    // 404 Page
     { 
         path: '**', 
         component: ErrorsComponent

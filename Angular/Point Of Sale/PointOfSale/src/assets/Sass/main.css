@@ -1580,6 +1580,10 @@ sup {
     background-color: #fff;
   }
 }
+.authentification .color-success {
+  color: #4CAF50 !important;
+  font-weight: 600 !important;
+}
 .authentification .authentification-content {
   display: flex;
   align-items: center;

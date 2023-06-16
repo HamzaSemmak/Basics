@@ -58,7 +58,7 @@ export class AuthService {
     return this.HttpClient.get<User>(`${ApiUsers}?${Colmun}=${value}`, httpOptions);
   }
 
-  ResetPassword(id: any, User: any): Observable<User> {
+  ResetPassword(id: any, User: User): Observable<User> {
     return this.HttpClient.put<User>(`${ApiUsers}/${id}`, User);
   }
   

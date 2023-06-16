@@ -28,8 +28,7 @@ export class EmailComponent implements OnInit {
     private MailService: EmailService,
     private Owl: OwlService,
     private Router: Router,
-    private ActivateRoute: ActivatedRoute,
-    private ToastService: ToastService
+    private ActivateRoute: ActivatedRoute
   ) {  }
 
   ngOnInit(): void {

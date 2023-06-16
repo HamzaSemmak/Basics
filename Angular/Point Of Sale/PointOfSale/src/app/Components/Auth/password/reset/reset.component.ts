@@ -18,15 +18,12 @@ import { elementAt } from 'rxjs';
 export class ResetComponent implements OnInit {
   error: boolean = true;
   message: string;
-  email: string;
-  name: string;
+  email: string | any;
   User: User;
 
   constructor(
     private formBuilder: FormBuilder,
     private AuthService: AuthService,
-    private MailService: EmailService,
-    private Owl: OwlService,
     private Router: Router,
     private ActivateRoute: ActivatedRoute
   ) {  }
@@ -36,6 +33,25 @@ export class ResetComponent implements OnInit {
     {
       this.Router.navigate(['/']);
     }
+    if(!localStorage.getItem("mail"))
+    {
+       this.Router.navigate(['auth/login']);
+    }
+    this.email = localStorage.getItem("mail")?.toString();
+    this.AuthService.ForgotPassword(this.email).subscribe(
+      response => {
+        let res = Object.entries(response);
+        this.User = { 
+          id: res[0][1].id,
+          name:  res[0][1].name,
+          gender:  res[0][1].gender,
+          email:  res[0][1].email,
+          password:  res[0][1].password,
+          active:  res[0][1].active,
+          Key:  res[0][1].Key,
+        }
+      }
+    )
   }
 
   Validators = this.formBuilder.group({
@@ -51,8 +67,17 @@ export class ResetComponent implements OnInit {
         this.ThrowError(Response.RESPONSE_MSG_AUTH_PASSWORD_MATCH);
       }
       else {
-        //change password 
-        console.log("here");
+        this.User.password = this.Validators.value.password;
+        this.AuthService.ResetPassword(this.User.id, this.User).subscribe(
+          response => {
+            localStorage.clear();
+            this.Router.navigate([`/auth/forget-password/password/confirm/${this.User.Key}`]);
+            return response;
+          },
+          (error: HttpErrorResponse) => {
+            this.ThrowError(`Error ${error.status} : ${error.message}`);
+          },
+        )
       }
     }
     else {

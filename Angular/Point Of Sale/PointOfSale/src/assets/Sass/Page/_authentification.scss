@@ -5,6 +5,10 @@
     @include xx-large {
         background-color: $white;
     }
+    .color-success {
+        color: $success !important;
+        font-weight: 600 !important;
+    }
     .authentification-content {
         display: flex;
         align-items: center;
