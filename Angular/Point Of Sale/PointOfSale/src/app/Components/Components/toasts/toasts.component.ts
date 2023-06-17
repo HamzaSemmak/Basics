@@ -1,4 +1,5 @@
-import { Component, Input, OnInit  } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
+import { ToastService } from 'src/app/Services/Toast/toast.service';
 
 @Component({
   selector: 'app-toasts',
@@ -7,12 +8,13 @@ import { Component, Input, OnInit  } from '@angular/core';
 })
 export class ToastsComponent implements OnInit {
 
-  @Input() message: string;
-
-  constructor() { }
+  constructor(private ToastService: ToastService) { }
 
   ngOnInit(): void {
     return;
   }
-  
+
+  ngOnClose(): void {
+    this.ToastService.Close();
+  }
 }

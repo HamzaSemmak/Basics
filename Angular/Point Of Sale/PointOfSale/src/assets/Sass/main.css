@@ -1879,7 +1879,7 @@ sup {
   display: none;
   width: 350px;
   height: auto;
-  padding: 10px 10px 28px 10px;
+  padding: 10px 10px 24px 10px;
   margin: 15px 0px;
   border-radius: 5px;
   position: relative;
@@ -1889,6 +1889,24 @@ sup {
   -webkit-animation-duration: 0.9s;
   animation-name: popupAlert;
   animation-duration: 0.9s;
+}
+@media only screen and (max-width: 768px) {
+  .alert-components .alert {
+    width: 150px;
+    padding: 10px;
+  }
+  .alert-components .alert .alert-icon {
+    margin: 0 10px 0 8px;
+  }
+  .alert-components .alert .alert-description {
+    margin-top: 5px;
+  }
+  .alert-components .alert .alert-description .alert-title {
+    font-size: 13px;
+  }
+  .alert-components .alert .alert-description .alert-text-content, .alert-components .alert .alert-description .alert-time {
+    display: none !important;
+  }
 }
 .alert-components .alert .alert-content {
   display: flex;
@@ -1939,7 +1957,7 @@ sup {
   bottom: 0;
   width: 100%;
   height: 100%;
-  animation: progress 7s linear forwards;
+  animation: progress 9s linear forwards;
 }
 .alert-components .alert-danger {
   border-left: 4px solid #E53935;
