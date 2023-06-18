@@ -41,6 +41,5 @@ export class ToastService {
     alert.forEach(element => {
       element.classList.remove('active');
     });
-    //Hamza Semmak
   }
 }

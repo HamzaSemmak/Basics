@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ToastService } from 'src/app/Services/Toast/toast.service';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +8,6 @@ import { ToastService } from 'src/app/Services/Toast/toast.service';
 
 export class HomeComponent implements OnInit {
 
-  constructor(private Toast: ToastService) {}
-
   ngOnInit(): void {
-    this.Toast.warning("warning message test please work");
   }
 }
