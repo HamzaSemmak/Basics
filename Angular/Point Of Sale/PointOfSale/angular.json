@@ -103,6 +103,11 @@
     }
   },
   "cli": {
-    "analytics": "33d9c060-7620-4d69-bae5-de1659d5a440"
+    "analytics": "33d9c060-7620-4d69-bae5-de1659d5a440",
+    "cache": {
+      "environment": "all",
+      "path": ".cache/ng",
+      "enabled": true
+    }
   }
 }
