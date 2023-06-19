@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './Components/Layouts/sidebar/sidebar.component';
-import { NavbarComponent } from './Components/Layouts/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { Route } from './Modules/Route/Route';
 import { LoginComponent } from './Components/Auth/login/login.component';
@@ -15,14 +13,14 @@ import { EmailComponent } from './Components/Auth/password/email/email.component
 import { ConfirmComponent } from './Components/Auth/password/confirm/confirm.component';
 import { ResetComponent } from './Components/Auth/password/reset/reset.component';
 import { EmailConfirmComponent } from './Components/Auth/password/email-confirm/email-confirm.component';
-import { ErrorsComponent } from './Components/errors/errors.component';
+import { ErrorsComponent } from './Components/Pages/errors/errors.component';
 import { ToastsComponent } from './Components/Components/toasts/toasts.component';
+import { NavbarComponent } from './Components/Layouts/navbar/navbar.component';
+import { SidebarComponent } from './Components/Layouts/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
-    NavbarComponent,
     LoginComponent,
     ErrorComponent,
     EmailComponent,
@@ -30,7 +28,9 @@ import { ToastsComponent } from './Components/Components/toasts/toasts.component
     ResetComponent,
     EmailConfirmComponent,
     ErrorsComponent,
-    ToastsComponent
+    ToastsComponent,
+    SidebarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

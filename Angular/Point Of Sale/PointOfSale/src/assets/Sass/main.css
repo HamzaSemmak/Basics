@@ -1709,24 +1709,92 @@ sup {
   height: 100%;
   width: 100%;
 }
-.page-not-found .page-content .container-fluid {
+.page-not-found .page-content .container {
   height: 650px;
   overflow: hidden;
 }
-.page-not-found .page-content .container-fluid .content {
-  width: 50% !important;
-  height: 100% !important;
+@media only screen and (max-width: 997px) {
+  .page-not-found .page-content .container {
+    height: auto !important;
+  }
+  .page-not-found .page-content .container .d-flex-space {
+    flex-direction: column;
+  }
 }
-.page-not-found .page-content .container-fluid .content:nth-child(1) {
+.page-not-found .page-content .container .content {
   height: 650px !important;
+}
+@media only screen and (max-width: 997px) {
+  .page-not-found .page-content .container .content {
+    height: 100% !important;
+  }
+}
+.page-not-found .page-content .container .content:nth-child(1) {
+  width: 40% !important;
   flex-direction: column !important;
   align-items: flex-start;
-  padding-left: 50px;
+  padding-left: 70px;
 }
-.page-not-found .page-content .container-fluid .content img {
+@media only screen and (max-width: 997px) {
+  .page-not-found .page-content .container .content:nth-child(1) {
+    width: 100% !important;
+    align-items: center;
+    padding-left: 0 !important;
+  }
+}
+.page-not-found .page-content .container .content img {
   width: 100%;
   height: 100%;
   max-width: auto;
+}
+@media only screen and (max-width: 997px) {
+  .page-not-found .page-content .container .content img {
+    display: none !important;
+  }
+}
+.page-not-found .page-content .container .content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: #212529;
+}
+@media only screen and (max-width: 600px) {
+  .page-not-found .page-content .container .content h1 {
+    font-size: 40px;
+  }
+}
+.page-not-found .page-content .container .content h5 {
+  font-size: 30px;
+  color: #212529;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 600px) {
+  .page-not-found .page-content .container .content h5 {
+    font-size: 22px;
+  }
+}
+.page-not-found .page-content .container .content .text {
+  margin: 10px 0;
+}
+@media only screen and (max-width: 997px) {
+  .page-not-found .page-content .container .content .text {
+    text-align: center;
+  }
+}
+.page-not-found .page-content .container .content .text div {
+  color: #6c757d;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+  .page-not-found .page-content .container .content .text div {
+    font-size: 14px;
+  }
+}
+.page-not-found .page-content .container .content .btn-place {
+  padding: 6px;
 }
 
 .input-floating {
