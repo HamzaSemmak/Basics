@@ -15,8 +15,8 @@ import { ResetComponent } from './Components/Auth/password/reset/reset.component
 import { EmailConfirmComponent } from './Components/Auth/password/email-confirm/email-confirm.component';
 import { ErrorsComponent } from './Components/Pages/errors/errors.component';
 import { ToastsComponent } from './Components/Components/toasts/toasts.component';
-import { NavbarComponent } from './Components/Layouts/navbar/navbar.component';
 import { SidebarComponent } from './Components/Layouts/sidebar/sidebar.component';
+import { NavbarComponent } from './Components/Layouts/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -42,4 +42,5 @@ import { SidebarComponent } from './Components/Layouts/sidebar/sidebar.component
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

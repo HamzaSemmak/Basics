@@ -14,10 +14,9 @@ export class AppComponent implements OnInit {
   constructor(private location: Location) { }
 
   ngOnInit(): void {
-    if(this.location.path().includes('auth') || this.location.path() == "*")
+    if(this.location.path().includes('auth') || this.location.path().includes('404'))
     {
       this.Bool = false;
     }
   }
-
 }

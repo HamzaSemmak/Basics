@@ -31,7 +31,9 @@ export class AuthService {
       let response = Object.entries(res);
       Key = response[0][1].Key;
       sessionStorage.setItem(Keys, Key);
-      this.router.navigate(["/"]);
+      this.router.navigate(["/"]).then(() => {
+        window.location.reload();
+      })
     })
   }
 

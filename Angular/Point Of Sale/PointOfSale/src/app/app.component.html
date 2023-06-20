@@ -1,7 +1,8 @@
+<div class="alerts">
+    <app-toasts></app-toasts>
+</div>
 <sidebar *ngIf="Bool"></sidebar>
-<main>
-    <div class="alerts">
-        <app-toasts></app-toasts>
-    </div>
+<main [ngClass]="{'main-content': Bool}">
+    <app-navbar *ngIf="Bool"></app-navbar>
     <router-outlet></router-outlet>
 </main>

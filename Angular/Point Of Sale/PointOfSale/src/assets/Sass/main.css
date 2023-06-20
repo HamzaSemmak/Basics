@@ -1,5 +1,6 @@
 /* Colorers */
 /* System Media Queries Breakpoints */
+/* Sizes */
 /* System Media Queries */
 /* Grid System */
 .row {
@@ -142,6 +143,7 @@
 
 /* Colorers */
 /* System Media Queries Breakpoints */
+/* Sizes */
 body {
   margin: 0;
   padding: 0;
@@ -1797,6 +1799,15 @@ sup {
   padding: 6px;
 }
 
+.main-content {
+  position: relative;
+  top: 0;
+  left: 110px;
+  width: calc(100% - 110px);
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
 .input-floating {
   position: relative;
   width: 100% !important;
@@ -2121,4 +2132,82 @@ sup {
   to {
     right: 100%;
   }
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 110px;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+aside::-webkit-scrollbar {
+  width: 2px;
+  background-color: #fff;
+}
+aside::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+aside::-webkit-scrollbar-thumb {
+  background-color: #0d6efd;
+  border-radius: 0;
+}
+aside .sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+aside .sidebar .sidebar-logo {
+  padding: 20px 0px 60px 0px;
+}
+aside .sidebar .sidebar-logo .logo {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  border: 1px solid #adb5bd;
+}
+aside .sidebar .sidebar-logo .logo i {
+  font-size: 45px;
+  color: #0d6efd;
+}
+aside .sidebar .sidebar-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+aside .sidebar .sidebar-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+aside .sidebar .sidebar-items ul li {
+  margin: 20px 0px;
+}
+aside .sidebar .sidebar-items ul li a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+}
+aside .sidebar .sidebar-items ul li a i {
+  font-size: 30px;
+  color: #adb5bd;
+  position: relative;
+}
+aside .sidebar .sidebar-items ul li a i:hover {
+  color: #0d6efd;
+}
+
+.nav {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */

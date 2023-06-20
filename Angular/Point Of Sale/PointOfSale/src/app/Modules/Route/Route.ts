@@ -38,6 +38,11 @@ export const Route: Routes = [
     // 404 Page
     { 
         path: '**', 
+        redirectTo: '/404/page-not-found',
+        pathMatch: 'full'
+    },
+    { 
+        path: '404/page-not-found', 
         component: ErrorsComponent
     }
 ];
