@@ -21,7 +21,6 @@ export class AuthGuard implements CanActivate {
         return true;
       }
       else {
-        this.Toast.warning("You have to login first.")
         this.router.navigate(['/auth/login']);
         return false;
       }
