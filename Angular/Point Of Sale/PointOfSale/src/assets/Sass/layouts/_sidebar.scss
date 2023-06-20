@@ -25,16 +25,16 @@ aside {
         justify-content: flex-start;
         flex-direction: column;
         .sidebar-logo {
-            padding: 20px 0px 60px 0px;
+            padding: 20px 0px 50px 0px;
             .logo {
                 position: relative;
-                width: 65px;
-                height: 65px;
+                width: 55px;
+                height: 55px;
                 border-radius: 50%;
                 background-color: $light;
                 border: 1px solid $gray-light;
                 i {
-                    font-size: 45px;
+                    font-size: 35px;
                     color: $primary;
                 }
             }
@@ -56,7 +56,7 @@ aside {
                         border-radius: 50%;
                         display: flex;
                         i {
-                            font-size: 30px;
+                            font-size: 26px;
                             color: $gray-light;
                             position: relative;
                             &:hover {

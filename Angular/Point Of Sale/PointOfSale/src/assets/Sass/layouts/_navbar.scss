@@ -3,4 +3,14 @@
     height: auto;
     padding: 10px;
     background-color: transparent;
+    .navbar {
+        width: 100%;
+        .navbar-collapse {
+            h1 {
+                color: $dark;
+                font-size: 30px !important;
+                font-weight: 500;
+            }
+        }
+    }
 }
