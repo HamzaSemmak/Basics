@@ -15,10 +15,10 @@ import { ResetComponent } from './Components/Auth/password/reset/reset.component
 import { EmailConfirmComponent } from './Components/Auth/password/email-confirm/email-confirm.component';
 import { ErrorsComponent } from './Components/Pages/errors/errors.component';
 import { ToastsComponent } from './Components/Components/toasts/toasts.component';
-import { NavbarComponent } from './Components/layouts/navbar/navbar.component';
-import { SidebarComponent } from './Components/layouts/sidebar/sidebar.component';
+import { SidebarComponent } from './Components/Layouts/sidebar/sidebar.component';
+import { NavbarComponent } from './Components/Layouts/navbar/navbar.component';
+import { CategoryComponent } from './Components/Components/category/category.component';
 import { LogoutComponent } from './Components/Auth/logout/logout.component';
-import { CategoryComponent } from './Components/layouts/category/category.component';
 
 @NgModule({
   declarations: [

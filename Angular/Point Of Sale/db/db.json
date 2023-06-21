@@ -12,23 +12,23 @@
   "Category": [
     { 
       "id": 1,
-      "category": "nike"
+      "category": "Nike"
     },
     { 
       "id": 2,
-      "category": "adidas"
+      "category": "Adidas"
     },
     { 
       "id": 3,
-      "category": "air jordan"
+      "category": "Air Jordan"
     },
     { 
       "id": 4,
-      "category": "puma"
+      "category": "Puma"
     },
     { 
       "id": 5,
-      "category": "vans"
+      "category": "Vans"
     }
   ]
 }

@@ -31,12 +31,4 @@ export class OwlService {
         e.preventDefault();
     });   
   }
-
-  owl2(): void {
-    $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:2,
-      nav:false,
-    });
-  }
 }

@@ -3212,4 +3212,21 @@ aside .sidebar .sidebar-items ul li a i:hover {
 
 .category-content {
   padding: 10px;
+}
+.category-content .category-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.category-content .category-items .item {
+  margin: 5px 10px;
+  padding: 10px 26px;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.category-content .category-items .item:hover {
+  background-color: #0d6efd;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
