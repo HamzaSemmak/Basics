@@ -7,9 +7,75 @@
         width: 100%;
         .navbar-collapse {
             h1 {
+                font-family: 'Oswald' !important;
                 color: $dark;
-                font-size: 30px !important;
+                font-size: 25px !important;
                 font-weight: 500;
+                letter-spacing: 1.2px;
+            }
+            .text {
+                color: $gray;
+                font-size: 14px;
+            }
+        }
+        .nav-collapse {
+            .input-box {
+                background-color: $white;
+                width: 370px;
+                height: 45px;
+                border-radius: 5px;
+                margin-right: 25px;
+                input {
+                    width: 85%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    &::placeholder {
+                        color: $gray;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+                .icon {
+                    width: 15%;
+                    height: 100%;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    cursor: pointer;
+                    i {
+                        font-size: 25px;
+                        font-weight: 700;
+                        color: $dark;
+                    }
+                }
+            }
+            .filter{
+                margin: 0 30px 0 0px;
+                background-color: $white;
+                height: 45px;
+                width: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                button {
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    i {
+                        font-size: 25px;
+                        font-weight: 700;
+                        color: $dark;
+                    }
+                }
             }
         }
     }

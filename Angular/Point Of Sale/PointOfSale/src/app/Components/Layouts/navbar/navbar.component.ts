@@ -3,9 +3,9 @@ import { User } from 'src/app/Modules/Model/Users';
 import { AuthService } from 'src/app/Services/Auth/auth.service';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'] 
 })
 
 export class NavbarComponent implements OnInit {

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule  } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,8 +15,8 @@ import { ResetComponent } from './Components/Auth/password/reset/reset.component
 import { EmailConfirmComponent } from './Components/Auth/password/email-confirm/email-confirm.component';
 import { ErrorsComponent } from './Components/Pages/errors/errors.component';
 import { ToastsComponent } from './Components/Components/toasts/toasts.component';
-import { SidebarComponent } from './Components/Layouts/sidebar/sidebar.component';
-import { NavbarComponent } from './Components/Layouts/navbar/navbar.component';
+import { NavbarComponent } from './Components/layouts/navbar/navbar.component';
+import { SidebarComponent } from './Components/layouts/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -29,18 +29,18 @@ import { NavbarComponent } from './Components/Layouts/navbar/navbar.component';
     EmailConfirmComponent,
     ErrorsComponent,
     ToastsComponent,
-    SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(Route)
+    RouterModule.forRoot(Route),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 
 export class AppModule { }
