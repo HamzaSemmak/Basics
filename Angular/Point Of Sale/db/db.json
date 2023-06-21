@@ -8,5 +8,27 @@
       "password": "AA102374h",
       "Key": "9f59b8e8-f750-4db3-aaea-6882a4ad8188"
     }
+  ],
+  "Category": [
+    { 
+      "id": 1,
+      "category": "nike"
+    },
+    { 
+      "id": 2,
+      "category": "adidas"
+    },
+    { 
+      "id": 3,
+      "category": "air jordan"
+    },
+    { 
+      "id": 4,
+      "category": "puma"
+    },
+    { 
+      "id": 5,
+      "category": "vans"
+    }
   ]
 }

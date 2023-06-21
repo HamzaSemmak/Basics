@@ -2719,6 +2719,15 @@ sup {
   height: 100vh;
   background-color: #f8f9fa;
 }
+.main-content .home-content {
+  height: 100% !important;
+}
+.main-content .order-details {
+  background-color: #fff;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 100%;
+}
 
 .input-floating {
   position: relative;
@@ -3199,4 +3208,8 @@ aside .sidebar .sidebar-items ul li a i:hover {
   font-size: 25px;
   font-weight: 700;
   color: #212529;
+}
+
+.category-content {
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */

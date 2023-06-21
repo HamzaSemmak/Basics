@@ -17,6 +17,8 @@ import { ErrorsComponent } from './Components/Pages/errors/errors.component';
 import { ToastsComponent } from './Components/Components/toasts/toasts.component';
 import { NavbarComponent } from './Components/layouts/navbar/navbar.component';
 import { SidebarComponent } from './Components/layouts/sidebar/sidebar.component';
+import { LogoutComponent } from './Components/Auth/logout/logout.component';
+import { CategoryComponent } from './Components/layouts/category/category.component';
 
 @NgModule({
   declarations: [
@@ -30,14 +32,16 @@ import { SidebarComponent } from './Components/layouts/sidebar/sidebar.component
     ErrorsComponent,
     ToastsComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    LogoutComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(Route),
+    RouterModule.forRoot(Route)
   ],
   providers: [],
   bootstrap: [AppComponent],

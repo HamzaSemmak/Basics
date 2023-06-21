@@ -1,8 +1,21 @@
 <div class="alerts">
     <app-toasts></app-toasts>
 </div>
-<sidebar *ngIf="Bool"></sidebar>
-<main [ngClass]="{'main-content': Bool}">
-    <navbar *ngIf="Bool"></navbar>
+<main *ngIf="Home">
+    <sidebar *ngIf="Home"></sidebar>
+    <main [ngClass]="{'main-content': Home}">
+        <div class="row home-content">
+            <div class="col-8">
+                <navbar *ngIf="Home"></navbar>
+                <category *ngIf="Home"></category>
+                <router-outlet></router-outlet>
+            </div>
+            <div class="col-4 order-details">
+
+            </div>
+        </div>
+    </main>
+</main>
+<main *ngIf="AuthOr404">
     <router-outlet></router-outlet>
 </main>

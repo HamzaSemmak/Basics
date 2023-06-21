@@ -25,6 +25,13 @@ export class AuthService {
     return this.HttpClient.get<User>(`${ApiUsers}?email=${name}&password=${password}`, httpOptions);
   }
 
+  logOut(): void {
+    sessionStorage.clear();
+    this.router.navigate(['auth/login']).then(() => {
+      window.location.reload();
+    })
+  }
+
   guard(email: any): void {
     let Key: any;
     this.HttpClient.get(`${ApiUsers}?email=${email}`).subscribe( res => {

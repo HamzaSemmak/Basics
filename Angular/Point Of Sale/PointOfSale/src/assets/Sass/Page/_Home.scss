@@ -5,4 +5,13 @@
     width: calc(100% - $SideBar-width);
     height: 100vh;
     background-color: $light;
+    .home-content {
+        height: 100% !important;
+    }
+    .order-details {
+        background-color: $white;
+        padding: 0 !important;
+        margin: 0 !important;
+        height: 100%;
+    }
 }

@@ -7,6 +7,7 @@ import { ErrorsComponent } from 'src/app/Components/Pages/errors/errors.componen
 import { EmailConfirmComponent } from 'src/app/Components/Auth/password/email-confirm/email-confirm.component';
 import { ResetComponent } from 'src/app/Components/Auth/password/reset/reset.component';
 import { ConfirmComponent } from 'src/app/Components/Auth/password/confirm/confirm.component';
+import { LogoutComponent } from 'src/app/Components/Auth/logout/logout.component';
 
 export const Route: Routes = [
     {
@@ -34,6 +35,10 @@ export const Route: Routes = [
     {
         path: 'auth/forget-password/password/confirm/:key',
         component: ConfirmComponent
+    },
+    {
+        path: 'auth/logout/account',
+        component: LogoutComponent
     },
     // 404 Page
     { 
