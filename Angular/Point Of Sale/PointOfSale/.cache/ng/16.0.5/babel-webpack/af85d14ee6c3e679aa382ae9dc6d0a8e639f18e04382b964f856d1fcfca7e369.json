@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const ApiUsers = \"http://localhost:3000/Users\";\nexport const ApiCategorys = \"http://localhost:3000/Category\";\nexport const ApiProducts = \"http://localhost:3000/Products\";","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
