@@ -12,23 +12,34 @@
   "Category": [
     { 
       "id": 1,
-      "category": "Nike"
+      "category": "nike"
     },
     { 
       "id": 2,
-      "category": "Adidas"
+      "category": "adidas"
     },
     { 
       "id": 3,
-      "category": "Air Jordan"
+      "category": "air Jordan"
     },
     { 
       "id": 4,
-      "category": "Puma"
+      "category": "puma"
     },
     { 
       "id": 5,
-      "category": "Vans"
+      "category": "vans"
+    }
+  ],
+  "Products": [
+    {
+      "id": 1,
+      "title": "iPhone 9",
+      "description": "An apple mobile which is nothing like apple",
+      "price": 549,
+      "stock": 94,
+      "category": "Nike",
+      "image": "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
     }
   ]
 }

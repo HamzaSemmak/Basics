@@ -149,7 +149,6 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   background-color: #fff;
-  overflow: hidden;
 }
 
 * {
@@ -2719,14 +2718,15 @@ sup {
   height: 100vh;
   background-color: #f8f9fa;
 }
-.main-content .home-content {
-  height: 100% !important;
-}
 .main-content .order-details {
   background-color: #fff;
   padding: 0 !important;
   margin: 0 !important;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-content .home-main-content {
+  padding: 10px;
 }
 
 .input-floating {
@@ -3056,7 +3056,7 @@ sup {
 }
 
 aside {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -3220,7 +3220,7 @@ aside .sidebar .sidebar-items ul li a i:hover {
   flex-wrap: wrap;
 }
 .category-content .category-items .item {
-  margin: 5px 10px;
+  margin: 0 10px 10px 0px;
   padding: 10px 26px;
   background-color: #fff;
   border-radius: 8px;
