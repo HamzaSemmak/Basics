@@ -19,6 +19,9 @@ import { SidebarComponent } from './Components/Layouts/sidebar/sidebar.component
 import { NavbarComponent } from './Components/Layouts/navbar/navbar.component';
 import { CategoryComponent } from './Components/Components/category/category.component';
 import { LogoutComponent } from './Components/Auth/logout/logout.component';
+import { HomeComponent } from './Components/Pages/home/home.component';
+import { ProductComponent } from './Components/Components/product/product.component';
+import { OrderComponent } from './Components/Components/order/order.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { LogoutComponent } from './Components/Auth/logout/logout.component';
     NavbarComponent,
     SidebarComponent,
     LogoutComponent,
-    CategoryComponent
+    CategoryComponent,
+    HomeComponent,
+    ProductComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

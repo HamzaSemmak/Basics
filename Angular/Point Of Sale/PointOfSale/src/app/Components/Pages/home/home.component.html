@@ -1,5 +1,20 @@
-<div class="home-main-content">
-    <div *ngFor="let item of Products">
-        {{ item.id }}
-    </div>
-</div> 
+<main>
+    <sidebar></sidebar>
+    <main class="main-content">
+        <div class="row home-content">
+            <section class="col-8">
+                <navbar></navbar>
+                <category></category>
+                <div class="products-items">
+                    <product 
+                        *ngFor="let Product of Products" 
+                        [Product]="Product">
+                    </product>
+                </div>
+            </section>
+            <section class="col-4 order-details">
+                <order></order>
+            </section>
+        </div>
+    </main>
+</main>

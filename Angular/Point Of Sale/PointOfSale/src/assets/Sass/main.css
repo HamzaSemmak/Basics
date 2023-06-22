@@ -2725,9 +2725,6 @@ sup {
   height: 100vh;
   overflow: hidden;
 }
-.main-content .home-main-content {
-  padding: 10px;
-}
 
 .input-floating {
   position: relative;
@@ -3055,6 +3052,79 @@ sup {
   }
 }
 
+.category-content {
+  padding: 10px;
+}
+.category-content .category-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.category-content .category-items .item {
+  margin: 0 10px 10px 0px;
+  padding: 10px 26px;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.category-content .category-items .item:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.products-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 700px;
+  overflow: auto;
+}
+.products-items::-webkit-scrollbar {
+  width: 3px;
+  background-color: #fff;
+}
+.products-items::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.products-items::-webkit-scrollbar-thumb {
+  background-color: #adb5bd;
+  border-radius: 0;
+}
+.products-items .product {
+  background-color: #fff;
+  padding: 10px 15px;
+  margin: 5px 5px;
+  width: 260px;
+  height: auto;
+  border-radius: 10px;
+}
+.products-items .product .img-field {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #6c757d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.products-items .product .product-title h6 {
+  margin: 12px 0;
+  color: #212529;
+  font-size: 15px;
+  font-weight: 700;
+}
+.products-items .product .product-description {
+  color: #6c757d;
+  font-size: 13px;
+  font-weight: 400;
+}
+.products-items .product .product-price {
+  margin: 10px 0;
+  color: #0d6efd;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 aside {
   position: fixed;
   top: 0;
@@ -3208,25 +3278,4 @@ aside .sidebar .sidebar-items ul li a i:hover {
   font-size: 25px;
   font-weight: 700;
   color: #212529;
-}
-
-.category-content {
-  padding: 10px;
-}
-.category-content .category-items {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-.category-content .category-items .item {
-  margin: 0 10px 10px 0px;
-  padding: 10px 26px;
-  background-color: #fff;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.category-content .category-items .item:hover {
-  background-color: #0d6efd;
-  color: #fff;
 }/*# sourceMappingURL=main.css.map */
