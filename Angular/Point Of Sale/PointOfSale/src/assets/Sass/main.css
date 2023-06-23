@@ -2716,6 +2716,7 @@ sup {
   left: 100px;
   width: calc(100% - 100px);
   height: 100vh;
+  overflow: hidden;
   background-color: #f8f9fa;
 }
 .main-content .order-details {
@@ -3081,6 +3082,11 @@ sup {
   height: 700px;
   overflow: auto;
 }
+@media only screen and (max-width: 1400px) {
+  .products-items {
+    height: 600px;
+  }
+}
 .products-items::-webkit-scrollbar {
   width: 3px;
   background-color: #fff;
@@ -3096,16 +3102,26 @@ sup {
   background-color: #fff;
   padding: 10px 15px;
   margin: 5px 5px;
-  width: 260px;
+  width: 250px;
   height: auto;
   border-radius: 10px;
 }
+@media only screen and (max-width: 1400px) {
+  .products-items .product {
+    width: 220px;
+  }
+}
 .products-items .product .img-field {
   width: 100%;
-  height: 250px;
+  height: 240px;
   border: 1px solid #6c757d;
   border-radius: 10px;
   overflow: hidden;
+}
+@media only screen and (max-width: 1400px) {
+  .products-items .product .img-field {
+    height: 200px;
+  }
 }
 .products-items .product .product-title h6 {
   margin: 12px 0;

@@ -4,6 +4,7 @@
     left: $SideBar-width;
     width: calc(100% - $SideBar-width);
     height: 100vh;
+    overflow: hidden;
     background-color: $light;
     .order-details {
         background-color: $white;
