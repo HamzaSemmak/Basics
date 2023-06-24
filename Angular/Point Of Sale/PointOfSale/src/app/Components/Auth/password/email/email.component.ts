@@ -7,7 +7,6 @@ import { Response  } from 'src/app/Modules/Error/Response';
 import { EmailService } from 'src/app/Services/Email/email.service';
 import { EMAIL_CODE_VEREFICATION } from 'src/app/Modules/Config/Config';
 import { HttpErrorResponse } from '@angular/common/http';
-import { ToastService } from 'src/app/Services/Toast/toast.service';
 import { User } from 'src/app/Modules/Model/Users';
 
 @Component({

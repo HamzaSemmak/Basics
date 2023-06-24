@@ -17,29 +17,26 @@
     { 
       "id": 2,
       "category": "adidas"
-    },
-    { 
-      "id": 3,
-      "category": "air Jordan"
-    },
-    { 
-      "id": 4,
-      "category": "puma"
-    },
-    { 
-      "id": 5,
-      "category": "vans"
     }
   ],
   "Products": [
     {
       "id": 1,
-      "title": "iPhone 9",
-      "description": "An apple mobile which is nothing like apple",
-      "price": 549,
-      "stock": 94,
-      "category": "Nike",
-      "image": "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+      "title": "Nike Dunk Panda",
+      "description": "Dunk Low Panda Retro White Black Panda (2021)",
+      "price": 1290,
+      "stock": 10,
+      "category": "nike",
+      "image": "assets/images/baskets-dunk-low-panda-pour-homme-et-femme-disponible-sur-kikikickz-563247_800x-_1_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Samba OG Cloud White",
+      "description": "adidas Originals Samba OG 'Cloud White'",
+      "price": 1750,
+      "stock": 20,
+      "category": "adidas",
+      "image": "assets/images/baskets-samba-og-cloud-white-pour-homme-et-femme-disponible-sur-kikikickz-127626_800x.jpg"
     }
   ]
 }

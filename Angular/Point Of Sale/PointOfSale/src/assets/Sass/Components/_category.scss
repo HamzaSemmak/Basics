@@ -11,9 +11,18 @@
             background-color: $white;
             border-radius: 8px;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon {
+                color: $dark;
+                margin-right: 12px;
+            }
             &:hover {
                 background-color: $primary;
-                color: $white;
+                .icon, span {
+                    color: $white;
+                }
             }
         }
     }

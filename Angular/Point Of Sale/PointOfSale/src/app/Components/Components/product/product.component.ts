@@ -16,4 +16,8 @@ export class ProductComponent implements OnInit {
     
   }
 
+  ngOrderProduct(Product: Products): void {
+    console.log(Product);
+  }
+
 }

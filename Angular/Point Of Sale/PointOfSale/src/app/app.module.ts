@@ -22,6 +22,7 @@ import { LogoutComponent } from './Components/Auth/logout/logout.component';
 import { HomeComponent } from './Components/Pages/home/home.component';
 import { ProductComponent } from './Components/Components/product/product.component';
 import { OrderComponent } from './Components/Components/order/order.component';
+import { CategoryComponent as CategoryComponentPages } from './Components/Pages/category/category.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { OrderComponent } from './Components/Components/order/order.component';
     CategoryComponent,
     HomeComponent,
     ProductComponent,
-    OrderComponent
+    OrderComponent,
+    CategoryComponentPages
   ],
   imports: [
     BrowserModule,

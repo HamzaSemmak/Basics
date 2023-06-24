@@ -8,11 +8,17 @@ import { EmailConfirmComponent } from 'src/app/Components/Auth/password/email-co
 import { ResetComponent } from 'src/app/Components/Auth/password/reset/reset.component';
 import { ConfirmComponent } from 'src/app/Components/Auth/password/confirm/confirm.component';
 import { LogoutComponent } from 'src/app/Components/Auth/logout/logout.component';
+import { CategoryComponent } from 'src/app/Components/Pages/category/category.component';
 
 export const Route: Routes = [
     {
         path: '',
         component: HomeComponent,
+        canActivate: [AuthGuard]
+    },
+    {
+        path: 'products/category/:item',
+        component: CategoryComponent,
         canActivate: [AuthGuard]
     },
     // Authentification
@@ -40,14 +46,14 @@ export const Route: Routes = [
         path: 'auth/logout/account',
         component: LogoutComponent
     },
-    // 404 Page
-    { 
-        path: '**', 
-        redirectTo: '/404/page-not-found',
-        pathMatch: 'full'
-    },
-    { 
-        path: '404/page-not-found', 
-        component: ErrorsComponent
-    }
+    // // 404 Page
+    // { 
+    //     path: '**', 
+    //     redirectTo: '/404/page-not-found',
+    //     pathMatch: 'full'
+    // },
+    // { 
+    //     path: '404/page-not-found', 
+    //     component: ErrorsComponent
+    // }
 ];
