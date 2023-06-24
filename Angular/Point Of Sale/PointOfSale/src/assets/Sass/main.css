@@ -3203,6 +3203,78 @@ sup {
   font-weight: 500;
   letter-spacing: 1.2px;
 }
+.order-component .order-product-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.order-component .order-product-items .product {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 5px 0px;
+}
+.order-component .order-product-items .product .product-image {
+  width: 35%;
+  height: auto;
+  margin-right: 10px;
+}
+.order-component .order-product-items .product .product-image img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.order-component .order-product-items .product .product-details {
+  height: auto;
+  width: 65%;
+}
+.order-component .order-product-items .product .product-details .product-description .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212529;
+  letter-spacing: 1.3px;
+}
+.order-component .order-product-items .product .product-details .product-description .description {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+}
+.order-component .order-product-items .product .product-details .product-information {
+  margin-top: 20px;
+}
+.order-component .order-product-items .product .product-details .product-information .product-price {
+  font-size: 14px;
+  color: #0d6efd;
+  font-weight: 700;
+}
+.order-component .order-product-items .product .product-details .product-information .product-qauntite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-component .order-product-items .product .product-details .product-information .product-qauntite .btn-counter {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d6efd;
+  color: #fff;
+  border-radius: 5px;
+}
+.order-component .order-product-items .product .product-details .product-information .product-qauntite input {
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
 
 aside {
   position: fixed;

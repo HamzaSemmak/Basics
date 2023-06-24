@@ -1,0 +1,39 @@
+<section class="order-component">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex-space">
+                <h1> Current Order </h1>
+                <div>
+                    clear 
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="order-product-items">
+                <div class="product" *ngFor="let item of Products">
+                    <div class="product-image">
+                        <img [src]="item.image" class="img-fluid" [alt]="item.title">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-description">
+                            <div class="title"> {{ item.title }} </div>
+                            <div class="description"> 
+                                {{ item.description }}
+                            </div>
+                        </div>
+                        <div class="product-information d-flex-space">
+                            <div class="product-price">
+                                {{ item.price }} DHS
+                            </div>
+                            <div class="product-qauntite">
+                                <div class="btn-counter" (click)="increase(item)"> + </div>
+                                <input type="text" value="1" disabled>
+                                <div class="btn-counter" (click)="decrease(item)"> - </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

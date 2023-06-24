@@ -21,8 +21,8 @@ import { CategoryComponent } from './Components/Components/category/category.com
 import { LogoutComponent } from './Components/Auth/logout/logout.component';
 import { HomeComponent } from './Components/Pages/home/home.component';
 import { ProductComponent } from './Components/Components/product/product.component';
-import { OrderComponent } from './Components/Components/order/order.component';
 import { CategoryComponent as CategoryComponentPages } from './Components/Pages/category/category.component';
+import { PanierComponent } from './Components/Components/panier/panier.component';
 
 @NgModule({
   declarations: [
@@ -41,8 +41,8 @@ import { CategoryComponent as CategoryComponentPages } from './Components/Pages/
     CategoryComponent,
     HomeComponent,
     ProductComponent,
-    OrderComponent,
-    CategoryComponentPages
+    CategoryComponentPages,
+    PanierComponent
   ],
   imports: [
     BrowserModule,

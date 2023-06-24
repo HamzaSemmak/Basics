@@ -1,0 +1,83 @@
+.order-component {
+    padding: 10px;
+    h1 {
+        font-family: 'Oswald' !important;
+        color: $dark;
+        font-size: 25px !important;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+    }
+    .order-product-items {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        .product {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin: 5px 0px;
+            .product-image {
+                width: 35%;
+                height: auto;
+                margin-right: 10px;
+                img {
+                    object-fit: fill;
+                }
+            }
+            .product-details {
+                height: auto;
+                width: 65%;
+                .product-description {
+                    .title {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $dark;
+                        letter-spacing: 1.3px;
+                    }
+                    .description {
+                        font-size: 14px;
+                        color: $gray;
+                        font-weight: 500;
+                    }
+                }
+                .product-information {
+                    margin-top: 20px;
+                    .product-price {
+                        font-size: 14px;
+                        color: $primary;
+                        font-weight: 700;
+                    }
+                    .product-qauntite {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .btn-counter {
+                            width: 25px;
+                            height: 25px;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $primary;
+                            color: $white;
+                            border-radius: 5px;
+                        }
+                        input {
+                            text-align: center;
+                            width: 25px;
+                            height: 25px;
+                            background-color: transparent;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            margin: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
