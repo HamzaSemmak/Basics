@@ -1,6 +1,10 @@
+import { Products } from "./Products"
+import { User } from "./Users"
+
 export interface basket {
     id?: number | undefined,
-    product: number | undefined,
-    date: Date,
-    user: number | undefined
+    product: Products
+    date: string,
+    userKey: string | undefined,
+    quantite: number
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Products } from 'src/app/Modules/Model/Products';
+import { basket } from 'src/app/Modules/Model/basket';
+import { BasketService } from 'src/app/Services/Basket/basket.service';
 
 @Component({
   selector: 'panier',
@@ -8,19 +10,22 @@ import { Products } from 'src/app/Modules/Model/Products';
 })
 export class PanierComponent implements OnInit  {
   Products: Products[];
+  Baskets: basket[];
 
-  constructor() {}
+  constructor(private basketService: BasketService) {}
 
   ngOnInit(): void {
-    return;
+    this.basketService.getBasket().subscribe(
+      (response) => this.Baskets = response
+    )
   }
 
-  increase(Product: Products): void {
-    console.log(Product);
+  increase(Product: basket): void {
+    Product.quantite++
   }
 
-  decrease(Product: Products): void {
-    console.log(Product);
+  decrease(Product: basket): void {
+    Product.quantite--
   }
 
 }
