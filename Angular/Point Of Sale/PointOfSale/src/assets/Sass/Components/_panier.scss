@@ -46,6 +46,9 @@
             justify-content: flex-start;
             margin: 5px 0px;
             position: relative;
+            &:hover {
+                cursor: pointer;
+            }
             .product-image {
                 width: 35%;
                 height: auto;

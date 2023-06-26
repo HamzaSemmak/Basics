@@ -5,6 +5,9 @@
     flex-wrap: wrap;
     height: 700px;
     overflow: auto;
+    @include media-only(1600px) {
+        height: 500px;
+    }
     @include xxx-large {
         height: 600px;
     }

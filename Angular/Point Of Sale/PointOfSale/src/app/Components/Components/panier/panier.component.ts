@@ -1,4 +1,3 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { basket } from 'src/app/Modules/Model/basket';
 import { BasketService } from 'src/app/Services/Basket/basket.service';
@@ -8,6 +7,7 @@ import { BasketService } from 'src/app/Services/Basket/basket.service';
   templateUrl: './panier.component.html',
   styleUrls: ['./panier.component.css']
 })
+
 export class PanierComponent implements OnInit  {
   Products: any[];
   Baskets: basket[];
@@ -29,31 +29,41 @@ export class PanierComponent implements OnInit  {
           return;
         }
         this.Products.forEach(element => {
-          this.Total += element.product.price;
+          this.SubTotal += element.product.price;
         });
-        this.SubTotal = this.Total;
-        this.Total += this.TotalSalesTax - this.DisCountSales;
+
+        this.CalcTotal(this.SubTotal);
       }
     )
   }
 
+  CalcTotal(SubTotal: number): number {
+    return this.Total = SubTotal + this.TotalSalesTax - this.DisCountSales;
+  }
+
   increase(Product: basket): void {
     if(Product.quantite >= Product.product.stock) {
-      Product.quantite = Product.product.stock;
+      return;
     }
     else {
       Product.quantite++;
       Product.price = Product.quantite * Product.product.price;
+
+      this.SubTotal += Product.price - Product.product.price
+      this.CalcTotal(this.SubTotal);
     }
   }
 
   decrease(Product: basket): void {
     if(Product.quantite < 2) {
-      Product.quantite = 1;
+      return;
     }
     else {
       Product.quantite--;
       Product.price -= Product.product.price;
+
+      this.SubTotal -= Product.price;
+      this.CalcTotal(this.SubTotal);
     } 
   }
 
@@ -69,3 +79,5 @@ export class PanierComponent implements OnInit  {
   }
 
 }
+
+//To Be Continue Here...

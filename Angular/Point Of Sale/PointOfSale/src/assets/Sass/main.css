@@ -3090,6 +3090,11 @@ sup {
   height: 700px;
   overflow: auto;
 }
+@media only screen and (max-width: 1600px) {
+  .products-items {
+    height: 500px;
+  }
+}
 @media only screen and (max-width: 1400px) {
   .products-items {
     height: 600px;
@@ -3242,6 +3247,9 @@ sup {
   justify-content: flex-start;
   margin: 5px 0px;
   position: relative;
+}
+.order-component .order-product-items .product:hover {
+  cursor: pointer;
 }
 .order-component .order-product-items .product .product-image {
   width: 35%;
