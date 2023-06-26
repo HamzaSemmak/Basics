@@ -6,5 +6,6 @@ export interface basket {
     product: Products
     date: string,
     userKey: string | undefined,
-    quantite: number
+    quantite: number,
+    price: number
 }

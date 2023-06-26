@@ -3202,24 +3202,36 @@ sup {
   font-weight: 500;
   letter-spacing: 1.2px;
 }
+.order-component .clear-icon i {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #0d6efd;
+  cursor: pointer;
+}
 .order-component .order-product-items {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  height: 400px;
+  height: 600px;
   overflow: auto;
   padding-right: 10px;
 }
+@media only screen and (max-width: 1600px) {
+  .order-component .order-product-items {
+    height: 400px;
+  }
+}
 .order-component .order-product-items::-webkit-scrollbar {
-  width: 3px;
+  width: 0px;
   background-color: #fff;
 }
 .order-component .order-product-items::-webkit-scrollbar-track {
   background-color: #fff;
 }
 .order-component .order-product-items::-webkit-scrollbar-thumb {
-  background-color: #0d6efd;
+  background-color: #f8f9fa;
   border-radius: 0;
 }
 .order-component .order-product-items .product {
@@ -3229,6 +3241,7 @@ sup {
   align-items: flex-start;
   justify-content: flex-start;
   margin: 5px 0px;
+  position: relative;
 }
 .order-component .order-product-items .product .product-image {
   width: 35%;
@@ -3287,6 +3300,27 @@ sup {
   outline: none;
   cursor: pointer;
   margin: 0 5px;
+}
+.order-component .order-product-items .product .product-delete {
+  position: absolute;
+  right: 0%;
+}
+.order-component .order-product-items .product .product-delete i {
+  color: #212529;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+.order-component .order-total-components {
+  padding: 10px;
+}
+.order-component .order-total-components .order-total {
+  width: 100%;
+  height: auto;
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  border: none;
+  border-radius: 10px;
 }
 
 aside {

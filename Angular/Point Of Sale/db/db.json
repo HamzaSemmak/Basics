@@ -24,7 +24,7 @@
       "id": 1,
       "title": "Nike Dunk Panda",
       "description": "Dunk Low Panda Retro White Black Panda (2021)",
-      "price": 1290,
+      "price": 300,
       "stock": 10,
       "category": "nike",
       "image": "assets/images/baskets-dunk-low-panda-pour-homme-et-femme-disponible-sur-kikikickz-563247_800x-_1_.jpg"
@@ -33,7 +33,7 @@
       "id": 2,
       "title": "Samba OG Cloud White",
       "description": "adidas Originals Samba OG 'Cloud White",
-      "price": 1750,
+      "price": 250,
       "stock": 20,
       "category": "adidas",
       "image": "assets/images/baskets-samba-og-cloud-white-pour-homme-et-femme-disponible-sur-kikikickz-127626_800x.jpg"
@@ -42,27 +42,20 @@
       "id": 3,
       "title": "Nike Dunk Low PRM",
       "description": "Nike Dunk Low PRM Light Orewood Brown Light Orewood Brown",
-      "price": 1290,
+      "price": 300,
       "stock": 5,
       "category": "nike",
       "image": "assets/images/nike-dunk-low-prm-light-orewood-brown-4.jpg"
+    },
+    {
+      "id": 4,
+      "title": "FORUM LOW SHOES",
+      "description": "Adidas Forum Buckle Low Bad Bunny Last Forum,Bad Bunny Last Forum",
+      "price": 350,
+      "stock": 8,
+      "category": "adidas",
+      "image": "assets/images/HQ2153_sivasdescalzo-adidas-BAD_BUNNY_FORUM-1669729714-1.jpg"
     }
   ],
-  "basket": [
-    {
-      "id": 8405,
-      "product": {
-        "id": 1,
-        "title": "Nike Dunk Panda",
-        "description": "Dunk Low Panda Retro White Black Panda (2021)",
-        "price": 1290,
-        "stock": 10,
-        "category": "nike",
-        "image": "assets/images/baskets-dunk-low-panda-pour-homme-et-femme-disponible-sur-kikikickz-563247_800x-_1_.jpg"
-      },
-      "date": "2023-06-25",
-      "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188",
-      "quantite": 1
-    }
-  ]
+  "basket": []
 }

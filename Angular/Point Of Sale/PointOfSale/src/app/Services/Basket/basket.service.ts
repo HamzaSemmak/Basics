@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ApiBasket } from 'src/app/Modules/Config/Api';
 import { basket } from 'src/app/Modules/Model/basket';
 import { Products } from 'src/app/Modules/Model/Products';
 import { User } from 'src/app/Modules/Model/Users';
 import { Keys } from 'src/app/Modules/Config/Config';
+import { Router } from '@angular/router';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -19,10 +20,11 @@ const httpOptions = {
 
 export class BasketService {
   Basket: basket;
+  Baskets: basket[];
   dateOfToday: any;
   id: number = Math.floor(Math.random() * 100000);
 
-  constructor(private HttpClient: HttpClient) { 
+  constructor(private HttpClient: HttpClient, private router: Router) { 
     var date = new Date();
     this.dateOfToday = date.toISOString().split('T')[0];
   }
@@ -37,9 +39,30 @@ export class BasketService {
       product: Product,
       date: this.dateOfToday,
       userKey: sessionStorage.getItem(Keys)?.toString(),
-      quantite: 1
+      quantite: 1,
+      price: Product.price
     }
     return this.HttpClient.post<basket>(ApiBasket, this.Basket, httpOptions);
   }
 
+  clearBasket(): void {
+    this.getBasket().subscribe(
+      (Response) => {
+        this.Baskets = Object.values(Response);
+        this.Baskets.forEach(element => {
+          this.HttpClient.delete(`${ApiBasket}/${element.id}`, httpOptions).subscribe(
+            (Response) => {
+              this.router.navigate([this.router.url]).then(() => {
+                window.location.reload();
+              })
+            }
+          )
+        });
+      }
+    )
+  }
+
+  deleteItemFromBasket(basket: basket): Observable<basket> {
+    return this.HttpClient.delete<basket>(`${ApiBasket}/${basket.id}`, httpOptions);
+  }
 }
