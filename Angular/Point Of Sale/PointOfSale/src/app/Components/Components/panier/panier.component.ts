@@ -23,6 +23,11 @@ export class PanierComponent implements OnInit  {
     this.basketService.getBasket().subscribe(
       (response) => {
         this.Baskets = response;
+        this.Products = Object.values(response);
+        this.Products.forEach(element => {
+          this.SubTotal += element.price
+        });
+        this.Total = this.SubTotal - 30;
       }
     )
   }
@@ -33,10 +38,14 @@ export class PanierComponent implements OnInit  {
       return;
     }
     else {
+      this.SubTotal = this.SubTotal - Product.price
+      this.Total = this.SubTotal - 30;
       Product.quantite++;
       Product.price = Product.product.price * Product.quantite;
       this.UpdateBasket(Product);
     }
+    this.SubTotal += Product.price
+    this.Total = this.SubTotal - 30;
   }
 
   decrease(Product: Basket): void {
@@ -45,22 +54,34 @@ export class PanierComponent implements OnInit  {
       return;
     }
     else {
+      this.SubTotal = this.SubTotal - Product.price
+      this.Total = this.SubTotal - 30;
       Product.quantite--;
       Product.price = Product.product.price * Product.quantite;
       this.UpdateBasket(Product);
     }
+    this.SubTotal += Product.price
+    this.Total = this.SubTotal - 30;
   }
 
   ngClearBasket(): void {
     this.basketService.clearBasket();
     this.Baskets = [];
-    //Total SubTotal 
+    this.Total = 0;
+    this.SubTotal = 0;
   }
 
   ngDeleteItemFromBasket(item: basket): void {
     this.basketService.deleteItemFromBasket(item).subscribe(() => {
       this.Baskets =  this.Baskets.filter(t => t.id != item.id)
     })
+    this.SubTotal -= item.price;
+    if(this.SubTotal == 0)
+    {
+      this.Total = 0;
+      return;
+    }
+    this.Total = this.SubTotal - 30;
   }
 
   UpdateBasket(Basket: Basket): void {
