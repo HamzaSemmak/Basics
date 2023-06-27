@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { basket } from 'src/app/Modules/Model/basket';
+import { Products } from 'src/app/Modules/Model/Products';
+import { basket as Basket, basket } from 'src/app/Modules/Model/basket';
 import { BasketService } from 'src/app/Services/Basket/basket.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { BasketService } from 'src/app/Services/Basket/basket.service';
 
 export class PanierComponent implements OnInit  {
   Products: any[];
-  Baskets: basket[];
+  Baskets: Basket[];
   Total: number = 0;
   SubTotal: number = 0;
   DisCountSales: number = 50;
@@ -22,62 +23,51 @@ export class PanierComponent implements OnInit  {
     this.basketService.getBasket().subscribe(
       (response) => {
         this.Baskets = response;
-
-        this.Products = Object.values(response);
-        if(this.Products.length <= 0)
-        {
-          return;
-        }
-        this.Products.forEach(element => {
-          this.SubTotal += element.product.price;
-        });
-
-        this.CalcTotal(this.SubTotal);
       }
     )
   }
 
-  CalcTotal(SubTotal: number): number {
-    return this.Total = SubTotal + this.TotalSalesTax - this.DisCountSales;
-  }
-
-  increase(Product: basket): void {
-    if(Product.quantite >= Product.product.stock) {
+  increase(Product: Basket): void {
+    if(Product.quantite >= Product.product.stock)
+    {
       return;
     }
     else {
       Product.quantite++;
-      Product.price = Product.quantite * Product.product.price;
-
-      this.SubTotal += Product.price - Product.product.price
-      this.CalcTotal(this.SubTotal);
+      Product.price = Product.product.price * Product.quantite;
+      this.UpdateBasket(Product);
     }
   }
 
-  decrease(Product: basket): void {
-    if(Product.quantite < 2) {
+  decrease(Product: Basket): void {
+    if(Product.quantite < 2)
+    {
       return;
     }
     else {
       Product.quantite--;
-      Product.price -= Product.product.price;
-
-      this.SubTotal -= Product.price;
-      this.CalcTotal(this.SubTotal);
-    } 
+      Product.price = Product.product.price * Product.quantite;
+      this.UpdateBasket(Product);
+    }
   }
 
   ngClearBasket(): void {
     this.basketService.clearBasket();
+    this.Baskets = [];
+    //Total SubTotal 
   }
 
   ngDeleteItemFromBasket(item: basket): void {
     this.basketService.deleteItemFromBasket(item).subscribe(() => {
       this.Baskets =  this.Baskets.filter(t => t.id != item.id)
-      window.location.reload();
     })
   }
 
+  UpdateBasket(Basket: Basket): void {
+    this.basketService.UpdateItemInBaskets(Basket).subscribe(
+      (response) => {
+        return response;
+      }
+    )
+  }
 }
-
-//To Be Continue Here...

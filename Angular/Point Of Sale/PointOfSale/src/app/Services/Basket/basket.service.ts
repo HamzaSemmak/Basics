@@ -45,24 +45,23 @@ export class BasketService {
     return this.HttpClient.post<basket>(ApiBasket, this.Basket, httpOptions);
   }
 
-  clearBasket(): void {
+  clearBasket(): Observable<basket[]> {
     this.getBasket().subscribe(
       (Response) => {
         this.Baskets = Object.values(Response);
         this.Baskets.forEach(element => {
-          this.HttpClient.delete(`${ApiBasket}/${element.id}`, httpOptions).subscribe(
-            (Response) => {
-              this.router.navigate([this.router.url]).then(() => {
-                window.location.reload();
-              })
-            }
-          )
+          this.HttpClient.delete(`${ApiBasket}/${element.id}`, httpOptions).subscribe();
         });
       }
     )
+    return this.getBasket();
   }
 
   deleteItemFromBasket(basket: basket): Observable<basket> {
     return this.HttpClient.delete<basket>(`${ApiBasket}/${basket.id}`, httpOptions);
+  }
+
+  UpdateItemInBaskets(basket: basket): Observable<basket> {
+    return this.HttpClient.put<basket>(`${ApiBasket}/${basket.id}`, basket, httpOptions);
   }
 }
