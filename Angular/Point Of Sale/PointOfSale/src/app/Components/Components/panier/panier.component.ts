@@ -4,6 +4,7 @@ import { Keys } from 'src/app/Modules/Config/Config';
 import { Products } from 'src/app/Modules/Model/Products';
 import { basket as Basket, basket } from 'src/app/Modules/Model/basket';
 import { BasketService } from 'src/app/Services/Basket/basket.service';
+import { ToastService } from 'src/app/Services/Toast/toast.service';
 
 @Component({
   selector: 'panier',
@@ -19,7 +20,7 @@ export class PanierComponent implements OnInit  {
   DisCountSales: number = 50;
   TotalSalesTax: number = 20;
 
-  constructor(private basketService: BasketService, private router: Router) {}
+  constructor(private basketService: BasketService, private router: Router, private Toast: ToastService) {}
 
   ngOnInit(): void {
     this.basketService.getBasket().subscribe(
@@ -40,11 +41,13 @@ export class PanierComponent implements OnInit  {
   }
 
   ngValidatePayement(): void {
-    if(Object.values(this.Baskets).length <= 0)
+    if(Object.values(this.Baskets).length <= 0) {
+      this.Toast.error('You have 0 items in your basket.');
       return;
-
-    //Traitment
-    this.router.navigate([`payement/${sessionStorage.getItem(Keys)}/${Object.values(this.Baskets).toString()}/validate`])
+    } 
+    else {
+      this.router.navigate([`payement/${sessionStorage.getItem(Keys)}/${Object.values(this.Baskets).toString()}/validate`])
+    }
   }
 
   increase(Product: Basket): void {

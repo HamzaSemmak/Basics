@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { AuthService } from 'src/app/Services/Auth/auth.service';
 import { Observable } from 'rxjs';
+import { ToastService } from 'src/app/Services/Toast/toast.service';
 
 @Injectable({
   providedIn: 'root'
@@ -9,8 +10,7 @@ import { Observable } from 'rxjs';
 
 export class AuthGuard implements CanActivate {
 
-  constructor(private service: AuthService, private router: Router) { 
-  }
+  constructor(private service: AuthService, private router: Router, private Toast: ToastService) {}
 
   canActivate(
     route: ActivatedRouteSnapshot,
@@ -20,9 +20,8 @@ export class AuthGuard implements CanActivate {
         return true;
       }
       else {
-        this.router.navigate(['/auth/login']).then(() => {
-          window.location.reload();
-        });
+        this.router.navigate(['/auth/login']);
+        this.Toast.warning('You have to log first');
         return false;
       }
     }

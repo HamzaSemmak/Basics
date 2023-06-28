@@ -2,8 +2,9 @@
     width: auto;
     height: auto;
     position: absolute;
-    right: 2% !important;
-    top: 2% !important;
+    right: 1%;
+    top: 1%;
+    z-index: 100 !important;
     .alert {
         display: none;
         width: 350px;
@@ -18,6 +19,8 @@
         -webkit-animation-duration: 0.9s;
         animation-name: popupAlert;
         animation-duration: 0.9s;
+        background: $white;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
         @include large {
             width: 150px;
             padding: 10px;

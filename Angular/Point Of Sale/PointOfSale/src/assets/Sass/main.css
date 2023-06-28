@@ -149,6 +149,8 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   background-color: #fff;
+  width: 100vw;
+  overflow: hidden;
 }
 
 * {
@@ -2897,8 +2899,9 @@ sup {
   width: auto;
   height: auto;
   position: absolute;
-  right: 2% !important;
-  top: 2% !important;
+  right: 1%;
+  top: 1%;
+  z-index: 100 !important;
 }
 .alert-components .alert {
   display: none;
@@ -2914,6 +2917,8 @@ sup {
   -webkit-animation-duration: 0.9s;
   animation-name: popupAlert;
   animation-duration: 0.9s;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 @media only screen and (max-width: 768px) {
   .alert-components .alert {
