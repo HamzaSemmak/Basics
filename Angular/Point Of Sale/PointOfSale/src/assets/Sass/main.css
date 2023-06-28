@@ -2729,6 +2729,19 @@ sup {
   overflow: hidden;
 }
 
+.payement-content {
+  background-color: #f8f9fa;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.payement-content .row .basket-content {
+  background-color: #fff;
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+}
+
 .input-floating {
   position: relative;
   width: 100% !important;
@@ -3230,7 +3243,7 @@ sup {
 }
 @media only screen and (max-width: 1600px) {
   .order-component .order-product-items {
-    height: 400px;
+    height: 385px;
   }
 }
 .order-component .order-product-items::-webkit-scrollbar {
@@ -3332,15 +3345,11 @@ sup {
   height: auto;
   background-color: #f8f9fa;
   padding: 10px 0;
-  margin-bottom: 5px;
   border: none;
   border-radius: 10px;
 }
 .order-component .order-total-components .order-total .d-flex-space {
   padding: 5px 10px;
-}
-.order-component .order-total-components .order-total .d-flex-space.active {
-  margin-top: 10px;
 }
 .order-component .order-total-components .order-total .d-flex-space.active .title {
   color: #212529;
@@ -3353,11 +3362,21 @@ sup {
   font-weight: 500;
   letter-spacing: 1.2px;
 }
+@media only screen and (max-width: 1600px) {
+  .order-component .order-total-components .order-total .title {
+    font-size: 14px;
+  }
+}
 .order-component .order-total-components .order-total .price {
   color: #212529;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1.2px;
+}
+@media only screen and (max-width: 1600px) {
+  .order-component .order-total-components .order-total .price {
+    font-size: 14px;
+  }
 }
 
 aside {

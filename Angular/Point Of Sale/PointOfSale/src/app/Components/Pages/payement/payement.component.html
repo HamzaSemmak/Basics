@@ -1,1 +1,23 @@
-<p>payement works!</p>
+<main>
+    <div class="payement-content">
+        <div class="row">
+            <div class="col-4 basket-content">
+                <div *ngFor="let item of Baskets">
+                    {{ item.id }}
+                    /-/ {{ item.product.title }}
+                    /-/ {{ item.price }}
+                    /-/ {{ item.quantite }}
+                    <div>
+                        <img [src]="item.product.image" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div>
+                    <b> {{ Total }} </b>
+                </div>
+            </div>
+            <div class="col-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, suscipit.
+            </div>
+        </div>
+    </div>
+</main>
