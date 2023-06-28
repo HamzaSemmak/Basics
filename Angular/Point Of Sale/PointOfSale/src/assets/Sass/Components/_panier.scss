@@ -21,7 +21,7 @@
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
-        height: 600px;
+        height: 540px;
         overflow: auto;
         padding-right: 10px;
         @include media-only(1600px) {
@@ -127,8 +127,32 @@
             height: auto;
             background-color: $light;
             padding: 10px 0;
+            margin-bottom: 5px;
             border: none;
             border-radius: 10px;
+            .d-flex-space {
+                padding: 5px 10px;
+                &.active {
+                    margin-top: 10px;
+                    .title {
+                        color: $dark;
+                        font-size: 17px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .title {
+                font-size: 16px;
+                color: $gray;
+                font-weight: 500;
+                letter-spacing: 1.2px;
+            }
+            .price {
+                color: $dark;
+                font-weight: 600;
+                font-size: 16px;
+                letter-spacing: 1.2px;
+            }
         }
     }
 } 

@@ -64,4 +64,8 @@ export class BasketService {
   UpdateItemInBaskets(basket: basket): Observable<basket> {
     return this.HttpClient.put<basket>(`${ApiBasket}/${basket.id}`, basket, httpOptions);
   }
+
+  checkProductInBaskets(Key: number | undefined): Observable<basket> {
+    return this.HttpClient.get<basket>(`${ApiBasket}?userKey=${sessionStorage.getItem(Keys)}&product.id=${Key}`, httpOptions);
+  }
 }

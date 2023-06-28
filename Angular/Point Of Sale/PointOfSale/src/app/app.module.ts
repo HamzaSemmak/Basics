@@ -23,6 +23,7 @@ import { HomeComponent } from './Components/Pages/home/home.component';
 import { ProductComponent } from './Components/Components/product/product.component';
 import { CategoryComponent as CategoryComponentPages } from './Components/Pages/category/category.component';
 import { PanierComponent } from './Components/Components/panier/panier.component';
+import { PayementComponent } from './Components/Pages/payement/payement.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { PanierComponent } from './Components/Components/panier/panier.component
     HomeComponent,
     ProductComponent,
     CategoryComponentPages,
-    PanierComponent
+    PanierComponent,
+    PayementComponent
   ],
   imports: [
     BrowserModule,

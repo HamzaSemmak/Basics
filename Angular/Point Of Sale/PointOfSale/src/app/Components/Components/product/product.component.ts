@@ -24,8 +24,20 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void { }
 
   ngOrderProduct(Product: Products): void {
-    this.basketService.setProductToBasket(Product).subscribe(
-      (Response) => window.location.reload()
+    this.basketService.checkProductInBaskets(Product.id).subscribe(
+      (response) => {
+        if(Object.values(response).length > 0)
+        {
+          return;
+        }
+        else {
+          this.basketService.setProductToBasket(Product).subscribe(
+            () =>  {
+              window.location.reload();
+            }
+          )
+        }
+      }
     )
   }
 }

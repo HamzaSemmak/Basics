@@ -9,6 +9,7 @@ import { ResetComponent } from 'src/app/Components/Auth/password/reset/reset.com
 import { ConfirmComponent } from 'src/app/Components/Auth/password/confirm/confirm.component';
 import { LogoutComponent } from 'src/app/Components/Auth/logout/logout.component';
 import { CategoryComponent } from 'src/app/Components/Pages/category/category.component';
+import { PayementComponent } from 'src/app/Components/Pages/payement/payement.component';
 
 export const Route: Routes = [
     {
@@ -19,6 +20,11 @@ export const Route: Routes = [
     {
         path: 'products/category/:item',
         component: CategoryComponent,
+        canActivate: [AuthGuard]
+    },
+    {
+        path: 'payement/:Key/:Baskets/validate',
+        component: PayementComponent,
         canActivate: [AuthGuard]
     },
     // Authentification
@@ -46,14 +52,14 @@ export const Route: Routes = [
         path: 'auth/logout/account',
         component: LogoutComponent
     },
-    // // 404 Page
-    // { 
-    //     path: '**', 
-    //     redirectTo: '/404/page-not-found',
-    //     pathMatch: 'full'
-    // },
-    // { 
-    //     path: '404/page-not-found', 
-    //     component: ErrorsComponent
-    // }
+    // 404 Page
+    { 
+        path: '**', 
+        redirectTo: '/404/page-not-found',
+        pathMatch: 'full'
+    },
+    { 
+        path: '404/page-not-found', 
+        component: ErrorsComponent
+    }
 ];

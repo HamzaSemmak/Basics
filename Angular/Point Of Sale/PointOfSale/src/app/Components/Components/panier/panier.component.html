@@ -40,10 +40,41 @@
         </div>
         <div class="col-12 order-total-components">
             <div class="order-total">
-                <div class="d-flax-space"> {{ SubTotal }} DHS </div>
-                <div class="d-flax-space"> -{{ DisCountSales }} DHS </div>
-                <div class="d-flax-space"> +{{ TotalSalesTax }} DHS </div>
-                <div class="d-flax-space"> <b> {{ Total }} DHS </b> </div>
+                <div class="d-flex-space"> 
+                    <div class="title">
+                        Subtotal
+                    </div> 
+                    <div class="price"> 
+                        {{ SubTotal }} DHS
+                    </div>
+                 </div>
+                <div class="d-flex-space"> 
+                    <div class="title">
+                        Discount sales
+                    </div>   
+                    <div class="price">
+                        -{{ DisCountSales }} DHS
+                    </div> 
+                </div>
+                <div class="d-flex-space">
+                    <div class="title">
+                        Total sales tax
+                    </div>   
+                    <div class="price">
+                        +{{ TotalSalesTax }} DHS
+                    </div> 
+                </div>
+                <div class="d-flex-space active"> 
+                    <div class="title">
+                        Total 
+                    </div>
+                    <div class="title">
+                        {{ Total }} DHS
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex-space">
+                <button class="btn" (click)="ngValidatePayement()" > Continue to Payement </button>
             </div>
         </div>
     </div>

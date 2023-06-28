@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Keys } from 'src/app/Modules/Config/Config';
 import { Products } from 'src/app/Modules/Model/Products';
 import { basket as Basket, basket } from 'src/app/Modules/Model/basket';
 import { BasketService } from 'src/app/Services/Basket/basket.service';
@@ -17,7 +19,7 @@ export class PanierComponent implements OnInit  {
   DisCountSales: number = 50;
   TotalSalesTax: number = 20;
 
-  constructor(private basketService: BasketService) {}
+  constructor(private basketService: BasketService, private router: Router) {}
 
   ngOnInit(): void {
     this.basketService.getBasket().subscribe(
@@ -27,9 +29,22 @@ export class PanierComponent implements OnInit  {
         this.Products.forEach(element => {
           this.SubTotal += element.price
         });
+        if(this.SubTotal == 0)
+        {
+          this.Total = 0;
+          return;
+        }
         this.Total = this.SubTotal - 30;
       }
     )
+  }
+
+  ngValidatePayement(): void {
+    if(Object.values(this.Baskets).length <= 0)
+      return;
+
+    //Traitment
+    this.router.navigate([`payement/${sessionStorage.getItem(Keys)}/${Object.values(this.Baskets).toString()}/validate`])
   }
 
   increase(Product: Basket): void {
