@@ -2796,7 +2796,7 @@ sup {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 10px 0px;
+  margin: 15px 0px;
   position: relative;
 }
 .payement-content .row .basket-content .product:hover {
@@ -2850,11 +2850,123 @@ sup {
 }
 .payement-content .row .billing-content {
   position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.payement-content .row .billing-content .btn-go-back {
+.payement-content .row .billing-content .btn-groupe {
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: 1%;
+  right: 1%;
+  display: flex;
+}
+.payement-content .row .billing-content .btn-groupe .btn-field {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.payement-content .row .billing-content .btn-groupe .btn-field i {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+}
+.payement-content .row .billing-content .btn-groupe .btn-field.bg-success {
+  background-color: #4CAF50;
+}
+.payement-content .row .billing-content .btn-groupe .btn-field.bg-danger {
+  background-color: #E53935;
+}
+.payement-content .row .billing-content .btn-groupe .btn-field:hover {
+  opacity: 0.9;
+}
+.payement-content .row .billing-content .bill {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 900px) {
+  .payement-content .row .billing-content .bill {
+    max-width: 500px;
+  }
+}
+.payement-content .row .billing-content .bill .logo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.payement-content .row .billing-content .bill .logo .icon-logo {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border: 1px solid #6c757d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+.payement-content .row .billing-content .bill .logo .icon-logo i {
+  color: #0d6efd;
+  font-size: 25px;
+  font-weight: 500;
+}
+.payement-content .row .billing-content .bill .logo .title {
+  letter-spacing: 1.3px;
+  font-size: 18px;
+  color: #212529;
+  font-weight: 500;
+}
+.payement-content .row .billing-content .bill .text {
+  font-weight: 500;
+  color: #212529;
+  font-size: 16px;
+}
+.payement-content .row .billing-content .bill .text-bold {
+  font-weight: 700;
+  font-size: 17px;
+}
+.payement-content .row .billing-content .bill .border-dotted {
+  border: 2px dotted #212529;
+}
+.payement-content .row .billing-content .bill .table, .payement-content .row .billing-content .bill tr, .payement-content .row .billing-content .bill td, .payement-content .row .billing-content .bill th {
+  border: none;
+}
+.payement-content .row .billing-content .bill .table {
+  width: 100%;
+}
+.payement-content .row .billing-content .bill .table th {
+  text-align: start;
+}
+.payement-content .row .billing-content .bill .table .center {
+  text-align: center !important;
+}
+.payement-content .row .billing-content .bill .table.total td:nth-child(2) {
+  text-align: right;
+}
+.payement-content .row .billing-content .bill .footer-bill {
+  padding-bottom: 30px;
+}
+.payement-content .row .billing-content .bill .footer-bill .d-flex {
+  font-size: 14px;
+  color: #212529;
 }
 
 .input-floating {
@@ -3492,6 +3604,46 @@ sup {
   .order-component .order-total-components .order-total .price {
     font-size: 14px;
   }
+}
+
+.spinner {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.spinner:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #0d6efd;
+  border-color: #0d6efd transparent #0d6efd transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner-body {
+  display: none;
+  position: fixed;
+  left: 0%;
+  height: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 aside {

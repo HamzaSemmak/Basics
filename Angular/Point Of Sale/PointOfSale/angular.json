@@ -33,7 +33,8 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/owl.carousel/dist/owl.carousel.min.js"
+              "node_modules/owl.carousel/dist/owl.carousel.min.js",
+              "./node_modules/html2pdf.js/dist/html2pdf.bundle.min.js"
             ]
           },
           "configurations": {

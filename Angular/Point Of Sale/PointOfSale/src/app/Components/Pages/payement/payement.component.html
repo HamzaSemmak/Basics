@@ -1,4 +1,5 @@
 <main>
+    <spinner *ngIf="Spinner"></spinner>
     <div class="payement-content">
         <div class="row">
             <div class="col-4 basket-content">
@@ -72,9 +73,84 @@
                 </div>
             </div>
             <div class="col-8 billing-content">
-                <div class="btn-go-back">
-                    <i class="icon-arrow-back" routerLink="/"></i>
-                    <i class="icon-check"></i>
+                <div class="btn-groupe">
+                    <div class="btn-field shadow bg-danger" routerLink="/">
+                        <i class="icon-arrow-back"></i>
+                    </div>
+                    <div class="btn-field shadow bg-success" (click)="ngValidateOrder()">
+                        <i class="icon-check"></i>
+                    </div>
+                </div>
+                <div class="bill shadow">
+                    <div class="logo">
+                        <div class="icon-logo">
+                            <i class="icon-planet"></i>
+                        </div>
+                        <div class="title">
+                            Planet Shoes
+                        </div>
+                    </div>
+                    <br>
+                    <div class="text d-flex">
+                        &nbsp;&nbsp; Tel : 06 67 78 65 52
+                    </div>
+                    <br>
+                    <div class="d-flex-space">
+                        <div class="text"> Order N° {{ OrderID }} </div>
+                        <div class="text"> {{ Date }} </div>
+                    </div>
+                    <br>
+                    <hr class="border-dotted">
+                    <div>
+                        <div class="d-flex-space">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text"> Product </th>
+                                        <th class="text center"> Quantite </th>
+                                        <th class="text center"> Price </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of Baskets">
+                                        <td class=""> {{ item.product.title }} </td>
+                                        <td class=" center"> {{ item.quantite }} </td>
+                                        <td class=" center"> {{ item.price }} DHS </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br>
+                    <hr class="border-dotted">
+                    <div>
+                        <table class="table total">
+                            <tbody>
+                                <tr>
+                                    <td> <span class="text"> SubTotal </span> </td>
+                                    <td> {{ SubTotal  }} DHS </td>
+                                </tr>
+                                <tr>
+                                    <td> <span class="text"> Total sales tax </span> </td>
+                                    <td> +{{ TotalSalesTax  }} DHS </td>
+                                </tr>
+                                <tr>
+                                    <td> <span class="text"> Discount sales </span> </td>
+                                    <td> -{{ DisCountSales  }} DHS </td>
+                                </tr>
+                                <tr>
+                                    <td> <span class="text text-bold"> Total </span> </td>
+                                    <td> <span class="text-bold"> {{ Total }} DHS </span> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <div class="footer-bill">
+                        <div class="d-flex"> Thank You </div>
+                        <div class="d-flex"> See you Again </div>
+                        <div class="d-flex"> Powered by Hamza Semmak </div>
+                    </div>
                 </div>
             </div>
         </div>

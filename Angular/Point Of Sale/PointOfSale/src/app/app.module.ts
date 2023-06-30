@@ -24,6 +24,7 @@ import { ProductComponent } from './Components/Components/product/product.compon
 import { CategoryComponent as CategoryComponentPages } from './Components/Pages/category/category.component';
 import { PanierComponent } from './Components/Components/panier/panier.component';
 import { PayementComponent } from './Components/Pages/payement/payement.component';
+import { SpinnerComponent } from './Components/Components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { PayementComponent } from './Components/Pages/payement/payement.componen
     ProductComponent,
     CategoryComponentPages,
     PanierComponent,
-    PayementComponent
+    PayementComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
