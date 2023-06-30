@@ -24,6 +24,10 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void { }
 
   ngOrderProduct(Product: Products): void {
+    if(Product.stock <= 0) {
+      this.toast.warning('Product out of stock');
+      return;
+    }
     this.basketService.checkProductInBaskets(Product.id).subscribe(
       (response) => {
         if(Object.values(response).length > 0)

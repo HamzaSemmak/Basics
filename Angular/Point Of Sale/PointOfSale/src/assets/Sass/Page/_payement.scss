@@ -8,7 +8,122 @@
             background-color: $white;
             height: 100vh;
             margin: 0;
+            padding: 15px;
             overflow: auto;
+            &::-webkit-scrollbar {
+                width: 0px;
+                background-color: $white;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: $white;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $light;
+                border-radius: 0;
+            }
+            h1 {
+                font-family: 'Roboto Mono';
+                font-size: 30px;
+                color: $primary;
+                font-style: italic;
+                letter-spacing: 1.2px;
+                margin-bottom: 18px;
+            }
+            .order-total-details {
+                background-color: $light;
+                border-radius: 10px;
+                padding: 10px 15px;
+                .d-flex-space {
+                    padding-right: 20px;
+                    margin-bottom: 12px;
+                    .total, .title {
+                        font-size: 16px;
+                    }
+                    .title {
+                        color: $gray;
+                        letter-spacing: 1.3px;
+                        font-weight: 500;
+                    }
+                    .total {
+                        columns: $dark;
+                        font-weight: 600;
+                        letter-spacing: 1.6px;
+                    }
+                    &.active {
+                        margin-top: 18px;
+                        .total, .title {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .product {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin: 10px 0px;
+                position: relative;
+                &:hover {
+                    cursor: pointer;
+                }
+                .product-image {
+                    width: 35%;
+                    height: auto;
+                    margin-right: 10px;
+                    img {
+                        object-fit: fill;
+                    }
+                }
+                .product-details {
+                    height: auto;
+                    width: 65%;
+                    .product-description {
+                        .title {
+                            font-size: 15px;
+                            font-weight: 700;
+                            color: $dark;
+                            letter-spacing: 1.3px;
+                        }
+                        .description {
+                            font-size: 13px;
+                            color: $gray;
+                            font-weight: 500;
+                        }
+                    }
+                    .product-information {
+                        align-items: center !important;
+                        margin-top: 20px;
+                        .product-price {
+                            font-size: 14px;
+                            color: $primary;
+                            font-weight: 700;
+                        }
+                        .product-qauntite {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .quantite {
+                                padding-right: 20px;
+                                font-size: 14px;
+                                font-weight: 500; 
+                                cursor: pointer;
+                                color: $dark;
+                                letter-spacing: 1.2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .billing-content {
+            position: relative;
+            .btn-go-back {
+                position: absolute;
+                top: 0%;
+                right: 0%;
+            }
         }
     }
 }
