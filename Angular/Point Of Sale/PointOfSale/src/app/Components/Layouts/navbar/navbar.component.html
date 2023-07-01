@@ -7,11 +7,11 @@
             </div>
         </div>
         <div class="nav-collapse d-flex">
-            <!-- <div class="input-box d-flex">
+            <div class="input-box d-flex" *ngIf="Bool">
                 <div class="icon d-flex"> <i class="icon-search"></i> </div>
                 <input type="text" placeholder="Search Product...">
-            </div> -->
-            <div class="filter"> 
+            </div>
+            <div class="filter" *ngIf="Bool"> 
                 <button> 
                     <i class="icon-filter"></i>
                 </button>

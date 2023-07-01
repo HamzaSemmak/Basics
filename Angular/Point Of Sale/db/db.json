@@ -6,7 +6,8 @@
       "gender": "Male",
       "email": "hamza@gmail.com",
       "password": "AA102374h",
-      "Key": "9f59b8e8-f750-4db3-aaea-6882a4ad8188"
+      "Key": "9f59b8e8-f750-4db3-aaea-6882a4ad8188",
+      "role": "admin"
     }
   ],
   "Category": [
@@ -47,7 +48,7 @@
       "title": "Nike Dunk Low PRM",
       "description": "Nike Dunk Low PRM Light Orewood Brown Light Orewood Brown",
       "price": 300,
-      "stock": 2,
+      "stock": 15,
       "category": "nike",
       "image": "assets/images/nike-dunk-low-prm-light-orewood-brown-4.jpg"
     },
@@ -154,6 +155,29 @@
           "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188",
           "quantite": 3,
           "price": 900
+        }
+      ],
+      "date": "2023-07-01",
+      "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188"
+    },
+    {
+      "id": 9403059,
+      "basket": [
+        {
+          "id": 18306,
+          "product": {
+            "id": 3,
+            "title": "Nike Dunk Low PRM",
+            "description": "Nike Dunk Low PRM Light Orewood Brown Light Orewood Brown",
+            "price": 300,
+            "stock": 20,
+            "category": "nike",
+            "image": "assets/images/nike-dunk-low-prm-light-orewood-brown-4.jpg"
+          },
+          "date": "2023-07-01",
+          "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188",
+          "quantite": 5,
+          "price": 1500
         }
       ],
       "date": "2023-07-01",

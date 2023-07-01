@@ -47,8 +47,8 @@ export class ResetComponent implements OnInit {
           gender:  res[0][1].gender,
           email:  res[0][1].email,
           password:  res[0][1].password,
-          active:  res[0][1].active,
           Key:  res[0][1].Key,
+          role:  res[0][1].role,
         }
       }
     )

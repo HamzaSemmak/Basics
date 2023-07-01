@@ -25,6 +25,9 @@ import { CategoryComponent as CategoryComponentPages } from './Components/Pages/
 import { PanierComponent } from './Components/Components/panier/panier.component';
 import { PayementComponent } from './Components/Pages/payement/payement.component';
 import { SpinnerComponent } from './Components/Components/spinner/spinner.component';
+import { UsersComponent } from './Components/Pages/users/users.component';
+import { IndexComponent } from './Components/Models/Users/index/index.component';
+import { CreateComponent } from './Components/Models/Users/create/create.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,10 @@ import { SpinnerComponent } from './Components/Components/spinner/spinner.compon
     CategoryComponentPages,
     PanierComponent,
     PayementComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    UsersComponent,
+    IndexComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,8 @@ import { ConfirmComponent } from 'src/app/Components/Auth/password/confirm/confi
 import { LogoutComponent } from 'src/app/Components/Auth/logout/logout.component';
 import { CategoryComponent } from 'src/app/Components/Pages/category/category.component';
 import { PayementComponent } from 'src/app/Components/Pages/payement/payement.component';
+import { UsersComponent } from 'src/app/Components/Pages/users/users.component';
+import { IndexComponent } from 'src/app/Components/Models/Users/index/index.component';
 
 export const Route: Routes = [
     {
@@ -26,6 +28,14 @@ export const Route: Routes = [
         path: 'payement/:Key/:Baskets/validate',
         component: PayementComponent,
         canActivate: [AuthGuard]
+    },
+    {
+        path: 'users',
+        component: UsersComponent,
+        canActivate: [AuthGuard],
+        children: [
+            { path: '', component: IndexComponent }
+        ]
     },
     // Authentification
     {
@@ -52,7 +62,7 @@ export const Route: Routes = [
         path: 'auth/logout/account',
         component: LogoutComponent
     },
-    // 404 Page
+    //404 Page
     { 
         path: '**', 
         redirectTo: '/404/page-not-found',

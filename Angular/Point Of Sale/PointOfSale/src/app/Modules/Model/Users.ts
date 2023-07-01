@@ -4,6 +4,6 @@ export interface User {
     gender: 'Male' | 'Female',
     email: string,
     password: string | any,
-    active: true | false,
-    Key: string
+    Key: string,
+    role: string
 }

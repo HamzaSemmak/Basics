@@ -11,6 +11,7 @@ import { AuthService } from 'src/app/Services/Auth/auth.service';
 export class NavbarComponent implements OnInit {
   User: User;
   Name: string;
+  Bool: boolean;
 
   constructor(private AuthService: AuthService) { }
 
@@ -24,12 +25,13 @@ export class NavbarComponent implements OnInit {
           gender:  res[0][1].gender,
           email:  res[0][1].email,
           password:  res[0][1].password,
-          active:  res[0][1].active,
           Key:  res[0][1].Key,
+          role:  res[0][1].role,
         }
         this.Name = this.User.name;
       }
     )
+    this.Bool = false;
   }
 
 }

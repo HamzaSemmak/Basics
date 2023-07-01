@@ -1,0 +1,109 @@
+.table {
+    border-collapse: collapse;
+    background-color: $white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    th {
+        padding: 15px;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-size: 0.7rem;
+        font-weight: 900;
+        color: $primary;
+    }
+    td {
+        padding: 12px 12px;
+        font-size: 14px;
+    }
+}
+
+.bg-dark {
+    background-color: $dark;
+    th {
+        color: $white;
+    }
+}
+.bg-secondary {
+    background-color: $light;
+    th {
+        color: $dark;
+    }
+}
+.bg-light {
+    background-color: $light;
+    color: $primary;
+}
+
+.table-bordered {
+    tr:nth-child(even) {
+        background-color: $light;
+    }
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        height: 3px;
+        background-color: $white;
+        color: $dark;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $dark;
+        height: 3px !important;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: $dark; 
+        height: 3px !important;
+    }
+}
+  
+@media (max-width: 575.98px) {
+    .table-responsive-sm {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+@media (max-width: 767.98px) {
+    .table-responsive-md {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+@media (max-width: 991.98px) {
+    .table-responsive-lg {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+@media (max-width: 1199.98px) {
+    .table-responsive-xl {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+@media (max-width: 1399.98px) {
+    .table-responsive-xxl {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@include x-large{
+    .table {
+        thead {
+            th {
+                font-size: 10px;
+                min-width: 180px;
+            }
+        }
+        tbody {
+            td {
+                font-size: 11px;
+                min-width: 180px;
+            }
+        }
+    }
+}

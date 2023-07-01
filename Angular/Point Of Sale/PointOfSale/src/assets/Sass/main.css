@@ -385,6 +385,18 @@ sup {
   height: auto;
 }
 
+.color-primary {
+  color: #0d6efd;
+}
+
+.color-danger {
+  color: #E53935;
+}
+
+.color-warning {
+  color: #FFC107;
+}
+
 /* devanagari */
 @font-face {
   font-family: "Poppins";
@@ -2981,6 +2993,16 @@ sup {
   color: #212529;
 }
 
+.users-content {
+  padding: 10px;
+}
+.users-content .table-action i {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
 .input-floating {
   position: relative;
   width: 100% !important;
@@ -3658,6 +3680,108 @@ sup {
   z-index: 1;
 }
 
+.table {
+  border-collapse: collapse;
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-radius: 10px;
+}
+.table th {
+  padding: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: #0d6efd;
+}
+.table td {
+  padding: 12px 12px;
+  font-size: 14px;
+}
+
+.bg-dark {
+  background-color: #212529;
+}
+.bg-dark th {
+  color: #fff;
+}
+
+.bg-secondary {
+  background-color: #f8f9fa;
+}
+.bg-secondary th {
+  color: #212529;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+  color: #0d6efd;
+}
+
+.table-bordered tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.table-responsive::-webkit-scrollbar {
+  height: 3px;
+  background-color: #fff;
+  color: #212529;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background-color: #212529;
+  height: 3px !important;
+}
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #212529;
+  height: 3px !important;
+}
+
+@media (max-width: 575.98px) {
+  .table-responsive-sm {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 767.98px) {
+  .table-responsive-md {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 991.98px) {
+  .table-responsive-lg {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 1199.98px) {
+  .table-responsive-xl {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 1399.98px) {
+  .table-responsive-xxl {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media only screen and (max-width: 997px) {
+  .table thead th {
+    font-size: 10px;
+    min-width: 180px;
+  }
+  .table tbody td {
+    font-size: 11px;
+    min-width: 180px;
+  }
+}
 aside {
   position: fixed;
   top: 0;
