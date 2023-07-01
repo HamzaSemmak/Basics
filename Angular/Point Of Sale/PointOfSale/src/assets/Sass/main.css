@@ -2854,6 +2854,18 @@ sup {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: auto;
+}
+.payement-content .row .billing-content::-webkit-scrollbar {
+  width: 0px;
+  background-color: #fff;
+}
+.payement-content .row .billing-content::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.payement-content .row .billing-content::-webkit-scrollbar-thumb {
+  background-color: #f8f9fa;
+  border-radius: 0;
 }
 .payement-content .row .billing-content .btn-groupe {
   position: absolute;
@@ -3470,7 +3482,7 @@ sup {
 }
 @media only screen and (max-width: 1600px) {
   .order-component .order-product-items {
-    height: 385px;
+    height: 380px;
   }
 }
 .order-component .order-product-items::-webkit-scrollbar {

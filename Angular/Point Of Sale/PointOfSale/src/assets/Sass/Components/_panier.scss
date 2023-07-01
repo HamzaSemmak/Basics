@@ -25,7 +25,7 @@
         overflow: auto;
         padding-right: 10px;
         @include media-only(1600px) {
-            height: 385px;
+            height: 380px;
         }
         &::-webkit-scrollbar {
             width: 0px;

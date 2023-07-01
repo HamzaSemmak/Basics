@@ -29,7 +29,7 @@
       "title": "Nike Dunk Panda",
       "description": "Dunk Low Panda Retro White Black Panda (2021)",
       "price": 300,
-      "stock": 10,
+      "stock": 9,
       "category": "nike",
       "image": "assets/images/baskets-dunk-low-panda-pour-homme-et-femme-disponible-sur-kikikickz-563247_800x-_1_.jpg"
     },
@@ -38,7 +38,7 @@
       "title": "Samba OG Cloud White",
       "description": "adidas Originals Samba OG 'Cloud White",
       "price": 250,
-      "stock": 20,
+      "stock": 18,
       "category": "adidas",
       "image": "assets/images/baskets-samba-og-cloud-white-pour-homme-et-femme-disponible-sur-kikikickz-127626_800x.jpg"
     },
@@ -47,7 +47,7 @@
       "title": "Nike Dunk Low PRM",
       "description": "Nike Dunk Low PRM Light Orewood Brown Light Orewood Brown",
       "price": 300,
-      "stock": 5,
+      "stock": 2,
       "category": "nike",
       "image": "assets/images/nike-dunk-low-prm-light-orewood-brown-4.jpg"
     },
@@ -56,7 +56,7 @@
       "title": "Yeezy Boost 350",
       "description": "Adidas Originals Yeezy Boost 350 V2 Core Black Red",
       "price": 300,
-      "stock": 5,
+      "stock": 2,
       "category": "yeezy",
       "image": "assets/images/itrsneakersYeezy_Boost_350_V2_Core_Black_Red-BY9612-0.jpg"
     },
@@ -65,58 +65,34 @@
       "title": "Campus 00s Grey White",
       "description": "Campus 00s Grey White with white logo stripes and thick white midsole",
       "price": 150,
-      "stock": 20,
+      "stock": 17,
       "category": "adidas",
       "image": "assets/images/baskets-campus-00s-grey-white-pour-homme-et-femme-disponible-sur-kikikickz-687197_800x.jpg"
     }
   ],
-  "basket": [
-    {
-      "id": 43366,
-      "product": {
-        "id": 1,
-        "title": "Nike Dunk Panda",
-        "description": "Dunk Low Panda Retro White Black Panda (2021)",
-        "price": 300,
-        "stock": 10,
-        "category": "nike",
-        "image": "assets/images/baskets-dunk-low-panda-pour-homme-et-femme-disponible-sur-kikikickz-563247_800x-_1_.jpg"
-      },
-      "date": "2023-06-30",
-      "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188",
-      "quantite": 1,
-      "price": 300
-    }
-  ],
+  "basket": [],
   "Orders": [
     {
-      "id": 1207023,
+      "id": 9381983,
       "basket": [
         {
-          "id": 85117,
+          "id": 94980,
           "product": {
-            "id": 1,
-            "title": "Nike Dunk Panda",
-            "description": "Dunk Low Panda Retro White Black Panda (2021)",
+            "id": 3,
+            "title": "Nike Dunk Low PRM",
+            "description": "Nike Dunk Low PRM Light Orewood Brown Light Orewood Brown",
             "price": 300,
-            "stock": 10,
+            "stock": 5,
             "category": "nike",
-            "image": "assets/images/baskets-dunk-low-panda-pour-homme-et-femme-disponible-sur-kikikickz-563247_800x-_1_.jpg"
+            "image": "assets/images/nike-dunk-low-prm-light-orewood-brown-4.jpg"
           },
-          "date": "2023-06-30",
+          "date": "2023-07-01",
           "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188",
-          "quantite": 1,
-          "price": 300
-        }
-      ],
-      "date": "2023-06-30",
-      "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188"
-    },
-    {
-      "id": 1722722,
-      "basket": [
+          "quantite": 3,
+          "price": 900
+        },
         {
-          "id": 17808,
+          "id": 10197,
           "product": {
             "id": 2,
             "title": "Samba OG Cloud White",
@@ -126,29 +102,61 @@
             "category": "adidas",
             "image": "assets/images/baskets-samba-og-cloud-white-pour-homme-et-femme-disponible-sur-kikikickz-127626_800x.jpg"
           },
-          "date": "2023-06-30",
+          "date": "2023-07-01",
           "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188",
-          "quantite": 1,
-          "price": 250
+          "quantite": 2,
+          "price": 500
         },
         {
-          "id": 74888,
+          "id": 58682,
+          "product": {
+            "id": 5,
+            "title": "Campus 00s Grey White",
+            "description": "Campus 00s Grey White with white logo stripes and thick white midsole",
+            "price": 150,
+            "stock": 20,
+            "category": "adidas",
+            "image": "assets/images/baskets-campus-00s-grey-white-pour-homme-et-femme-disponible-sur-kikikickz-687197_800x.jpg"
+          },
+          "date": "2023-07-01",
+          "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188",
+          "quantite": 3,
+          "price": 450
+        },
+        {
+          "id": 52109,
           "product": {
             "id": 1,
             "title": "Nike Dunk Panda",
             "description": "Dunk Low Panda Retro White Black Panda (2021)",
             "price": 300,
-            "stock": 12,
+            "stock": 10,
             "category": "nike",
             "image": "assets/images/baskets-dunk-low-panda-pour-homme-et-femme-disponible-sur-kikikickz-563247_800x-_1_.jpg"
           },
-          "date": "2023-06-30",
+          "date": "2023-07-01",
           "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188",
-          "quantite": 2,
-          "price": 600
+          "quantite": 1,
+          "price": 300
+        },
+        {
+          "id": 76502,
+          "product": {
+            "id": 4,
+            "title": "Yeezy Boost 350",
+            "description": "Adidas Originals Yeezy Boost 350 V2 Core Black Red",
+            "price": 300,
+            "stock": 5,
+            "category": "yeezy",
+            "image": "assets/images/itrsneakersYeezy_Boost_350_V2_Core_Black_Red-BY9612-0.jpg"
+          },
+          "date": "2023-07-01",
+          "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188",
+          "quantite": 3,
+          "price": 900
         }
       ],
-      "date": "2023-06-30",
+      "date": "2023-07-01",
       "userKey": "9f59b8e8-f750-4db3-aaea-6882a4ad8188"
     }
   ]

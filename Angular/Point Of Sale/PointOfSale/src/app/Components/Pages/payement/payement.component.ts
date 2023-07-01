@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Keys } from 'src/app/Modules/Config/Config';
 import { Products } from 'src/app/Modules/Model/Products';
 import { basket } from 'src/app/Modules/Model/basket';
 import { BasketService } from 'src/app/Services/Basket/basket.service';
 import { ToastService } from 'src/app/Services/Toast/toast.service';
-import * as html2pdf from 'html2pdf.js';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
+import { OrdersService } from 'src/app/Services/Orders/orders.service';
+import { ProductsService } from 'src/app/Services/Products/products.service';
+
 
 @Component({
   selector: 'app-payement',
@@ -24,26 +28,21 @@ export class PayementComponent implements OnInit {
   TotalSalesTax: number = 20;
   Date: string;
   Spinner: boolean = false;
-  filename: string = 'Invoice'
-  Options: any;
-  Bill: HTMLElement | null;
+  Invoice: string;
+  Bill: any;
+  jsPDF: jsPDF = new jsPDF();
 
   constructor(
     private Router: Router,
     private ActivatedRoute: ActivatedRoute,
     private BasketService: BasketService,
     private Toast: ToastService,
+    private orderService: OrdersService,
+    private productService: ProductsService
   ) { 
     this.OrderID = this.generateOrderID();
     this.Date = this.getCurrentDate();
-    this.Bill = document.querySelector('.bill')
-    this.Options =  {
-      margin:        [0.5, 0.4, 0, 0.6],
-      filename:     `${this.filename}`,
-      image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 2, bottom: 0 },
-      jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-    }
+    this.Invoice = `Invoice-${this.OrderID}.pdf`;
   }
 
   ngOnInit(): void {
@@ -65,14 +64,15 @@ export class PayementComponent implements OnInit {
 
   html2pdf(): void {
     try {
-      //converts to PDF
-      html2pdf()
-      .set(this.Options)
-      .from(this.Bill)
-      .save()
-
-      console.log('Good');
-
+      this.Bill = document.querySelector('.bill');
+      html2canvas(this.Bill).then((canvas) => {
+        const imgData = canvas.toDataURL('image/png');
+        const imgProps = this.jsPDF.getImageProperties(imgData);
+        const pdfWidth = this.jsPDF.internal.pageSize.getWidth();
+        const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+        this.jsPDF.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
+        this.jsPDF.save(this.Invoice);
+      });
     } catch (error) {
       console.log(error);
     }
@@ -89,21 +89,20 @@ export class PayementComponent implements OnInit {
 
   ngValidateOrder() :void {
     this.Spinner = true;
-    // this.orderService.setOrder(this.Baskets, this.OrderID).subscribe(
-    //   (Order) => {
-    //     this.productService.UpdateProductsPassedOnBasket(this.Baskets);
-    //     this.BasketService.clearBasket().subscribe(
-    //       (Basket) => {
-    //         console.log(Order);
-    //         console.log(Basket);
-    //       }
-    //     )
-    //   }
-    // )
-    this.html2pdf();
+    this.orderService.setOrder(this.Baskets, this.OrderID).subscribe(
+      (Order) => {
+        this.productService.UpdateProductsPassedOnBasket(this.Baskets);
+        this.BasketService.clearBasket().subscribe(
+          (Basket) => {
+            this.html2pdf();
+          }
+        )
+      }
+    )
     setTimeout(() => {
       this.Spinner = false;
-      // this.Router.navigate(['/']);
+      this.Router.navigate(['/']);
+      this.Toast.success("You've successflly placed the order.");
     }, 7000);
   }
 
@@ -114,4 +113,3 @@ export class PayementComponent implements OnInit {
     return this.Products;
   }
 }
-//Bill Print 
