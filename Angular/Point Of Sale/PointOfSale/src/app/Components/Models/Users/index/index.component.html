@@ -31,10 +31,10 @@
               <td> {{ item.role }} </td>
               <td class="table-action"> 
                   <i class="icon-delete color-danger" (click)="ngDeleteUser(item)"></i>
-                  <i class="icon-pen color-primary"></i>
-                  <i class="icon-eye color-warning"></i>
+                  <i class="icon-pen color-primary" routerLink="update/{{item.Key}}"></i>
+                  <i class="icon-eye color-warning" ></i>
               </td>
-            </tr>
+             </tr>
           </tbody>
       </table>
   </div>

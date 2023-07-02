@@ -28,6 +28,7 @@ import { SpinnerComponent } from './Components/Components/spinner/spinner.compon
 import { UsersComponent } from './Components/Pages/users/users.component';
 import { IndexComponent } from './Components/Models/Users/index/index.component';
 import { CreateComponent } from './Components/Models/Users/create/create.component';
+import { UpdateComponent } from './Components/Models/Users/update/update.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { CreateComponent } from './Components/Models/Users/create/create.compone
     SpinnerComponent,
     UsersComponent,
     IndexComponent,
-    CreateComponent
+    CreateComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

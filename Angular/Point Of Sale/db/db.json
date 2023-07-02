@@ -6,8 +6,17 @@
       "gender": "Male",
       "email": "hamza@gmail.com",
       "password": "AA102374h",
-      "Key": "x_zz.bYYe0y5m;NqOfp5+UtFNLJIz-",
+      "Key": "9f59b8e8-f750-4db3-aaea-6882a4ad8188",
       "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "tarik oulkhabou",
+      "gender": "Male",
+      "email": "tarik@gmail.com",
+      "password": "AA102374",
+      "Key": "MX8mI3iTk15FSd7QV0yiUUXO5bZrK1",
+      "role": "User"
     }
   ],
   "Category": [

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, elementAt } from 'rxjs';
 import { User } from 'src/app/Modules/Model/Users';
 import { ApiUsers } from 'src/app/Modules/Config/Api';
 import { Keys } from 'src/app/Modules/Config/Config';
@@ -38,6 +38,7 @@ export class AuthService {
       let response = Object.entries(res);
       Key = response[0][1].Key;
       sessionStorage.setItem(Keys, Key);
+      sessionStorage.setItem("Role", response[0][1].role);
       this.router.navigate(["/"]).then(() => {
         window.location.reload();
       })
@@ -70,5 +71,4 @@ export class AuthService {
   ResetPassword(id: any, User: User): Observable<User> {
     return this.HttpClient.put<User>(`${ApiUsers}/${id}`, User);
   }
-  
 }

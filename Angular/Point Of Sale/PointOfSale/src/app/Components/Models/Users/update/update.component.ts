@@ -1,20 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/Modules/Model/Users';
 import { UserService } from 'src/app/Services/User/user.service';
 import { FormBuilder, Validators } from '@angular/forms'
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Response } from 'src/app/Modules/Error/Response';
 import { ToastService } from 'src/app/Services/Toast/toast.service';
+import { AuthService } from 'src/app/Services/Auth/auth.service';
+import { elementAt } from 'rxjs';
 
 @Component({
-  selector: 'app-create',
-  templateUrl: './create.component.html',
-  styleUrls: ['./create.component.css']
+  selector: 'app-update',
+  templateUrl: './update.component.html',
+  styleUrls: ['./update.component.css']
 })
-
-export class CreateComponent {
+export class UpdateComponent implements OnInit {
   User: User;
+  Users: User;
+  Key: string;
   error: boolean = true;
   message: string;
 
@@ -22,8 +25,16 @@ export class CreateComponent {
     private formBuilder: FormBuilder,
     private router: Router,
     private userService: UserService,
-    private toast: ToastService
+    private toast: ToastService,
+    private ActivateRouter: ActivatedRoute
   ) {  }
+
+  ngOnInit(): void {
+    this.Key = this.ActivateRouter.snapshot.params['key'];
+    // this.userService.findByColumn('Key', this.Key).subscribe(
+    //   (res) => this.Users = res[0]
+    // )
+  }
 
   Validators = this.formBuilder.group({
     name: this.formBuilder.control('', [Validators.required]),
@@ -41,15 +52,7 @@ export class CreateComponent {
         return;
       }
       else {
-        this.userService.create(this.ConvertToUser()).subscribe(
-          () => {
-            this.router.navigate(['/users']);
-            this.toast.success('User Created Successfly.');
-          },
-          (error: HttpErrorResponse) => {
-            this.ThrowError(`Error ${error.status} : ${error.message}`);
-          }
-        )
+        //
       }
     }
     else {
@@ -65,7 +68,7 @@ export class CreateComponent {
       gender: this.Validators.value.gender,
       email: this.Validators.value.email,
       password: this.Validators.value.password,
-      Key: this.generateKey(30),
+      Key: this.User.Key,
       role: this.Validators.value.role
     }
     this.User = NewUser;

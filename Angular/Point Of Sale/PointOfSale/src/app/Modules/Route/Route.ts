@@ -13,6 +13,8 @@ import { PayementComponent } from 'src/app/Components/Pages/payement/payement.co
 import { UsersComponent } from 'src/app/Components/Pages/users/users.component';
 import { IndexComponent } from 'src/app/Components/Models/Users/index/index.component';
 import { CreateComponent } from 'src/app/Components/Models/Users/create/create.component';
+import { AdminGuard } from 'src/app/Guards/Admin/admin.guard';
+import { UpdateComponent } from 'src/app/Components/Models/Users/update/update.component';
 
 export const Route: Routes = [
     {
@@ -33,10 +35,11 @@ export const Route: Routes = [
     {
         path: 'users',
         component: UsersComponent,
-        canActivate: [AuthGuard],
+        canActivate: [AuthGuard, AdminGuard],
         children: [
             { path: '', component: IndexComponent },
-            { path: 'create', component: CreateComponent }
+            { path: 'create', component: CreateComponent },
+            { path: 'update/:key', component: UpdateComponent }
         ]
     },
     // Authentification

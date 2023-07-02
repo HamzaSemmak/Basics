@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { ApiUsers } from 'src/app/Modules/Config/Api';
 import { User } from 'src/app/Modules/Model/Users';
 
@@ -30,4 +30,13 @@ export class UserService {
     return this.HttpClient.delete<User>(`${ApiUsers}/${User.id}`, httpOptions);
   }
 
+  findByColumn(Colmun: string, value: any): Observable<User> {
+    return this.HttpClient.get<User>(`${ApiUsers}?${Colmun}=${value}`, httpOptions).pipe(
+      map(
+        result => {
+          return result;
+        }
+      )
+    )
+  }
 }
