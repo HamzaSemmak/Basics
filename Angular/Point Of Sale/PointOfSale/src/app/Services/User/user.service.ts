@@ -22,4 +22,12 @@ export class UserService {
     return this.HttpClient.get<User[]>(ApiUsers, httpOptions);
   }
 
+  create(User: User): Observable<User> {
+    return this.HttpClient.post<User>(ApiUsers, User, httpOptions);
+  }
+
+  delete(User: User): Observable<User> {
+    return this.HttpClient.delete<User>(`${ApiUsers}/${User.id}`, httpOptions);
+  }
+
 }

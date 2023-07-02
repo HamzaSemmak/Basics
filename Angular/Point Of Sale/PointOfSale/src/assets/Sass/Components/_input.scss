@@ -18,7 +18,7 @@
             font-weight: 400;
         }
     }
-    input{
+    input, select {
         width: 100%;
         padding: 10px;
         border: 1px solid $gray-light;
@@ -28,6 +28,9 @@
         transition: 0.4s;
         background-color: $light;
         color: $primary;
+    }
+    select {
+        appearance: none;
     }
     label {
         color: $gray-light;
@@ -55,6 +58,8 @@
 }
 
 .input-floating input:valid ~ span,
+.input-floating select:valid ~ span,
+.input-floating select:focus ~ span,
 .input-floating input:focus ~ span {
     color: $primary;
     transform: translateX(10px) translateY(-7px);
@@ -65,11 +70,14 @@
     letter-spacing: 0.1rem;
     
 }
+.input-floating select:valid ~ i,
+.input-floating select:focus ~ i,
 .input-floating input:valid ~ i,
 .input-floating input:focus ~ i {
     color: $primary;
 }
-
+.input-floating select:valid,
+.input-floating select:focus,
 .input-floating input:valid,
 .input-floating input:focus{
     border: 1px solid $primary;

@@ -1,1 +1,65 @@
-<p>create works!</p>
+<section class="users-content">
+    <div class="section-header">
+      <h1> Create User </h1>
+    </div>
+    <br>
+    <form class="row" [formGroup]="Validators" (ngSubmit)="ngOnSubmit()">
+        <div class="col-3">
+            <div class="input-floating">
+                <input type="text" formControlName="name" required/>
+                <span> Name </span>
+                <i class="icon-email"></i>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="input-floating">
+                <input type="email" formControlName="email" required/>
+                <span> E-mail </span>
+                <i class="icon-email"></i>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="input-floating">
+                <input type="password" formControlName="password" required/>
+                <span> Password </span>
+                <i class="icon-lock"></i>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="input-floating">
+                <input type="password" formControlName="confirmPassword" required/>
+                <span> Confirm Password </span>
+                <i class="icon-lock"></i>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="input-floating">
+                <select required formControlName="gender">
+                    <option selected disabled> </option>
+                    <option value="Male"> Male </option>
+                    <option value="Female"> Female </option>
+                </select>
+                <span> Gender </span>
+                <i class="icon-lock"></i>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="input-floating">
+                <select required formControlName="role">
+                    <option selected disabled> </option>
+                    <option value="User"> User </option>
+                    <option value="Admin"> Admin </option>
+                </select>
+                <span> Role </span>
+                <i class="icon-lock"></i>
+            </div>
+        </div>
+        <div class="col-12 p-0 m-0">
+            <error [message]="message" *ngIf="error"></error>
+        </div>
+        <div class="col-1">
+            <button class="btn"> Submit </button>
+        </div>
+    </form>
+</section>
+

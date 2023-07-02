@@ -1,6 +1,6 @@
 .btn {
     position: relative;
-    padding: 10px;
+    padding: 10px; 
     border: 1px solid $primary;
     background-color: $primary;
     margin-block: 10px;
@@ -23,5 +23,16 @@
         padding: 8px 16px;
         font-size: 12px;
         font-weight: 400;
+    }
+    &.btn-icon {
+        display: flex;
+        align-items: center;
+        justify-tracks: center;
+        padding: 10px 10px 10px 15px;
+        i {
+            color: $white;
+            font-size: 16px;
+            font-weight: 500;
+        }
     }
 }

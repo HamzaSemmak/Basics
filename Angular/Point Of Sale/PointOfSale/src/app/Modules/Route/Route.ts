@@ -12,6 +12,7 @@ import { CategoryComponent } from 'src/app/Components/Pages/category/category.co
 import { PayementComponent } from 'src/app/Components/Pages/payement/payement.component';
 import { UsersComponent } from 'src/app/Components/Pages/users/users.component';
 import { IndexComponent } from 'src/app/Components/Models/Users/index/index.component';
+import { CreateComponent } from 'src/app/Components/Models/Users/create/create.component';
 
 export const Route: Routes = [
     {
@@ -34,7 +35,8 @@ export const Route: Routes = [
         component: UsersComponent,
         canActivate: [AuthGuard],
         children: [
-            { path: '', component: IndexComponent }
+            { path: '', component: IndexComponent },
+            { path: 'create', component: CreateComponent }
         ]
     },
     // Authentification

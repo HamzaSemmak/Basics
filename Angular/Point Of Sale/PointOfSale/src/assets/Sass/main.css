@@ -3002,6 +3002,28 @@ sup {
   margin: 0 5px;
   cursor: pointer;
 }
+.users-content .section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px 0 0px;
+}
+.users-content .section-header h1 {
+  font-size: 25px;
+  letter-spacing: 1.3px;
+  color: #212529;
+  font-weight: 500;
+}
+.users-content .row {
+  padding: 0;
+  margin: 0;
+}
+.users-content .row .p-0 {
+  padding: 0;
+}
+.users-content .row .m-0 {
+  margin: 0;
+}
 
 .input-floating {
   position: relative;
@@ -3024,7 +3046,7 @@ sup {
   font-size: 13px;
   font-weight: 400;
 }
-.input-floating input {
+.input-floating input, .input-floating select {
   width: 100%;
   padding: 10px;
   border: 1px solid #adb5bd;
@@ -3034,6 +3056,11 @@ sup {
   transition: 0.4s;
   background-color: #f8f9fa;
   color: #0d6efd;
+}
+.input-floating select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .input-floating label {
   color: #adb5bd;
@@ -3060,6 +3087,8 @@ sup {
 }
 
 .input-floating input:valid ~ span,
+.input-floating select:valid ~ span,
+.input-floating select:focus ~ span,
 .input-floating input:focus ~ span {
   color: #0d6efd;
   transform: translateX(10px) translateY(-7px);
@@ -3070,11 +3099,15 @@ sup {
   letter-spacing: 0.1rem;
 }
 
+.input-floating select:valid ~ i,
+.input-floating select:focus ~ i,
 .input-floating input:valid ~ i,
 .input-floating input:focus ~ i {
   color: #0d6efd;
 }
 
+.input-floating select:valid,
+.input-floating select:focus,
 .input-floating input:valid,
 .input-floating input:focus {
   border: 1px solid #0d6efd;
@@ -3153,6 +3186,17 @@ sup {
     font-size: 12px;
     font-weight: 400;
   }
+}
+.btn.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-tracks: center;
+  padding: 10px 10px 10px 15px;
+}
+.btn.btn-icon i {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .message {
