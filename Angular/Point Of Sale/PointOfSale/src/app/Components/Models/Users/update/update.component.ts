@@ -16,8 +16,9 @@ import { elementAt } from 'rxjs';
 })
 export class UpdateComponent implements OnInit {
   User: User;
-  Users: User;
-  Key: string;
+  UserUpdated: string = this.ActivateRouter.snapshot.params['User'];
+  Items: string[] = this.UserUpdated.split(',');
+  Key: string = this.ActivateRouter.snapshot.params['key'];
   error: boolean = true;
   message: string;
 
@@ -30,19 +31,16 @@ export class UpdateComponent implements OnInit {
   ) {  }
 
   ngOnInit(): void {
-    this.Key = this.ActivateRouter.snapshot.params['key'];
-    // this.userService.findByColumn('Key', this.Key).subscribe(
-    //   (res) => this.Users = res[0]
-    // )
+
   }
 
   Validators = this.formBuilder.group({
-    name: this.formBuilder.control('', [Validators.required]),
-    email: this.formBuilder.control('', [Validators.required, Validators.email]),
+    name: this.formBuilder.control(this.Items[1], [Validators.required]),
+    email: this.formBuilder.control(this.Items[3], [Validators.required, Validators.email]),
     password: this.formBuilder.control('', [Validators.required]),
     confirmPassword: this.formBuilder.control('', [Validators.required]),
-    gender: this.formBuilder.control('', [Validators.required]),
-    role: this.formBuilder.control('', [Validators.required]),
+    gender: this.formBuilder.control(this.Items[2], [Validators.required]),
+    role: this.formBuilder.control(this.Items[6], [Validators.required]),
   });
 
   ngOnSubmit(): void {
@@ -52,7 +50,15 @@ export class UpdateComponent implements OnInit {
         return;
       }
       else {
-        //
+        this.userService.Update(this.ConvertToUser()).subscribe(
+          (Response) => {
+            this.router.navigate(['/users']);
+            this.toast.success('Your change have been successflly saved!.');
+          },
+          (error: HttpErrorResponse) => {
+            this.ThrowError(`Error ${error.status} : ${error.message}`);
+          }
+        )
       }
     }
     else {
@@ -62,17 +68,18 @@ export class UpdateComponent implements OnInit {
   }
 
   ConvertToUser(): User {
+    var User: User;
     var NewUser: any = {
-      id: Math.floor(Math.random() * 100),
+      id: this.Items[0],
       name: this.Validators.value.name,
       gender: this.Validators.value.gender,
       email: this.Validators.value.email,
       password: this.Validators.value.password,
-      Key: this.User.Key,
+      Key: this.Key,
       role: this.Validators.value.role
     }
-    this.User = NewUser;
-    return this.User;
+    User = NewUser;
+    return User;
   }
 
   generateKey(length: number): string {

@@ -17,6 +17,15 @@
       "password": "AA102374",
       "Key": "MX8mI3iTk15FSd7QV0yiUUXO5bZrK1",
       "role": "User"
+    },
+    {
+      "id": 8,
+      "name": "yacine",
+      "gender": "Male",
+      "email": "yacine@gmail.com",
+      "password": "AA102374",
+      "Key": "H2Xcjt-eoOd-1b9tDUrNOQd--djgVV",
+      "role": "User"
     }
   ],
   "Category": [

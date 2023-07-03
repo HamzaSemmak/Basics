@@ -30,13 +30,13 @@ export class UserService {
     return this.HttpClient.delete<User>(`${ApiUsers}/${User.id}`, httpOptions);
   }
 
-  findByColumn(Colmun: string, value: any): Observable<User> {
-    return this.HttpClient.get<User>(`${ApiUsers}?${Colmun}=${value}`, httpOptions).pipe(
-      map(
-        result => {
-          return result;
-        }
-      )
-    )
+  Update(User: User): Observable<User> {
+    return this.HttpClient.put<User>(`${ApiUsers}/${User.id}`, User, httpOptions);
   }
+
+  findByColumn(Colmun: string, value: any): Observable<User> {
+    return this.HttpClient.get<User>(`${ApiUsers}?${Colmun}=${value}`, httpOptions);
+  }
+
+
 }

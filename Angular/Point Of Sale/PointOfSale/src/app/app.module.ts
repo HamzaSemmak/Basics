@@ -29,6 +29,8 @@ import { UsersComponent } from './Components/Pages/users/users.component';
 import { IndexComponent } from './Components/Models/Users/index/index.component';
 import { CreateComponent } from './Components/Models/Users/create/create.component';
 import { UpdateComponent } from './Components/Models/Users/update/update.component';
+import { ShowComponent } from './Components/Models/Users/show/show.component';
+import { OrdersComponent } from './Components/Pages/orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { UpdateComponent } from './Components/Models/Users/update/update.compone
     UsersComponent,
     IndexComponent,
     CreateComponent,
-    UpdateComponent
+    UpdateComponent,
+    ShowComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,

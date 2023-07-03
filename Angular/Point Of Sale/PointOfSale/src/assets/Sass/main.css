@@ -3826,6 +3826,102 @@ sup {
     min-width: 180px;
   }
 }
+.Modal {
+  display: none;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.Modal::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff;
+}
+.Modal::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.Modal::-webkit-scrollbar-thumb {
+  background-color: #0d6efd;
+  border-radius: 0;
+}
+.Modal.fade {
+  transition: opacity 0.15s linear;
+}
+.Modal.showModal {
+  display: block !important;
+}
+.Modal.showModal .modal-dialog {
+  animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards !important;
+}
+.Modal .modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.Modal .modal-dialog .modal-content {
+  width: 40%;
+  padding: 18px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.Modal .modal-dialog .modal-content .modal-header {
+  margin: 10px 0px 15px 0;
+}
+.Modal .modal-dialog .modal-content .modal-header .title {
+  font-family: "Roboto";
+  color: #212529;
+  font-size: 22px;
+  letter-spacing: 1.3px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Modal .modal-dialog .modal-content .modal-header .title i {
+  font-size: 22px;
+  margin: 0 10px 0 0;
+}
+.Modal .modal-dialog .modal-content .modal-header .close-modal i {
+  font-size: 18px;
+  color: #212529;
+  font-weight: 900;
+  cursor: pointer;
+}
+.Modal .modal-dialog .modal-content .row {
+  padding: 0;
+  margin: 0;
+}
+.Modal .modal-dialog .modal-content .row * {
+  margin: 0;
+  padding: 0;
+}
+.Modal .modal-dialog .modal-content .row .col-6, .Modal .modal-dialog .modal-content .row .col-12 {
+  color: #6c757d;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.Modal .modal-dialog .modal-content .row span {
+  color: #212529;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+
+@keyframes blowUpModal {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 aside {
   position: fixed;
   top: 0;
