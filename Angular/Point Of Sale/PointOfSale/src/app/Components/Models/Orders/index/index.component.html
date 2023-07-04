@@ -10,7 +10,6 @@
               <tr>
                 <th>#</th>
                 <th>date</th>
-                <th>user key</th>
                 <th>N°Article</th>
                 <th>Article</th>
                 <th>action</th>
@@ -20,7 +19,6 @@
               <tr *ngFor="let item of Orders">
                 <td> {{ item.id }} </td>
                 <td> {{ item.date }} </td>
-                <td> {{ item.userKey }} </td>
                 <td> {{ item.basket.length }} </td>
                 <td>
                   <span *ngFor="let basket of item.basket">
