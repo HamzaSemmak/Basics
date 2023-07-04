@@ -41,7 +41,7 @@ export const Route: Routes = [
         canActivate: [AuthGuard],
         children: [
             { path: '', component: OrderIndex },
-            { path: 'show/order-:id/:order', component: OrderShow }
+            { path: 'show/order/:id/:order', component: OrderShow }
         ]
     },
     {
@@ -80,13 +80,13 @@ export const Route: Routes = [
         component: LogoutComponent
     },
     //404 Page
-    { 
-        path: '**', 
-        redirectTo: '/404/page-not-found',
-        pathMatch: 'full'
-    },
-    { 
-        path: '404/page-not-found', 
-        component: ErrorsComponent
-    }
+    // { 
+    //     path: '**', 
+    //     redirectTo: '/404/page-not-found',
+    //     pathMatch: 'full'
+    // },
+    // { 
+    //     path: '404/page-not-found', 
+    //     component: ErrorsComponent
+    // }
 ];

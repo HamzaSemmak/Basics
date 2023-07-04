@@ -35,4 +35,12 @@ export class OrdersService {
     return this.HttpClient.post<Orders>(ApiOrders, this.Orders, httpOptions);
   }
 
+  all(): Observable<Orders[]> {
+    return this.HttpClient.get<Orders[]>(ApiOrders, httpOptions);
+  }
+
+  find(id: number): Observable<Orders> {
+    return this.HttpClient.get<Orders>(`${ApiOrders}/${id}`, httpOptions);
+  }
+
 }

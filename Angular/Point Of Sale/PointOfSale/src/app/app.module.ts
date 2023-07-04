@@ -26,11 +26,13 @@ import { PanierComponent } from './Components/Components/panier/panier.component
 import { PayementComponent } from './Components/Pages/payement/payement.component';
 import { SpinnerComponent } from './Components/Components/spinner/spinner.component';
 import { UsersComponent } from './Components/Pages/users/users.component';
-import { IndexComponent } from './Components/Models/Users/index/index.component';
-import { CreateComponent } from './Components/Models/Users/create/create.component';
-import { UpdateComponent } from './Components/Models/Users/update/update.component';
-import { ShowComponent } from './Components/Models/Users/show/show.component';
+import { IndexComponent as UsersIndes } from './Components/Models/Users/index/index.component';
+import { CreateComponent as UsersCreate } from './Components/Models/Users/create/create.component';
+import { UpdateComponent as UsersUpdate } from './Components/Models/Users/update/update.component';
+import { ShowComponent as UsersShow} from './Components/Models/Users/show/show.component';
 import { OrdersComponent } from './Components/Pages/orders/orders.component';
+import { IndexComponent as OrdersIndex } from './Components/Models/Orders/index/index.component';
+import { ShowComponent as OrdersShow } from './Components/Models/Orders/show/show.component';
 
 @NgModule({
   declarations: [
@@ -54,11 +56,13 @@ import { OrdersComponent } from './Components/Pages/orders/orders.component';
     PayementComponent,
     SpinnerComponent,
     UsersComponent,
-    IndexComponent,
-    CreateComponent,
-    UpdateComponent,
-    ShowComponent,
-    OrdersComponent
+    UsersIndes,
+    UsersCreate,
+    UsersUpdate,
+    UsersShow,
+    OrdersComponent,
+    OrdersIndex,
+    OrdersShow
   ],
   imports: [
     BrowserModule,

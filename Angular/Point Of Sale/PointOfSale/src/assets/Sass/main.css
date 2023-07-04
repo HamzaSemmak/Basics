@@ -3024,6 +3024,12 @@ sup {
 .users-content .row .m-0 {
   margin: 0;
 }
+.users-content .row .title {
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  font-weight: 600;
+  color: #212529;
+}
 
 .input-floating {
   position: relative;
