@@ -18,6 +18,7 @@ import { UpdateComponent as UserUpdate} from 'src/app/Components/Models/Users/up
 import { OrdersComponent } from 'src/app/Components/Pages/orders/orders.component';
 import { IndexComponent as OrderIndex } from 'src/app/Components/Models/Orders/index/index.component';
 import { ShowComponent as OrderShow } from 'src/app/Components/Models/Orders/show/show.component';
+import { ProductsComponent } from 'src/app/Components/Pages/products/products.component';
 
 export const Route: Routes = [
     {
@@ -33,6 +34,11 @@ export const Route: Routes = [
     {
         path: 'payement/:Key/:Baskets/validate',
         component: PayementComponent,
+        canActivate: [AuthGuard]
+    },
+    {
+        path: 'products',
+        component: ProductsComponent,
         canActivate: [AuthGuard]
     },
     {

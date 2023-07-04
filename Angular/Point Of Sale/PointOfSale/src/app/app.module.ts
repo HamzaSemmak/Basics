@@ -33,6 +33,7 @@ import { ShowComponent as UsersShow} from './Components/Models/Users/show/show.c
 import { OrdersComponent } from './Components/Pages/orders/orders.component';
 import { IndexComponent as OrdersIndex } from './Components/Models/Orders/index/index.component';
 import { ShowComponent as OrdersShow } from './Components/Models/Orders/show/show.component';
+import { ProductsComponent } from './Components/Pages/products/products.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { ShowComponent as OrdersShow } from './Components/Models/Orders/show/sho
     UsersShow,
     OrdersComponent,
     OrdersIndex,
-    OrdersShow
+    OrdersShow,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
