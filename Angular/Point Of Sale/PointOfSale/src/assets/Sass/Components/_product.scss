@@ -6,7 +6,7 @@
     height: 700px;
     overflow: auto;
     @include media-only(1600px) {
-        height: 500px;
+        height: 550px;
     }
     @include xxx-large {
         height: 600px;

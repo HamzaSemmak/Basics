@@ -3438,7 +3438,7 @@ sup {
 }
 @media only screen and (max-width: 1600px) {
   .products-items {
-    height: 500px;
+    height: 550px;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -3935,6 +3935,9 @@ sup {
   font-size: 16px;
   letter-spacing: 1.2px;
   font-weight: 700;
+}
+.Modal .modal-dialog .modal-content .mt-0 {
+  margin-bottom: 15px;
 }
 
 @keyframes blowUpModal {

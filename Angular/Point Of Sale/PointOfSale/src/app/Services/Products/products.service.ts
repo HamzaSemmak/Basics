@@ -34,4 +34,9 @@ export class ProductsService {
       )
     })
   }
+
+  delete(item: Products): Observable<Products> {
+    return this.HttpClient.delete<Products>(`${ApiProducts}/${item.id}`, httpOptions);
+  }
+
 }

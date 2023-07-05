@@ -92,11 +92,11 @@ export class PayementComponent implements OnInit {
     this.orderService.setOrder(this.Baskets, this.OrderID).subscribe(
       (Order) => {
         this.productService.UpdateProductsPassedOnBasket(this.Baskets);
-        this.BasketService.clearBasket().subscribe(
-          (Basket) => {
-            this.html2pdf();
-          }
-        )
+      }
+    )
+    this.BasketService.clearBasket().subscribe(
+      (Basket) => {
+        this.html2pdf();
       }
     )
     setTimeout(() => {

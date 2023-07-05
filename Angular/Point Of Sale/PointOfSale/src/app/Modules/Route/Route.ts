@@ -20,9 +20,7 @@ import { IndexComponent as OrderIndex } from 'src/app/Components/Models/Orders/i
 import { ShowComponent as OrderShow } from 'src/app/Components/Models/Orders/show/show.component';
 import { ProductsComponent } from 'src/app/Components/Pages/products/products.component';
 import { IndexComponent as ProductIndex } from 'src/app/Components/Models/Products/index/index.component';
-import { CreateComponent as ProductCreate } from 'src/app/Components/Models/Products/create/create.component';
 import { ShowComponent as ProductShow } from 'src/app/Components/Models/Products/show/show.component';
-import { UpdateComponent as ProductUpdate } from 'src/app/Components/Models/Products/update/update.component';
 
 export const Route: Routes = [
     {
