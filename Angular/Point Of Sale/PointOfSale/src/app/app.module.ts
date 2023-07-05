@@ -34,6 +34,10 @@ import { OrdersComponent } from './Components/Pages/orders/orders.component';
 import { IndexComponent as OrdersIndex } from './Components/Models/Orders/index/index.component';
 import { ShowComponent as OrdersShow } from './Components/Models/Orders/show/show.component';
 import { ProductsComponent } from './Components/Pages/products/products.component';
+import { IndexComponent as ProductIndex } from './Components/Models/Products/index/index.component';
+import { CreateComponent as ProductsCreate} from './Components/Models/Products/create/create.component';
+import { ShowComponent as ProductsShow } from './Components/Models/Products/show/show.component';
+import { UpdateComponent as ProductsUpdate} from './Components/Models/Products/update/update.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +68,11 @@ import { ProductsComponent } from './Components/Pages/products/products.componen
     OrdersComponent,
     OrdersIndex,
     OrdersShow,
-    ProductsComponent
+    ProductsComponent,
+    ProductIndex,
+    ProductsCreate,
+    ProductsShow,
+    ProductsUpdate
   ],
   imports: [
     BrowserModule,

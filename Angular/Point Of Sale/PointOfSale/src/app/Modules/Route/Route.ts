@@ -19,6 +19,10 @@ import { OrdersComponent } from 'src/app/Components/Pages/orders/orders.componen
 import { IndexComponent as OrderIndex } from 'src/app/Components/Models/Orders/index/index.component';
 import { ShowComponent as OrderShow } from 'src/app/Components/Models/Orders/show/show.component';
 import { ProductsComponent } from 'src/app/Components/Pages/products/products.component';
+import { IndexComponent as ProductIndex } from 'src/app/Components/Models/Products/index/index.component';
+import { CreateComponent as ProductCreate } from 'src/app/Components/Models/Products/create/create.component';
+import { ShowComponent as ProductShow } from 'src/app/Components/Models/Products/show/show.component';
+import { UpdateComponent as ProductUpdate } from 'src/app/Components/Models/Products/update/update.component';
 
 export const Route: Routes = [
     {
@@ -39,7 +43,10 @@ export const Route: Routes = [
     {
         path: 'products',
         component: ProductsComponent,
-        canActivate: [AuthGuard]
+        canActivate: [AuthGuard, AdminGuard],
+        children: [
+            {path: '', component: ProductIndex }
+        ]
     },
     {
         path: 'orders',
@@ -85,14 +92,14 @@ export const Route: Routes = [
         path: 'auth/logout/account',
         component: LogoutComponent
     },
-    //404 Page
-    // { 
-    //     path: '**', 
-    //     redirectTo: '/404/page-not-found',
-    //     pathMatch: 'full'
-    // },
-    // { 
-    //     path: '404/page-not-found', 
-    //     component: ErrorsComponent
-    // }
+    // 404 Page
+    { 
+        path: '**', 
+        redirectTo: '/404/page-not-found',
+        pathMatch: 'full'
+    },
+    { 
+        path: '404/page-not-found', 
+        component: ErrorsComponent
+    }
 ];
