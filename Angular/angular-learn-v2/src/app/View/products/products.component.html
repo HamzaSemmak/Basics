@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-header"> Products List </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of Products">
+                    <td> {{ item.id }} </td>
+                    <td> {{ item.name }} </td>
+                    <td> {{ item.price }} </td>
+                    <td> 
+                        <button class="btn btn-danger" (click)="handleDeleteProducts(item)">
+                            <i class="bi bi-trash"></i>
+                        </button>    
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
