@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" *ngIf="Products; else errors">
     <div class="card-header"> Products List </div>
     <div class="card-body">
         <table class="table">
@@ -25,3 +25,8 @@
         </table>
     </div>
 </div>
+<ng-template #errors>
+    <div class="alert alert-danger">
+        {{ ErrorMsg }} 
+    </div>
+</ng-template>
