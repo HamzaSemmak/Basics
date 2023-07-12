@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/Model/products';
 import { ProductsService } from 'src/app/Services/Product/products.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { ProductsService } from 'src/app/Services/Product/products.service';
 })
 
 export class ProductsComponent implements OnInit {
-  Products: Array<any>; 
+  Products: Array<Product>; 
   ErrorMsg: string = '';
 
   constructor(private productService: ProductsService) {}
@@ -25,7 +26,10 @@ export class ProductsComponent implements OnInit {
     })
   }
 
-  handleDeleteProducts(item: any): void {
+  handleDeleteProducts(item: Product): void {
+    let config = confirm("Are you sure!");
+    if(!config) return;
+    
     this.productService.deleteProducts(item).subscribe(
       (response) => this.Products = response
     );
