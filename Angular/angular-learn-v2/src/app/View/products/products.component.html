@@ -1,13 +1,23 @@
 <div class="card" *ngIf="Products; else errors">
     <div class="card-header"> Products List </div>
     <div class="card-body">
+        <form [formGroup]="SearchForm" (ngSubmit)="handleSerach()">
+            <div class="input-group">
+                <label class="input-group-text"> Keyword : </label>
+                <input type="text" class="form-control" formControlName="Keyword">
+                <button class="btn btn-info"> Search </button>
+            </div>
+        </form>
+        <!-- {{ SearchForm.value | json }} -->
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Action</th>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>promotion</th>
+                    <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -15,6 +25,15 @@
                     <td> {{ item.id }} </td>
                     <td> {{ item.name }} </td>
                     <td> {{ item.price }} </td>
+                    <td> 
+                        <i *ngIf="item.promotion" class="bi bi-heart-fill text-primary"></i>
+                    </td>
+                    <td>
+                        <button (click)="handleSetPromotion(item)" [ngClass]="item.promotion ? 'btn-danger' : 'btn-primary'" class="btn">
+                            <span *ngIf="item.promotion"> Promo Off </span>
+                            <span *ngIf="!item.promotion"> Promo On </span>
+                        </button>
+                    </td>
                     <td> 
                         <button class="btn btn-danger" (click)="handleDeleteProducts(item)">
                             <i class="bi bi-trash"></i>
@@ -24,6 +43,18 @@
             </tbody>
         </table>
     </div>
+    <div class="card-footer">
+        <!-- Pagination : 
+        <br>
+        <ul>
+            <li *ngFor="let item of [].constructor(this.PageTotal); let i = index">
+                <a> {{ i }} </a>
+            </li>
+        </ul> -->
+    </div>
+</div>
+<div>
+    <span class="text-danger"> {{ ErrorMsg }} </span>
 </div>
 <ng-template #errors>
     <div class="alert alert-danger">

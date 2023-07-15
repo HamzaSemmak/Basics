@@ -1,5 +1,6 @@
 export interface Product {
-    id?: number | undefined,
+    id?: number | undefined |string,
     name: string,
-    price: number
+    price: number,
+    promotion: boolean
 }
