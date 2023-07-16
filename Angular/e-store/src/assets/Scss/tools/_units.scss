@@ -1,0 +1,15 @@
+// Set the base font size in pixels => 16px
+
+@function units($value, $unit) {
+  $value-in-pixels: calc($value / $base-font-size);
+  $value-in-rem: $value-in-pixels * 1rem;
+
+  @return if($unit == 'rem', $value-in-rem, $value + $unit);
+}
+
+/*
+// Usage example:
+.example {
+  width: units(200, 'px'); // Converts 200px to rem
+}
+*/

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +6,6 @@ import * as $ from 'jquery';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent  implements OnInit{
+export class AppComponent {
   title = 'e-store';
-
-  ngOnInit(): void {
-    $( document ).ready(function() {
-        console.log( "ready!" );
-    });
-  }
 }
