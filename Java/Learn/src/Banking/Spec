@@ -1,0 +1,48 @@
+    Exercise: Simple Banking System
+
+You are tasked with creating a simple banking system with the following requirements:
+
+Create a BankAccount class with the following attributes:
+
+accountNumber (a unique identifier)
+balance (the account's balance)
+ownerName (the name of the account owner)
+
+Provide the following methods for the BankAccount class:
+
+deposit(double amount): Deposits the specified amount into the account.
+withdraw(double amount): Withdraws the specified amount from the account, if sufficient balance is available.
+getBalance(): Returns the current balance of the account.
+toString(): Returns a string representation of the account.
+
+Create a SavingsAccount class that inherits from BankAccount. It should have an additional attribute :
+
+interestRate (the annual interest rate for the savings account)
+Override the toString method in the SavingsAccount class to include the interest rate.
+
+Create a CheckingAccount class that also inherits from BankAccount. It should have an additional attribute:
+
+overdraftLimit (the maximum negative balance allowed)
+Override the withdraw method in the CheckingAccount class to allow for overdrafts up to the specified limit.
+
+Create a Bank class that can hold multiple BankAccount objects. It should provide methods for:
+
+Adding a new account to the bank.
+Finding an account by its account number.
+Displaying the total balance of all accounts in the bank.
+Create a Main class to test your banking system. Create instances of SavingsAccount,
+ CheckingAccount, and add them to the Bank. Perform various deposit,
+ withdrawal, and balance checking operations to ensure everything works as expected.
+
+Remember to use proper encapsulation by declaring attributes as private and providing public
+ methods to interact with them. Additionally, make use of inheritance where appropriate to
+ avoid code duplication.
+
+This exercise will help you practice key OOP principles while building a simple yet functional
+ banking system. Feel free to expand on this exercise and add more features as you become more
+ comfortable with OOP concepts in Java. Good luck, and happy coding!
+
+
+
+
+
