@@ -1,18 +1,22 @@
 package algorithm;
 
-import java.lang.reflect.Array;
-
-public class NumberAlgorithm {
+public class Algorithms {
     public int number;
+
+    public String string;
     private int x = 1;
 
-
-    public NumberAlgorithm(int number)
+    public Algorithms(int number)
     {
         if (number < 0) {
             throw new Error("Please define a new number!");
         }
         this.number = number;
+    }
+
+    public Algorithms(String str)
+    {
+        this.string = str;
     }
 
     public void Factorial()
@@ -30,6 +34,18 @@ public class NumberAlgorithm {
             System.out.printf(i + " ");
         }
         System.out.println(" ");
+    }
+
+    public void commonSequences(String input1, String input2)
+    {
+        for (int i = 0; i < input1.length(); i++) {
+            for (int j = 0; j < input2.length(); j++) {
+                if(input1.charAt(i) == input2.charAt(j))
+                {
+                    System.out.printf(input1.charAt(i) + " ");
+                }
+            }
+        }
     }
 
     public void Fibonacci()
@@ -67,6 +83,32 @@ public class NumberAlgorithm {
 
     public void Pattern()
     {
+        for (int i = 0; i < this.number; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println(" ");
+        }
+    }
 
+    public void ReversePattern()
+    {
+        for (int i = this.number; i > 0; i--) {
+            for (int j = i; j > 0; j--) {
+                System.out.print("* ");
+            }
+            System.out.println(" ");
+        }
+    }
+
+    public void Swap(int a, int b)
+    {
+        System.out.println("First Value : ");
+        System.out.println("A => " + a + ", B => " + b);
+        System.out.println("Swap...");
+        int c = a;
+        a = b;
+        b = c;
+        System.out.println("A => " + a + ", B => " + b);
     }
 }
