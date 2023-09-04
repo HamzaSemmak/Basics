@@ -1,4 +1,4 @@
-package algorithm;
+package LearnAlgorithm;
 
 public class Algorithms {
     public int number;
