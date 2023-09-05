@@ -1,0 +1,44 @@
+-------------------------------------------------
+     - Student System:
+-------------------------------------------------
+ 1 - Student Class:
+Attributes:
+Student ID (unique identifier)
+First Name
+Last Name
+Date of Birth
+Contact Information (email, phone, address)
+Enrolled Courses (a list of courses with grades)
+Methods:
+Add and remove courses from the student's enrolled courses.
+Calculate the student's GPA.
+Generate a student transcript (list of enrolled courses with grades).
+Display detailed student information (including personal and academic details).
+ 2 - Course Class:
+Attributes:
+Course ID (unique identifier)
+Course Name
+Credits
+Instructor Name
+Methods:
+Display course information.
+ 3 - Instructor Class:
+Attributes:
+Instructor ID (unique identifier)
+First Name
+Last Name
+Contact Information (email, phone)
+Methods:
+Display instructor information.
+ 4 - Grading System:
+Create a grading system with letter grades (A, B, C, D, F) and corresponding grade points (4.0, 3.0, 2.0, 1.0, 0.0).
+Implement methods to assign grades to students for each enrolled course.
+StudentSystem Class:
+ 5 - Manage students, courses, and instructors.
+Implement methods to:
+Add a new student with personal information.
+Add a new course with course details and instructor information.
+Add and remove students from courses.
+Calculate the GPA for individual students.
+Generate transcripts for students.
+Display information about students, courses, and instructors.
