@@ -1,0 +1,72 @@
+     - Online Bookstore
+
+In this project, you'll be building an online bookstore application.
+This application will allow users to interact with a catalog of books,
+search for specific titles or authors, add books to a shopping cart,
+and process orders. The project will incorporate various Java concepts,
+including classes, generics, lambda expressions, and multithreading.
+
+ - Book Class (Generic):
+The Book class is parameterized with generics to represent different types of books, such as fiction or non-fiction.
+Each book has attributes like title, author, ISBN (International Standard Book Number), price, and more, which make it easier to distinguish and manage different books.
+Attributes:
+title (String) - The title of the book.
+author (String) - The author of the book.
+isbn (String) - The International Standard Book Number.
+price (double) - The price of the book.
+quantity (int) - The available quantity of the book.
+Methods:
+updateQuantity(newQuantity: int) - Update the quantity of the book.
+toString(): String - Convert the book object to a string for display.
+
+ - Inventory Management:
+Implement an Inventory class that will manage the bookstore's inventory.
+This class will use generics to store and manage different types of books.
+It should provide methods for adding books to the inventory, removing books from the inventory, and searching for books by title, author, or other criteria.
+Attributes:
+bookInventory (List<Book>) - A list to store book objects.
+Methods:
+addBook(book: Book) - Add a book to the inventory.
+removeBook(book: Book) - Remove a book from the inventory.
+searchBooksByTitle(title: String): List<Book> - Search for books by title and return a list of matching books.
+searchBooksByAuthor(author: String): List<Book> - Search for books by author and return a list of matching books.
+
+ - User Class:
+Create a User class to represent users of the online bookstore.
+Users can have attributes like a username, password, and a shopping cart where they can add books while shopping.
+Attributes:
+username (String) - The username of the user.
+password (String) - The password of the user.
+shoppingCart (ShoppingCart<Book>) - The shopping cart of the user.
+Methods:
+authenticate(username: String, password: String): boolean - Authenticate a user by checking the provided username and password.
+
+- Shopping Cart:
+Implement a ShoppingCart class that allows users to add and remove books from their cart as they shop.
+This cart will keep track of the books the user intends to purchase.
+Lambda Expressions:
+Attributes:
+cartItems (List<Book>) - A list to store books in the shopping cart.
+Methods:
+addBook(book: Book) - Add a book to the shopping cart.
+removeBook(book: Book) - Remove a book from the shopping cart.
+clearCart() - Clear the shopping cart.
+calculateTotalPrice(): double - Calculate the total price of the books in the shopping cart.
+toString(): String - Convert the shopping cart to a string for display.
+
+Utilize lambda expressions to enhance the user experience.
+For example, you can use lambda expressions to sort books in the inventory by price or filter books by author.
+Lambda expressions will make it easier to apply custom sorting and filtering logic.
+Order Processing (Multithreading):
+
+Create a system for processing orders concurrently using multithreading.
+When a user places an order, it should be processed in a separate thread to improve efficiency.
+Multithreading ensures that order processing doesn't block the user interface, allowing multiple orders to be handled simultaneously.
+User Interface (Optional):
+
+ - Project Goals:
+This project serves as a practical exercise to apply various Object-Oriented Programming (OOP) principles, including encapsulation, inheritance, and polymorphism.
+It also provides an opportunity to work with generics to make the code more reusable and flexible.
+Lambda expressions add functionality for custom sorting and filtering of data.
+Multithreading enhances the performance of the order processing system, making it more efficient.
+A user interface, if implemented, makes the application more user-friendly and accessible.
