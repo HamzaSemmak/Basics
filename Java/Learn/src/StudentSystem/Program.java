@@ -5,7 +5,7 @@ import StudentSystem.Constants.Courses;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StudentMain {
+public class Program {
 
     public static void main(String[] args) {
         Map<Courses, Integer> enrolledCourses = new HashMap<Courses, Integer>();

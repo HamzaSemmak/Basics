@@ -39,7 +39,8 @@ username (String) - The username of the user.
 password (String) - The password of the user.
 shoppingCart (ShoppingCart<Book>) - The shopping cart of the user.
 Methods:
-authenticate(username: String, password: String): boolean - Authenticate a user by checking the provided username and password.
+authenticate(username: String, password: String): boolean
+- Authenticate a user by checking the provided username and password.
 
 - Shopping Cart:
 Implement a ShoppingCart class that allows users to add and remove books from their cart as they shop.
