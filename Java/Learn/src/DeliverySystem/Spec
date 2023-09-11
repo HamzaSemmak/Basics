@@ -1,0 +1,60 @@
+     - Food Ordering and Delivery System
+
+    1. MenuItem Class:
+Attributes:
+name: The name of the food item.
+description: A brief description of the food item.
+price: The price of the food item.
+category: The category or type of the food item (e.g., "Appetizer," "Main Course").
+Methods:
+toString(): Overrides the toString() method to display the details of the food item.
+    2. Menu Class:
+Attributes:
+menuItems: A collection of MenuItem objects representing the menu items.
+Methods:
+addMenuItem(item): Adds a MenuItem to the menu.
+removeMenuItem(item): Removes a MenuItem from the menu.
+listMenu(): Lists all available menu items.
+searchMenuItem(keyword): Searches for a menu item by name or category.
+    3. Order Class:
+Attributes:
+orderID: A unique identifier for the order.
+customer: The customer who placed the order.
+items: A collection of MenuItem objects in the order.
+status: The current status of the order (e.g., "Pending," "Delivered").
+totalPrice: The total price of the order.
+Methods:
+addItem(item): Adds a MenuItem to the order.
+removeItem(item): Removes a MenuItem from the order.
+calculateTotalPrice(): Calculates the total price of the order based on the selected items.
+updateStatus(newStatus): Updates the status of the order.
+    4. Customer Class:
+Attributes:
+customerID: A unique identifier for the customer.
+name: The name of the customer.
+address: The customer's address.
+phoneNumber: The customer's phone number.
+    5. OrderManager Class:
+Methods:
+placeOrder(menuItem, customer, status, total): Places an order on behalf of a customer.
+trackOrder(order): Allows customers to track the status of their orders.
+completeOrder(order): Marks an order as completed.
+    6. CustomerManager Class:
+Methods:
+registerCustomer(name, address, phoneNumber): Registers a new customer with the system.
+login(customer): Allows customers to log in.
+logout(): Logs out the currently logged-in customer.
+    7. DeliveryService Class:
+Methods:
+startDelivery(order): Simulates the start of the delivery process for an order.
+endDelivery(order): Simulates the completion of the delivery process for an order.
+    8. FoodDeliveryApp Class (Main Application):
+Methods:
+Implements the console-based user interface,
+including options for customer registration, login, menu browsing, order placement, order tracking, and interaction with the system.
+These attributes and methods are designed to provide a structured and functional food ordering and delivery system.
+You can further customize and expand them to meet the specific requirements of your application.
+
+    - Objective:
+Develop a console-based food ordering and delivery system that allows
+customers to browse menus, place orders, and track deliveries.
