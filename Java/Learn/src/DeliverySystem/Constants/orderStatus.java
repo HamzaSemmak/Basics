@@ -1,6 +1,6 @@
 package DeliverySystem.Constants;
 
-import DeliverySystem.Logger.log4j;
+import Logger.log4j;
 
 import java.util.Objects;
 

@@ -1,6 +1,6 @@
-package OnlineBookstore.Model;
+package BookStoreSystem.Model;
 
-import OnlineBookstore.Constants.TypeBook;
+import BookStoreSystem.Constants.TypeBook;
 
 import java.util.ArrayList;
 import java.util.List;

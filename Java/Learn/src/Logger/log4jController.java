@@ -1,11 +1,11 @@
-package DeliverySystem.Logger;
+package Logger;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class log4jController {
-    private static final String Path = "E:/Workspace/Basics/Java/Learn/src/DeliverySystem/logs/";
+    private static final String Path = "E:/Workspace/Basics/Java/Learn/src/logs/";
 
     public static String logPattern()
     {

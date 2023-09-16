@@ -1,8 +1,7 @@
-package OnlineBookstore.Model;
+package BookStoreSystem.Model;
 
-import OnlineBookstore.Constants.TypeBook;
+import BookStoreSystem.Constants.TypeBook;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class User {

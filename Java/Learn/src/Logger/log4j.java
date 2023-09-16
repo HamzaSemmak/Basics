@@ -1,4 +1,4 @@
-package DeliverySystem.Logger;
+package Logger;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -24,7 +24,7 @@ public class log4j {
                             " " + message +
                             "\n"
             );
-            System.out.println(level + " : " + message);
+            System.out.println(message);
             writer.flush();
             writer.close();
         } catch (IOException e) {

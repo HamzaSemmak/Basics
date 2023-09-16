@@ -1,6 +1,6 @@
 package DeliverySystem;
 
-import DeliverySystem.Logger.log4j;
+import Logger.log4j;
 
 import java.util.ArrayList;
 import java.util.List;

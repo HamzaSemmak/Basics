@@ -1,7 +1,6 @@
 package DeliverySystem;
 
-import DeliverySystem.Logger.log4j;
-import sun.security.krb5.internal.crypto.Des;
+import Logger.log4j;
 
 public class MenuItem {
     protected int newObject = 1;

@@ -1,7 +1,7 @@
 package DeliverySystem;
 
 import DeliverySystem.Constants.orderStatus;
-import DeliverySystem.Logger.log4j;
+import Logger.log4j;
 
 public class OrderManager {
 

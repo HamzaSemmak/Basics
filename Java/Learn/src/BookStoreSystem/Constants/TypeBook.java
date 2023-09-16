@@ -1,4 +1,4 @@
-package OnlineBookstore.Constants;
+package BookStoreSystem.Constants;
 
 public enum TypeBook {
     Mystery,

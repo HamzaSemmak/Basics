@@ -1,4 +1,4 @@
-package OnlineBookstore.Model;
+package BookStoreSystem.Model;
 
 public class Book<T> {
     private static int BookCounter = 1;

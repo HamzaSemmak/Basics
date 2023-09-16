@@ -1,7 +1,7 @@
-package OnlineBookstore.Controller;
+package BookStoreSystem.Controller;
 
-import OnlineBookstore.Constants.TypeBook;
-import OnlineBookstore.Model.Book;
+import BookStoreSystem.Constants.TypeBook;
+import BookStoreSystem.Model.Book;
 
 public class BookController {
 

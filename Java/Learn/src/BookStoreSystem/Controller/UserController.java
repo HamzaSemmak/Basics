@@ -1,9 +1,6 @@
-package OnlineBookstore.Controller;
+package BookStoreSystem.Controller;
 
-import OnlineBookstore.Constants.TypeBook;
-import OnlineBookstore.Model.Book;
-import OnlineBookstore.Model.User;
-import jdk.nashorn.internal.runtime.regexp.joni.Warnings;
+import BookStoreSystem.Model.User;
 
 import java.util.ArrayList;
 import java.util.List;

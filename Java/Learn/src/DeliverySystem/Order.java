@@ -1,8 +1,7 @@
 package DeliverySystem;
 
 import DeliverySystem.Constants.orderStatus;
-import DeliverySystem.Logger.log4j;
-import com.sun.corba.se.impl.oa.toa.TOA;
+import Logger.log4j;
 
 import java.util.ArrayList;
 import java.util.List;

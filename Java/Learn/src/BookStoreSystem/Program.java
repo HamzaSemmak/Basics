@@ -1,12 +1,12 @@
-package OnlineBookstore;
+package BookStoreSystem;
 
-import OnlineBookstore.Constants.TypeBook;
-import OnlineBookstore.Controller.BookController;
-import OnlineBookstore.Controller.InventoryController;
-import OnlineBookstore.Controller.UserController;
-import OnlineBookstore.Model.Book;
-import OnlineBookstore.Model.ShoppingCart;
-import OnlineBookstore.Model.User;
+import BookStoreSystem.Constants.TypeBook;
+import BookStoreSystem.Controller.BookController;
+import BookStoreSystem.Controller.InventoryController;
+import BookStoreSystem.Controller.UserController;
+import BookStoreSystem.Model.Book;
+import BookStoreSystem.Model.ShoppingCart;
+import BookStoreSystem.Model.User;
 
 public class Program {
 
