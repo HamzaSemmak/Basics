@@ -1,0 +1,192 @@
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] Start of delivery system application
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] []
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] 
+
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] Test MenuItems : 
+
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Pizza, Description : This is the Best pizza in the world, Price : 13.0, Category : Pizza
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Burger, Description : A classic burger with all the fixings, Price : 8.99, Category : Burger
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Salad, Description : Fresh garden salad with mixed greens, Price : 6.49, Category : Salad
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Pasta, Description : Homemade pasta with rich tomato sauce, Price : 12.99, Category : Pasta
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Sushi Roll, Description : Assorted sushi rolls with fresh seafood, Price : 15.5, Category : Sushi
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Steak, Description : Grilled steak with a choice of side, Price : 19.99, Category : Steak
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Ice Cream, Description : Creamy vanilla ice cream with toppings, Price : 4.5, Category : Dessert
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Soft Drink, Description : Refreshing soft drink in various flavors, Price : 2.0, Category : Beverage
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Pizza, Description : This is the Best pizza in the world, Price : 13.0, Category : Pizza
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] Test Menu : 
+
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.MenuItem N°: 1
+ Name : + Pizza, Description : This is the Best pizza in the world, Price : 13.0, Category : Pizza
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.MenuItem N°: 1
+ Name : + Burger, Description : A classic burger with all the fixings, Price : 8.99, Category : Burger
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.MenuItem N°: 1
+ Name : + Salad, Description : Fresh garden salad with mixed greens, Price : 6.49, Category : Salad
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.MenuItem N°: 1
+ Name : + Pasta, Description : Homemade pasta with rich tomato sauce, Price : 12.99, Category : Pasta
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.MenuItem N°: 1
+ Name : + Sushi Roll, Description : Assorted sushi rolls with fresh seafood, Price : 15.5, Category : Sushi
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.MenuItem N°: 1
+ Name : + Steak, Description : Grilled steak with a choice of side, Price : 19.99, Category : Steak
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.MenuItem N°: 1
+ Name : + Ice Cream, Description : Creamy vanilla ice cream with toppings, Price : 4.5, Category : Dessert
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.MenuItem N°: 1
+ Name : + Soft Drink, Description : Refreshing soft drink in various flavors, Price : 2.0, Category : Beverage
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row deleted Successfully.MenuItem N°: 1
+ Name : + Soft Drink, Description : Refreshing soft drink in various flavors, Price : 2.0, Category : Beverage
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.MenuItem N°: 1
+ Name : + Soft Drink, Description : Refreshing soft drink in various flavors, Price : 2.0, Category : Beverage
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] This the list of Menu items : 
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Pizza, Description : This is the Best pizza in the world, Price : 13.0, Category : Pizza
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] 
+
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Burger, Description : A classic burger with all the fixings, Price : 8.99, Category : Burger
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] 
+
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Salad, Description : Fresh garden salad with mixed greens, Price : 6.49, Category : Salad
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] 
+
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Pasta, Description : Homemade pasta with rich tomato sauce, Price : 12.99, Category : Pasta
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] 
+
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Sushi Roll, Description : Assorted sushi rolls with fresh seafood, Price : 15.5, Category : Sushi
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] 
+
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Steak, Description : Grilled steak with a choice of side, Price : 19.99, Category : Steak
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] 
+
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Ice Cream, Description : Creamy vanilla ice cream with toppings, Price : 4.5, Category : Dessert
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] 
+
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Soft Drink, Description : Refreshing soft drink in various flavors, Price : 2.0, Category : Beverage
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] 
+
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] Search...
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Pizza, Description : This is the Best pizza in the world, Price : 13.0, Category : Pizza
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Burger, Description : A classic burger with all the fixings, Price : 8.99, Category : Burger
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Salad, Description : Fresh garden salad with mixed greens, Price : 6.49, Category : Salad
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Pasta, Description : Homemade pasta with rich tomato sauce, Price : 12.99, Category : Pasta
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Sushi Roll, Description : Assorted sushi rolls with fresh seafood, Price : 15.5, Category : Sushi
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Steak, Description : Grilled steak with a choice of side, Price : 19.99, Category : Steak
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Ice Cream, Description : Creamy vanilla ice cream with toppings, Price : 4.5, Category : Dessert
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Soft Drink, Description : Refreshing soft drink in various flavors, Price : 2.0, Category : Beverage
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] Search...
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Pizza, Description : This is the Best pizza in the world, Price : 13.0, Category : Pizza
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Burger, Description : A classic burger with all the fixings, Price : 8.99, Category : Burger
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Salad, Description : Fresh garden salad with mixed greens, Price : 6.49, Category : Salad
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Pasta, Description : Homemade pasta with rich tomato sauce, Price : 12.99, Category : Pasta
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Sushi Roll, Description : Assorted sushi rolls with fresh seafood, Price : 15.5, Category : Sushi
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Steak, Description : Grilled steak with a choice of side, Price : 19.99, Category : Steak
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Ice Cream, Description : Creamy vanilla ice cream with toppings, Price : 4.5, Category : Dessert
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Soft Drink, Description : Refreshing soft drink in various flavors, Price : 2.0, Category : Beverage
+2023-09-21 18:46:03 [Thread[main,5,main]] [INFO] [Logger.log4j] Search...
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Pizza, Description : This is the Best pizza in the world, Price : 13.0, Category : Pizza
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Burger, Description : A classic burger with all the fixings, Price : 8.99, Category : Burger
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Salad, Description : Fresh garden salad with mixed greens, Price : 6.49, Category : Salad
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Pasta, Description : Homemade pasta with rich tomato sauce, Price : 12.99, Category : Pasta
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Sushi Roll, Description : Assorted sushi rolls with fresh seafood, Price : 15.5, Category : Sushi
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Steak, Description : Grilled steak with a choice of side, Price : 19.99, Category : Steak
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Ice Cream, Description : Creamy vanilla ice cream with toppings, Price : 4.5, Category : Dessert
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] MenuItem N°: 1
+ Name : + Soft Drink, Description : Refreshing soft drink in various flavors, Price : 2.0, Category : Beverage
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Test Customer : 
+
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Customer{ID=1, Name='Hamza Semmak', Address='IMM 7 APPT 13 RABAT', Phone='0667786555'}
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Test Order : 
+
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Order{ID=1, Customer=Customer{ID=1, Name='Hamza Semmak', Address='IMM 7 APPT 13 RABAT', Phone='0667786555'}, Items=[], Status='Pending', totalPrice=0.0}
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] You have access to Delivery Service.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] initialize new Order
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row deleted Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Calculates the total price of the order based on the selected items : 
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Total : 37.49
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row Updated Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Test OrderManager : 
+
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] You have access to Order Service.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Order{ID=2, Customer=Customer{ID=1, Name='Hamza Semmak', Address='IMM 7 APPT 13 RABAT', Phone='0667786555'}, Items=[], Status='Pending', totalPrice=0.0}
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Order{ID=2, Customer=Customer{ID=1, Name='Hamza Semmak', Address='IMM 7 APPT 13 RABAT', Phone='0667786555'}, Items=[], Status='Pending', totalPrice=0.0}
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Order{ID=1, Customer=Customer{ID=1, Name='Hamza Semmak', Address='IMM 7 APPT 13 RABAT', Phone='0667786555'}, Items=[MenuItem N°: 1
+ Name : + Sushi Roll, Description : Assorted sushi rolls with fresh seafood, Price : 15.5, Category : Sushi, MenuItem N°: 1
+ Name : + Burger, Description : A classic burger with all the fixings, Price : 8.99, Category : Burger, MenuItem N°: 1
+ Name : + Pizza, Description : This is the Best pizza in the world, Price : 13.0, Category : Pizza], Status='Completed', totalPrice=37.49}
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row updated Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Test CustomerManager : 
+
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] You have access to Customer Service.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row affected Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Customer{ID=2, Name='Hamza Semmak', Address='IMM 7 APPT 13 RABAT', Phone='0667786555'}
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Customer{ID=2, Name='Hamza Semmak', Address='IMM 7 APPT 13 RABAT', Phone='0667786555'}
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] User 1 just logged in
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Customer{ID=1, Name='Hamza Semmak', Address='IMM 7 APPT 13 RABAT', Phone='0667786555'}
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] logout.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] Check if user is logged => (true).
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] You have access to Order Service.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] (1) Row updated Successfully.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] order completed.
+2023-09-21 18:46:04 [Thread[main,5,main]] [INFO] [Logger.log4j] End of delivery system application2023-09-21 20:22:17 [Thread[main,5,main]] [ERROR] [Logger.log4j] MySQL JDBC driver not found
+2023-09-21 20:22:17 [Thread[main,5,main]] [ERROR] [Logger.log4j] Database connection error
+2023-09-21 20:37:11 [Thread[main,5,main]] [ERROR] [Logger.log4j] MySQL JDBC driver not found
+2023-09-21 20:37:11 [Thread[main,5,main]] [ERROR] [Logger.log4j] Database connection error
+2023-09-21 20:39:13 [Thread[main,5,main]] [ERROR] [Logger.log4j] MySQL JDBC driver not found
+2023-09-21 20:39:13 [Thread[main,5,main]] [ERROR] [Logger.log4j] Database connection error
+2023-09-21 20:49:03 [Thread[main,5,main]] [ERROR] [Logger.log4j] MySQL JDBC driver not found
+2023-09-21 20:49:03 [Thread[main,5,main]] [ERROR] [Logger.log4j] Database connection error
+2023-09-21 20:55:06 [Thread[main,5,main]] [INFO] [Logger.log4j] Connection...
+2023-09-21 20:55:26 [Thread[main,5,main]] [ERROR] [Logger.log4j] MySQL JDBC driver not found
+2023-09-21 20:55:26 [Thread[main,5,main]] [ERROR] [Logger.log4j] Database connection error
+2023-09-21 21:00:24 [Thread[main,5,main]] [INFO] [Logger.log4j] Connection...
