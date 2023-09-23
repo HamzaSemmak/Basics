@@ -24,12 +24,18 @@ public class log4j {
                             " " + message +
                             "\n"
             );
-            System.out.println(message);
+            Console(level, message);
             writer.flush();
             writer.close();
         } catch (IOException e) {
             throw new Error("An error occurred while writing to the log file." + "\n" + e);
         }
+    }
+
+    private static void Console(String level, String message)
+    {
+        if(level.equals("INFO") || level.equals("WARNING")) System.out.println(message);
+        if(level.equals("ERROR")) System.err.println(message);
     }
 
     public static void info(String message)

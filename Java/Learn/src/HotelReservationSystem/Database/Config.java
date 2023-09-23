@@ -5,6 +5,7 @@ import Logger.log4j;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class Config {
     private static Config DB;
@@ -12,8 +13,9 @@ public class Config {
     private static final String USERNAME = "root";
     private static final String PASSWORD = "";
     private Connection connection;
+    private Statement statement;
 
-    public static Config DB() {
+    public static Config DAO() {
         if (DB == null) {
             DB = new Config();
         }
@@ -25,18 +27,16 @@ public class Config {
             Class.forName("com.mysql.cj.jdbc.Driver");
             log4j.info("Connection...");
         } catch (ClassNotFoundException e) {
-            log4j.error("MySQL JDBC driver not found");
-            e.printStackTrace();
+            log4j.error("MySQL JDBC driver not found \n" + e);
         }
     }
-    public Connection getConnection() {
+    public Connection Connection() {
         try {
             if (connection == null || connection.isClosed()) {
                 connection = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
             }
         } catch (SQLException e) {
-            log4j.error("Database connection error");
-            e.printStackTrace();
+            log4j.error("Database connection error \n" + e);
         }
         return connection;
     }
@@ -47,8 +47,17 @@ public class Config {
                 connection.close();
             }
         } catch (SQLException e) {
-            log4j.error("Error closing the database connection");
-            e.printStackTrace();
+            log4j.error("Error closing the database connection \n" + e);
         }
+    }
+
+    public Statement Statement()
+    {
+        try {
+            statement = this.Connection().createStatement();
+        } catch (SQLException e) {
+            log4j.error("Error in Statement \n" + e);
+        }
+        return statement;
     }
 }
