@@ -1,7 +1,7 @@
-package HotelReservationSystem.Database.Migration;
+package LearnJDBC.Database.Migration;
 
-import HotelReservationSystem.Database.Schema.Migration;
-import HotelReservationSystem.Database.Schema.Types;
+import LearnJDBC.Database.Schema.Migration;
+import LearnJDBC.Database.Schema.Types;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +17,6 @@ public class Run {
             /* Start Columns */
             put("created_at", Types.TIMESTAMP);
         }};
-
         Migration.up("", Columns);
     }
 }

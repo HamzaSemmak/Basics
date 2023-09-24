@@ -1,9 +1,8 @@
-package HotelReservationSystem.Service;
+package LearnJDBC.Service;
 
 import java.util.Map;
 
 public class MigrationService {
-
     public String MapPipe(Map<String, String> map)
     {
         StringBuilder result = new StringBuilder();

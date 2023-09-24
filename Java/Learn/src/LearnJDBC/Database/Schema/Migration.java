@@ -1,7 +1,7 @@
-package HotelReservationSystem.Database.Schema;
+package LearnJDBC.Database.Schema;
 
-import HotelReservationSystem.Database.Config;
-import HotelReservationSystem.Service.MigrationService;
+import LearnJDBC.Database.Config;
+import LearnJDBC.Service.MigrationService;
 import Logger.log4j;
 
 import java.sql.SQLException;
@@ -13,7 +13,7 @@ public class Migration {
 
     public Migration()
     {
-        Config = HotelReservationSystem.Database.Config.DAO();
+        Config = LearnJDBC.Database.Config.DAO();
         MigrationService = new MigrationService();
     }
 

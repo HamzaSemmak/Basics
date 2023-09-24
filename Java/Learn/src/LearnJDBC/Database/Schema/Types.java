@@ -1,6 +1,4 @@
-package HotelReservationSystem.Database.Schema;
-
-import java.lang.reflect.Type;
+package LearnJDBC.Database.Schema;
 
 public class Types {
 
