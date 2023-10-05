@@ -1,0 +1,58 @@
+Exercise: Building a Simple Spring Data JPA Application
+
+Scenario:
+Imagine you are building a bookstore application.
+You need to create a Spring Boot application that manages information about books.
+Each book has an ISBN (International Standard Book Number), a title, an author, and a publication year.
+
+Requirements:
+Create a new Spring Boot project using your favorite IDE or Spring Initializer.
+Add the necessary dependencies, including Spring Data JPA and an H2 in-memory database.
+
+Define a Book entity class with the following attributes:
+id (auto-generated)
+isbn (string)
+title (string)
+author (string)
+publicationYear (integer)
+Create a BookRepository interface that extends JpaRepository<Book, Long>. This repository interface will provide CRUD operations for the Book entity.
+Implement a RESTful API with the following endpoints using Spring MVC:
+
+GET /books: Retrieve a list of all books.
+GET /books/{id}: Retrieve a specific book by its ID.
+POST /books: Create a new book.
+PUT /books/{id}: Update an existing book.
+DELETE /books/{id}: Delete a book by its ID.
+Implement validation for book attributes:
+
+Ensure that the ISBN is unique.
+Add validation constraints for other fields as appropriate (e.g., title should not be empty).
+Write unit tests for your application using JUnit and Spring Test.
+
+Use Postman or a similar tool to test your REST API endpoints by performing CRUD operations on books.
+
+Add error handling and appropriate HTTP status codes to your API responses.
+
+Hints:
+
+Use annotations such as @Entity, @Table, @Id, @GeneratedValue, and @Column to define the Book entity and its attributes.
+
+Use @RepositoryRestResource on the repository interface to enable Spring Data REST endpoints automatically,
+ or create custom controllers for more fine-grained control.
+
+Implement validation constraints using annotations like @NotBlank, @Size, and @UniqueConstraint.
+
+For database initialization, you can use data.sql and schema.sql files or set properties in your application.properties
+or application.yml for an H2 in-memory database.
+
+Use the @RestController annotation to create a RESTful controller class.
+
+For unit testing, use Spring Boot's @SpringBootTest and @AutoConfigureMockMvc annotations to set up a test environment.
+
+Handle exceptions using @ControllerAdvice and @ExceptionHandler.
+
+Don't forget to configure your database connection details in your application.properties or application.yml file.
+
+This exercise will help you practice creating a simple Spring Boot application with Spring Data JPA, implementing RESTful
+APIs, handling validation and error cases, and writing unit tests. It's a valuable exercise for learning Spring Data
+JPA and building web applications with Spring Boot.
