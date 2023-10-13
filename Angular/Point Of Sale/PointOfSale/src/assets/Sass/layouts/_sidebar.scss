@@ -1,0 +1,71 @@
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: $SideBar-width;
+    background-color: $white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 2px;
+        background-color: $white;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $white;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: $primary;
+        border-radius: 0;
+    }
+    .sidebar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        .sidebar-logo {
+            padding: 20px 0px 50px 0px;
+            .logo {
+                position: relative;
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                background-color: $light;
+                border: 1px solid $gray-light;
+                i {
+                    font-size: 35px;
+                    color: $primary;
+                }
+            }
+        }
+        .sidebar-items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    margin: 20px 0px;
+                    a {
+                        text-decoration: none;
+                        padding: 10px;
+                        border-radius: 50%;
+                        display: flex;
+                        i {
+                            font-size: 26px;
+                            color: $gray-light;
+                            position: relative;
+                            &:hover {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

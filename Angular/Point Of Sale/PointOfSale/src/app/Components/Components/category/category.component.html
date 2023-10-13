@@ -1,0 +1,12 @@
+<section class="category-content">
+    <div class="category-items">
+        <div class="item shadow" (click)="ngOnNavigate('/')">
+            <i class="icon icon-planet"></i>
+            <span> Voir Tout </span>
+        </div>
+        <div *ngFor="let item of Categorys" class="item shadow" (click)="ngOnNavigate(item.category)">
+            <i class="icon icon-{{item.category}}"></i>
+            <span> {{ item.category }} </span>
+        </div>
+    </div>
+</section>

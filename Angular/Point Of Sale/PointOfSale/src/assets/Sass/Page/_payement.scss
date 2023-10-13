@@ -1,0 +1,253 @@
+.payement-content {
+    background-color: $light;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    .row {
+        .basket-content {
+            background-color: $white;
+            height: 100vh;
+            margin: 0;
+            padding: 15px;
+            overflow: auto;
+            &::-webkit-scrollbar {
+                width: 0px;
+                background-color: $white;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: $white;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $light;
+                border-radius: 0;
+            }
+            h1 {
+                font-family: 'Roboto Mono';
+                font-size: 30px;
+                color: $primary;
+                font-style: italic;
+                letter-spacing: 1.2px;
+                margin-bottom: 18px;
+            }
+            .order-total-details {
+                background-color: $light;
+                border-radius: 10px;
+                padding: 10px 15px;
+                .d-flex-space {
+                    padding-right: 20px;
+                    margin-bottom: 12px;
+                    .total, .title {
+                        font-size: 16px;
+                    }
+                    .title {
+                        color: $gray;
+                        letter-spacing: 1.3px;
+                        font-weight: 500;
+                    }
+                    .total {
+                        columns: $dark;
+                        font-weight: 600;
+                        letter-spacing: 1.6px;
+                    }
+                    &.active {
+                        margin-top: 18px;
+                        .total, .title {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .product {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin: 15px 0px;
+                position: relative;
+                &:hover {
+                    cursor: pointer;
+                }
+                .product-image {
+                    width: 35%;
+                    height: auto;
+                    margin-right: 10px;
+                    img {
+                        object-fit: fill;
+                    }
+                }
+                .product-details {
+                    height: auto;
+                    width: 65%;
+                    .product-description {
+                        .title {
+                            font-size: 15px;
+                            font-weight: 700;
+                            color: $dark;
+                            letter-spacing: 1.3px;
+                        }
+                        .description {
+                            font-size: 13px;
+                            color: $gray;
+                            font-weight: 500;
+                        }
+                    }
+                    .product-information {
+                        align-items: center !important;
+                        margin-top: 20px;
+                        .product-price {
+                            font-size: 14px;
+                            color: $primary;
+                            font-weight: 700;
+                        }
+                        .product-qauntite {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .quantite {
+                                padding-right: 20px;
+                                font-size: 14px;
+                                font-weight: 500; 
+                                cursor: pointer;
+                                color: $dark;
+                                letter-spacing: 1.2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .billing-content {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: auto;
+            &::-webkit-scrollbar {
+                width: 0px;
+                background-color: $white;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: $white;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $light;
+                border-radius: 0;
+            }
+            .btn-groupe {
+                position: absolute;
+                top: 1%;
+                right: 1%;
+                display: flex;
+                .btn-field {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 5px;
+                    cursor: pointer;
+                    i {
+                        font-size: 22px;
+                        font-weight: 500;
+                        color: $white;
+                    }
+                    &.bg-success {
+                        background-color: $success;
+                    }
+                    &.bg-danger {
+                        background-color: $danger;
+                    }
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+            .bill {
+                margin: 0 auto;
+                width: 100%;
+                height: auto;
+                max-width: 600px;
+                background-color: $white;
+                border: none;
+                border-radius: 10px;
+                padding: 15px 40px;
+                user-select: none;
+                cursor: pointer;
+                @include media-only(900px) {
+                    max-width: 500px;
+                }
+                .logo {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 10px 0;
+                    .icon-logo {
+                        width: 50px;
+                        height: 50px;
+                        margin: 0 10px;
+                        border: 1px solid $gray;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: $light;
+                        i {
+                            color: $primary;
+                            font-size: 25px;
+                            font-weight: 500;
+                        }
+                    }
+                    .title {
+                        letter-spacing: 1.3px;
+                        font-size: 18px;
+                        color: $dark;
+                        font-weight: 500;
+                    }
+                }
+                .text {
+                    font-weight: 500;
+                    color: $dark;
+                    font-size: 16px;
+                }
+                .text-bold {
+                    font-weight: 700;
+                    font-size: 17px;
+                }
+                .border-dotted {
+                    border: 2px dotted $dark;
+                }
+                .table, tr, td, th {
+                    border: none;
+                }
+                .table {
+                    width: 100%;
+                    th {
+                        text-align: start;
+                    }
+                    .center {
+                        text-align: center !important;
+                    }
+                    &.total {
+                        td {
+                            &:nth-child(2) {
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                .footer-bill {
+                    padding-bottom: 30px;
+                    .d-flex {
+                        font-size: 14px;
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+<section class="Modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content shadow">
+            <div class="modal-header d-flex-space">
+                <h1 class="title">
+                   <i class="icon-order"></i> Product Information
+                </h1>
+                <div class="close-modal">
+                    <i class="icon-close" (click)="CloseModal()"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <img [src]="Product.image" class="img-fluid" [alt]="Product.title">
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-12 mt-0">
+                            <span> ID : </span> 
+                            {{ Product.id }}
+                        </div>
+                        <div class="col-12 mt-0">
+                            <span> title : </span> 
+                            {{ Product.title }}
+                        </div>
+                        <div class="col-12 mt-0">
+                            <span> price : </span> 
+                            {{ Product.price }} DHS
+                        </div>
+                        <div class="col-12 mt-0">
+                            <span> Quatite : </span> 
+                            {{ Product.stock }}
+                        </div>
+                        <div class="col-12 mt-0">
+                            <span> Category : </span> 
+                            {{ Product.category }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-0">
+                    <span> Decsription : </span>
+                  <div>
+                    {{ Product.description }}
+                  </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</section>

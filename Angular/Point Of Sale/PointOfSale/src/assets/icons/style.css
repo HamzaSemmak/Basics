@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?9c7y2j');
+  src:  url('fonts/icomoon.eot?9c7y2j#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9c7y2j') format('truetype'),
+    url('fonts/icomoon.woff?9c7y2j') format('woff'),
+    url('fonts/icomoon.svg?9c7y2j#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shopping:before {
+  content: "\e91c";
+}
+.icon-order:before {
+  content: "\e91a";
+}
+.icon-person:before {
+  content: "\e91b";
+}
+.icon-add:before {
+  content: "\e919";
+}
+.icon-pen:before {
+  content: "\e918";
+}
+.icon-eye:before {
+  content: "\e917";
+}
+.icon-users:before {
+  content: "\e916";
+}
+.icon-arrow-back:before {
+  content: "\e915";
+}
+.icon-yeezy:before {
+  content: "\e914";
+}
+.icon-delete:before {
+  content: "\e913";
+}
+.icon-adidas:before {
+  content: "\e911";
+}
+.icon-nike:before {
+  content: "\e912";
+}
+.icon-shop:before {
+  content: "\e910";
+}
+.icon-logout:before {
+  content: "\e90f";
+}
+.icon-filter:before {
+  content: "\e90d";
+}
+.icon-search:before {
+  content: "\e90e";
+}
+.icon-home:before {
+  content: "\e90c";
+}
+.icon-info:before {
+  content: "\e908";
+}
+.icon-error:before {
+  content: "\e909";
+}
+.icon-warning:before {
+  content: "\e90a";
+}
+.icon-success:before {
+  content: "\e90b";
+}
+.icon-close:before {
+  content: "\e907";
+}
+.icon-check:before {
+  content: "\e904";
+}
+.icon-mail:before {
+  content: "\e905";
+}
+.icon-key:before {
+  content: "\e906";
+}
+.icon-email:before {
+  content: "\e901";
+}
+.icon-lock:before {
+  content: "\e902";
+}
+.icon-planet:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e903";
+}

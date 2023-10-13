@@ -1,0 +1,21 @@
+<nav class="nav">
+    <div class="navbar d-flex-space">
+        <div class="navbar-collapse">
+            <h1> Welcome, {{ Name }} </h1>
+            <div class="text">
+                Discover whatever you need easily.
+            </div>
+        </div>
+        <div class="nav-collapse d-flex">
+            <div class="input-box d-flex" *ngIf="Bool">
+                <div class="icon d-flex"> <i class="icon-search"></i> </div>
+                <input type="text" placeholder="Search Product...">
+            </div>
+            <div class="filter" *ngIf="Bool"> 
+                <button> 
+                    <i class="icon-filter"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>

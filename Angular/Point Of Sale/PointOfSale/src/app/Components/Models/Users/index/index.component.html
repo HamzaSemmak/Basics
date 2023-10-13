@@ -1,0 +1,42 @@
+<section class="users-content">
+  <div class="section-header">
+    <h1> Manage User </h1>
+    <div>
+      <button routerLink="create" class="btn btn-icon"> 
+        &nbsp; &nbsp; <i class="icon-add"></i> &nbsp;  New User 
+      </button>
+    </div>
+  </div>
+  <br>
+  <div class="table-responsive">
+      <table class="table shadow">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>name</th>
+              <th>email</th>
+              <th>key</th>
+              <th>gender</th>
+              <th>role</th>
+              <th>action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of Users">
+              <td> {{ item.id }} </td>
+              <td> {{ item.name }} </td>
+              <td> {{ item.email }} </td>
+              <td> {{ item.Key }} </td>
+              <td> {{ item.gender }} </td>
+              <td> {{ item.role }} </td>
+              <td class="table-action"> 
+                  <i class="icon-delete color-danger" (click)="ngDeleteUser(item)"></i>
+                  <i class="icon-pen color-primary" (click)="ngUpdateUser(item)"></i>
+                  <i class="icon-eye color-warning" (click)="ngShowUser(item)"></i>
+              </td>
+             </tr>
+          </tbody>
+      </table>
+  </div>
+  <user-show [User]="User"></user-show>
+</section>

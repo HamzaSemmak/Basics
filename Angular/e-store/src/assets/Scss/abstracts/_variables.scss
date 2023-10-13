@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the Variables of the site/application.
+// -----------------------------------------------------------------------------
+
+/* Colorers */
+$white: #fff;
+$black: #000;
+$primary: #0d6efd;
+$secondary: #6c757d;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #212529;
+
+/* System Media Queries Breakpoints */
+$Breakpoints : (
+    "x-small": 350px,     
+    "small": 400px,       
+    "medium": 600px,  
+    "large": 768px,    
+    "x-large": 997px,     
+    "xx-large": 1200px,   
+    "xxx-large": 1400px,
+);
+
+/* Set the base font size in pixels */
+$base-font-size: 16px;

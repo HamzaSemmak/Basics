@@ -1,0 +1,26 @@
+<h1>index works!</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th> ID </th>
+            <th> Name </th>
+            <th> Adress </th>
+            <th> Email </th>
+            <th> Action </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr  *ngFor="let item of Restaurants">
+            <td> {{ item.id }} </td>
+            <td> {{ item.name }} </td>
+            <td> {{ item.adress }} </td>
+            <td> {{ item.email }} </td>
+            <td> 
+                <button (click)="onDelete(item)" class="btn btn-danger"> Delete </button>
+                &nbsp;
+                <a routerLink="/Update/{{item.id}}" class="btn btn-primary"> Update </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
