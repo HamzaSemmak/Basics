@@ -1,8 +1,0 @@
-@mixin fonts($font: false, $size: false, $color: false, $weight: false,  $lh: false, $letter-spacing: false) {
-    @if $font { font-family: $font; }
-    @if $size { font-size: $size; }
-    @if $color { color: $color; }
-    @if $weight { font-weight: $weight; }
-    @if $line-height { line-height: $line-height; }
-    @if $letter-spacing { letter-spacing: $letter-spacing; }
-}
