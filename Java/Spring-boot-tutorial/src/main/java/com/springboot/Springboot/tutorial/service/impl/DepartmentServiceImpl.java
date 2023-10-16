@@ -53,7 +53,7 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public List<Department> findByName(String name) {
+    public Department findByName(String name) {
         return departmentRepository.getDepartmentByName(name);
     }
 

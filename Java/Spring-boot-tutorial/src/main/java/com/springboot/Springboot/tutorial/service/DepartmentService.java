@@ -16,5 +16,5 @@ public interface DepartmentService {
 
     public Department update(Long id, Department department);
 
-    List<Department> findByName(String name);
+    public Department findByName(String name);
 }
