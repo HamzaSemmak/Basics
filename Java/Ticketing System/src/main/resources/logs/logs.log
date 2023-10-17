@@ -1,0 +1,6 @@
+20:36:59.517 [http-nio-8080-exec-4] INFO  c.t.t.c.TicketController - first logs info
+20:36:59.518 [http-nio-8080-exec-4] ERROR c.t.t.c.TicketController - first logs error
+20:36:59.518 [http-nio-8080-exec-4] WARN  c.t.t.c.TicketController - first logs warn
+20:37:14.681 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:37:14.684 [SpringApplicationShutdownHook] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:37:14.695 [SpringApplicationShutdownHook] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

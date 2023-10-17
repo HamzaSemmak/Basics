@@ -1,0 +1,87 @@
+###################################################################
+#
+#   Project Title: Ticketing System :
+#
+###################################################################
+    - Project Description:
+The Ticketing System is a web application designed to facilitate customer support and technical issue tracking.
+It allows users to create, manage, and monitor tickets related to their support requests or technical problems.
+The system is designed to enhance communication between customers and support agents while providing efficient ticket management.
+
+    # Functional Specifications:
+
+ - User Roles:
+Customer:
+Can create new tickets.
+Can view their own tickets.
+Can add comments and attachments to their tickets.
+Receives notifications about ticket updates.
+ - Support Agent:
+Can view all tickets.
+Can assign and manage tickets.
+Can communicate with customers by adding comments and attachments.
+Receives notifications about assigned tickets.
+ - User Authentication:
+Users (customers and support agents) should be able to register, log in, and reset their passwords.
+Secure authentication and authorization mechanisms must be implemented.
+ - Ticket Management:
+Users can create new tickets with the following information:
+Title
+Description
+Category (e.g., technical, billing, general)
+Priority (e.g., low, medium, high)
+Attachments (e.g., screenshots, documents)
+Tickets should have status options such as "Open," "In Progress," "Resolved," and "Closed."
+ - Communication:
+Users can add comments and attachments to their tickets to provide additional information or updates.
+Support agents can communicate with customers within the ticket.
+ - Ticket Assignment:
+Support agents can assign tickets to themselves or other support agents based on expertise and workload.
+ - Search and Filtering:
+Users can search for tickets based on keywords, categories, status, and priority.
+Support agents can filter tickets based on their assignments and status.
+ - Notifications:
+Users receive email or in-app notifications when there are updates to their tickets.
+Support agents receive notifications for newly assigned tickets and customer interactions.
+    - Reporting and Analytics:
+Generate reports on ticket statistics, agent performance, and customer feedback.
+
+    # Database Schema :
+
+Tables:
+ - Users:
+user_id (Primary Key)
+username
+password (hashed)
+role (customer or support agent)
+ - Tickets:
+ticket_id (Primary Key)
+title
+description
+category
+priority
+status
+created_by (Foreign Key: user_id)
+assigned_to (Foreign Key: user_id)
+created_at
+updated_at
+ - Comments:
+comment_id (Primary Key)
+ticket_id (Foreign Key: ticket_id)
+user_id (Foreign Key: user_id)
+message
+created_at
+
+     # Security and Compliance:
+
+Implement user data protection and privacy measures.
+Ensure data encryption and secure access controls.
+Comply with relevant data protection regulations (e.g., GDPR).
+
+    # Technology Stack:
+
+Back-End: Spring Boot (Java)
+Front-End: Angular, React, or Vue.js (Choose one)
+Database: MySQL or PostgreSQL
+Authentication: Spring Security
+Notifications: Email and in-app notifications
