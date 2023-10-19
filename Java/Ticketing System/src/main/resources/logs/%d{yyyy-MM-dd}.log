@@ -1,638 +1,80 @@
-23:35:23.789 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-23:35:23.789 [http-nio-8080-exec-2] INFO  o.s.w.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-23:35:23.790 [http-nio-8080-exec-2] INFO  o.s.w.servlet.DispatcherServlet - Completed initialization in 1 ms
-23:35:23.969 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.ticketingsystem.ticketingsystem.entity.User.getID()" because "user" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.ticketingsystem.ticketingsystem.entity.User.getID()" because "user" is null
-	at com.ticketingsystem.ticketingsystem.service.impl.AuthServiceImpl.login(AuthServiceImpl.java:34)
-	at com.ticketingsystem.ticketingsystem.controller.AuthController.login(AuthController.java:31)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-23:35:25.843 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-23:35:25.849 [Thread-154]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:35:25.849 [Thread-154]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:35:25.850 [Thread-154]  INFO  o.a.c.c.C.[.[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
-23:35:25.852 [Thread-154]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:35:25.854 [Thread-154]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:35:25.854 [Thread-154]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:35:25.856 [Thread-154]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-31 - Shutdown initiated...
-23:35:25.865 [Thread-154]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-31 - Shutdown completed.
-23:35:26.056 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:35:26.056 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:35:26.242 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:35:26.253 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
-23:35:26.360 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:35:26.362 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:35:26.362 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:35:26.362 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:35:26.408 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:35:26.408 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 349 ms
-23:35:26.445 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:35:26.454 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:35:26.455 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:35:26.455 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-32 - Starting...
-23:35:26.474 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-32 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b17a9d6
-23:35:26.474 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-32 - Start completed.
-23:35:26.501 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:35:26.547 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:35:26.617 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:35:26.716 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:35:26.798 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:35:26.803 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:35:26.810 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:35:26.814 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.789 seconds (process running for 693.39)
-23:35:26.816 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:35:33.356 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-23:35:33.371 [Thread-159]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:35:33.372 [Thread-159]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:35:33.372 [Thread-159]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:35:33.372 [Thread-159]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:35:33.377 [Thread-159]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:35:33.377 [Thread-159]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-32 - Shutdown initiated...
-23:35:33.388 [Thread-159]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-32 - Shutdown completed.
-23:35:33.549 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:35:33.549 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:35:33.729 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:35:33.739 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
-23:35:33.814 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:35:33.814 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:35:33.814 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:35:33.814 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:35:33.882 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:35:33.882 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 333 ms
-23:35:33.926 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:35:33.934 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:35:33.934 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:35:33.934 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-33 - Starting...
-23:35:33.957 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-33 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43660a7a
-23:35:33.957 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-33 - Start completed.
-23:35:33.979 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:35:34.024 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:35:34.087 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:35:34.180 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:35:34.270 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:35:34.273 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:35:34.281 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:35:34.287 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.766 seconds (process running for 700.864)
-23:35:34.289 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:35:47.449 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-23:35:47.449 [http-nio-8080-exec-1] INFO  o.s.w.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-23:35:47.451 [http-nio-8080-exec-1] INFO  o.s.w.servlet.DispatcherServlet - Completed initialization in 2 ms
-23:35:47.457 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.ticketingsystem.ticketingsystem.entity.User.getID()" because "user" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.ticketingsystem.ticketingsystem.entity.User.getID()" because "user" is null
-	at com.ticketingsystem.ticketingsystem.service.impl.AuthServiceImpl.login(AuthServiceImpl.java:34)
-	at com.ticketingsystem.ticketingsystem.controller.AuthController.login(AuthController.java:31)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-23:35:50.989 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-23:35:50.995 [Thread-164]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:35:50.996 [Thread-164]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:35:50.996 [Thread-164]  INFO  o.a.c.c.C.[.[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
-23:35:50.998 [Thread-164]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:35:51.000 [Thread-164]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:35:51.000 [Thread-164]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:35:51.001 [Thread-164]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-33 - Shutdown initiated...
-23:35:51.010 [Thread-164]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-33 - Shutdown completed.
-23:35:51.181 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:35:51.181 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:35:51.383 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:35:51.396 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
-23:35:51.490 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:35:51.491 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:35:51.492 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:35:51.492 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:35:51.643 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:35:51.643 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 460 ms
-23:35:51.677 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:35:51.683 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:35:51.683 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:35:51.684 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-34 - Starting...
-23:35:51.700 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-34 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f61c4a6
-23:35:51.700 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-34 - Start completed.
-23:35:51.727 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:35:51.765 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:35:51.817 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:35:51.918 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:35:52.029 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:35:52.034 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:35:52.042 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:35:52.047 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.889 seconds (process running for 718.623)
-23:35:52.049 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:37:10.179 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-23:37:10.182 [Thread-169]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:37:10.182 [Thread-169]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:37:10.190 [Thread-169]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:37:10.192 [Thread-169]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:37:10.193 [Thread-169]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:37:10.193 [Thread-169]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-34 - Shutdown initiated...
-23:37:10.199 [Thread-169]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-34 - Shutdown completed.
-23:37:10.411 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:37:10.411 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:37:10.625 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:37:10.637 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
-23:37:10.742 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:37:10.742 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:37:10.742 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:37:10.742 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:37:10.798 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:37:10.799 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 386 ms
-23:37:10.822 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:37:10.836 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:10.836 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:37:10.836 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-35 - Starting...
-23:37:10.850 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-35 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5345f9b9
-23:37:10.850 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-35 - Start completed.
-23:37:10.874 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:10.924 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:37:10.974 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:37:11.073 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:37:11.170 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:37:11.175 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:37:11.186 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:37:11.187 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.817 seconds (process running for 797.767)
-23:37:11.192 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:37:22.848 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-23:37:22.895 [Thread-174]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:37:22.896 [Thread-174]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:37:22.917 [Thread-174]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:37:22.920 [Thread-174]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:37:22.922 [Thread-174]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:37:22.923 [Thread-174]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-35 - Shutdown initiated...
-23:37:22.934 [Thread-174]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-35 - Shutdown completed.
-23:37:23.212 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:37:23.213 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:37:23.417 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:37:23.430 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
-23:37:23.563 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:37:23.564 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:37:23.565 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:37:23.565 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:37:23.719 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:37:23.720 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 503 ms
-23:37:23.757 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:37:23.768 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:23.768 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:37:23.768 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-36 - Starting...
-23:37:23.784 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-36 - Added connection com.mysql.cj.jdbc.ConnectionImpl@146f440a
-23:37:23.784 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-36 - Start completed.
-23:37:23.806 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:23.850 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:37:23.903 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:37:24.008 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:37:24.149 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:37:24.157 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:37:24.163 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:37:24.169 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.993 seconds (process running for 810.745)
-23:37:24.171 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:37:25.588 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-23:37:25.593 [Thread-179]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:37:25.593 [Thread-179]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:37:25.595 [Thread-179]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:37:25.596 [Thread-179]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:37:25.598 [Thread-179]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:37:25.598 [Thread-179]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-36 - Shutdown initiated...
-23:37:25.604 [Thread-179]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-36 - Shutdown completed.
-23:37:25.820 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:37:25.822 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:37:25.972 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:37:25.981 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
-23:37:26.065 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:37:26.066 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:37:26.066 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:37:26.066 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:37:26.107 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:37:26.107 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 284 ms
-23:37:26.148 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:37:26.154 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:26.154 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:37:26.155 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-37 - Starting...
-23:37:26.168 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-37 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b1acc2
-23:37:26.168 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-37 - Start completed.
-23:37:26.185 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:26.219 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:37:26.287 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:37:26.435 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:37:26.526 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:37:26.531 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:37:26.537 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:37:26.542 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.753 seconds (process running for 813.119)
-23:37:26.544 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:37:29.994 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-23:37:30.004 [Thread-184]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:37:30.004 [Thread-184]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:37:30.007 [Thread-184]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:37:30.009 [Thread-184]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:37:30.009 [Thread-184]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:37:30.009 [Thread-184]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-37 - Shutdown initiated...
-23:37:30.017 [Thread-184]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-37 - Shutdown completed.
-23:37:30.243 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:37:30.245 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:37:30.395 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:37:30.404 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
-23:37:30.487 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:37:30.487 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:37:30.488 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:37:30.488 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:37:30.544 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:37:30.544 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 296 ms
-23:37:30.582 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:37:30.589 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:30.589 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:37:30.590 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-38 - Starting...
-23:37:30.607 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-38 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71dec8ed
-23:37:30.608 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-38 - Start completed.
-23:37:30.624 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:30.656 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:37:30.709 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:37:30.845 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:37:30.926 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:37:30.929 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:37:30.935 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:37:30.940 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.734 seconds (process running for 817.516)
-23:37:30.942 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:37:33.368 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-23:37:33.376 [Thread-189]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:37:33.376 [Thread-189]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:37:33.379 [Thread-189]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:37:33.380 [Thread-189]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:37:33.382 [Thread-189]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:37:33.383 [Thread-189]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-38 - Shutdown initiated...
-23:37:33.392 [Thread-189]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-38 - Shutdown completed.
-23:37:33.636 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:37:33.637 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:37:33.779 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:37:33.788 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
-23:37:33.887 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:37:33.888 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:37:33.889 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:37:33.889 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:37:33.951 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:37:33.951 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 312 ms
-23:37:33.989 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:37:33.994 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:33.995 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:37:33.995 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-39 - Starting...
-23:37:34.010 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-39 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c7b8f41
-23:37:34.010 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-39 - Start completed.
-23:37:34.033 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:34.081 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:37:34.148 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:37:34.245 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:37:34.315 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:37:34.319 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:37:34.324 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:37:34.327 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.719 seconds (process running for 820.903)
-23:37:34.328 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:37:55.211 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
-23:37:55.223 [Thread-194]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:37:55.223 [Thread-194]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:37:55.227 [Thread-194]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:37:55.229 [Thread-194]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:37:55.229 [Thread-194]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:37:55.230 [Thread-194]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-39 - Shutdown initiated...
-23:37:55.240 [Thread-194]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-39 - Shutdown completed.
-23:37:55.514 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:37:55.514 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:37:55.705 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:37:55.715 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
-23:37:55.836 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:37:55.836 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:37:55.837 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:37:55.837 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:37:55.879 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:37:55.879 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 362 ms
-23:37:55.922 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:37:55.930 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:55.930 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:37:55.931 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-40 - Starting...
-23:37:55.951 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-40 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c67c277
-23:37:55.951 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-40 - Start completed.
-23:37:55.985 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:56.046 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:37:56.116 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:37:56.233 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:37:56.336 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:37:56.340 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:37:56.347 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:37:56.352 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.892 seconds (process running for 842.928)
-23:37:56.353 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:37:56.615 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-23:37:56.615 [http-nio-8080-exec-2] INFO  o.s.w.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-23:37:56.616 [http-nio-8080-exec-2] INFO  o.s.w.servlet.DispatcherServlet - Completed initialization in 1 ms
-23:37:57.766 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-23:37:57.772 [Thread-199]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:37:57.774 [Thread-199]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:37:57.774 [Thread-199]  INFO  o.a.c.c.C.[.[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
-23:37:57.777 [Thread-199]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:37:57.779 [Thread-199]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:37:57.780 [Thread-199]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:37:57.780 [Thread-199]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-40 - Shutdown initiated...
-23:37:57.789 [Thread-199]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-40 - Shutdown completed.
-23:37:58.063 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:37:58.063 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:37:58.222 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:37:58.235 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
-23:37:58.327 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:37:58.328 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:37:58.328 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:37:58.328 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:37:58.374 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:37:58.374 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 308 ms
-23:37:58.406 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:37:58.411 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:58.412 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:37:58.412 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-41 - Starting...
-23:37:58.427 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-41 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ade5bbb
-23:37:58.427 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-41 - Start completed.
-23:37:58.443 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:37:58.483 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:37:58.532 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:37:58.627 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:37:58.706 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:37:58.710 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:37:58.715 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:37:58.720 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.689 seconds (process running for 845.296)
-23:37:58.721 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:38:05.218 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-23:38:05.225 [Thread-204]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:38:05.227 [Thread-204]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:38:05.228 [Thread-204]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:38:05.228 [Thread-204]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:38:05.232 [Thread-204]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:38:05.232 [Thread-204]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-41 - Shutdown initiated...
-23:38:05.242 [Thread-204]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-41 - Shutdown completed.
-23:38:05.526 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:38:05.526 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:38:05.713 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:38:05.722 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
-23:38:05.792 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:38:05.792 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:38:05.792 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:38:05.797 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:38:05.832 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:38:05.832 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 306 ms
-23:38:05.863 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:38:05.875 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:38:05.875 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:38:05.875 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-42 - Starting...
-23:38:05.888 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-42 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12c472eb
-23:38:05.888 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-42 - Start completed.
-23:38:05.905 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:38:05.946 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:38:06.003 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:38:06.096 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:38:06.164 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:38:06.172 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:38:06.177 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:38:06.180 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.684 seconds (process running for 852.757)
-23:38:06.182 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:38:25.611 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-23:38:25.612 [http-nio-8080-exec-2] INFO  o.s.w.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-23:38:25.613 [http-nio-8080-exec-2] INFO  o.s.w.servlet.DispatcherServlet - Completed initialization in 1 ms
-23:38:25.616 [http-nio-8080-exec-2] INFO  c.t.t.controller.AuthController - Travis
-23:38:25.623 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.ticketingsystem.ticketingsystem.entity.User.getID()" because "user" is null] with root cause
-java.lang.NullPointerException: Cannot invoke "com.ticketingsystem.ticketingsystem.entity.User.getID()" because "user" is null
-	at com.ticketingsystem.ticketingsystem.service.impl.AuthServiceImpl.login(AuthServiceImpl.java:34)
-	at com.ticketingsystem.ticketingsystem.controller.AuthController.login(AuthController.java:30)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-23:38:25.998 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
-23:38:26.004 [Thread-209]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:38:26.005 [Thread-209]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:38:26.005 [Thread-209]  INFO  o.a.c.c.C.[.[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
-23:38:26.008 [Thread-209]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:38:26.009 [Thread-209]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:38:26.011 [Thread-209]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:38:26.012 [Thread-209]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-42 - Shutdown initiated...
-23:38:26.026 [Thread-209]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-42 - Shutdown completed.
-23:38:26.307 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:38:26.308 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:38:26.500 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:38:26.510 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
-23:38:26.627 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:38:26.628 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:38:26.628 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:38:26.628 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:38:26.683 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:38:26.683 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 372 ms
-23:38:26.728 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:38:26.736 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:38:26.736 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:38:26.738 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-43 - Starting...
-23:38:26.758 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-43 - Added connection com.mysql.cj.jdbc.ConnectionImpl@146843cc
-23:38:26.758 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-43 - Start completed.
-23:38:26.789 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:38:26.832 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:38:26.884 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:38:26.983 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:38:27.075 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:38:27.078 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:38:27.094 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:38:27.097 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.837 seconds (process running for 873.674)
-23:38:27.099 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:38:28.509 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-23:38:28.516 [Thread-214]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:38:28.516 [Thread-214]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:38:28.518 [Thread-214]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:38:28.524 [Thread-214]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:38:28.526 [Thread-214]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:38:28.526 [Thread-214]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-43 - Shutdown initiated...
-23:38:28.535 [Thread-214]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-43 - Shutdown completed.
-23:38:28.829 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:38:28.830 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:38:29.005 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:38:29.018 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
-23:38:29.140 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:38:29.140 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:38:29.142 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:38:29.142 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:38:29.206 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:38:29.206 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 374 ms
-23:38:29.242 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:38:29.248 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:38:29.248 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:38:29.248 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-44 - Starting...
-23:38:29.264 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-44 - Added connection com.mysql.cj.jdbc.ConnectionImpl@217b1890
-23:38:29.264 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-44 - Start completed.
-23:38:29.282 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:38:29.333 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:38:29.402 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:38:29.512 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:38:29.600 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:38:29.605 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:38:29.613 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:38:29.622 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.826 seconds (process running for 876.198)
-23:38:29.623 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:38:33.087 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-23:38:33.095 [Thread-219]  INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-23:38:33.095 [Thread-219]  INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
-23:38:33.098 [Thread-219]  INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-23:38:33.100 [Thread-219]  INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-23:38:33.101 [Thread-219]  INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:38:33.101 [Thread-219]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-44 - Shutdown initiated...
-23:38:33.107 [Thread-219]  INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-44 - Shutdown completed.
-23:38:33.362 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 8108 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
-23:38:33.362 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
-23:38:33.532 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-23:38:33.545 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
-23:38:33.632 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-23:38:33.633 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:38:33.633 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
-23:38:33.633 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
-23:38:33.677 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:38:33.677 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 313 ms
-23:38:33.705 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-23:38:33.713 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:38:33.713 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-23:38:33.713 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-45 - Starting...
-23:38:33.724 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-45 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27100b5a
-23:38:33.724 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-45 - Start completed.
-23:38:33.743 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-23:38:33.779 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-23:38:33.816 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-23:38:33.900 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-23:38:33.975 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-23:38:33.980 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:38:33.985 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-23:38:33.992 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.657 seconds (process running for 880.568)
-23:38:33.992 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-23:39:32.882 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-23:39:32.883 [SpringApplicationShutdownHook] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-45 - Shutdown initiated...
-23:39:32.889 [SpringApplicationShutdownHook] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-45 - Shutdown completed.
+14:14:12.078 [SpringApplicationShutdownHook] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:14:12.086 [SpringApplicationShutdownHook] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:14:15.149 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 23096 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
+14:14:15.150 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
+14:14:15.235 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:14:15.235 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:14:16.163 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:14:16.248 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+14:14:17.188 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:14:17.201 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:14:17.208 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+14:14:17.209 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+14:14:17.271 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:14:17.273 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2035 ms
+14:14:17.926 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:14:17.942 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:14:18.344 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1eb07ec4
+14:14:18.346 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:14:19.779 [restartedMain] INFO  o.s.d.j.r.q.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14:14:20.358 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:14:20.738 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:14:20.751 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:14:20.777 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:14:20.786 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 6.028 seconds (process running for 6.95)
+14:14:24.222 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+14:14:24.231 [Thread-7]    INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+14:14:24.231 [Thread-7]    INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
+14:14:24.236 [Thread-7]    INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+14:14:24.238 [Thread-7]    INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+14:14:24.244 [Thread-7]    INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:14:24.269 [Thread-7]    INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:14:24.402 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 23096 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
+14:14:24.402 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
+14:14:24.683 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:14:24.697 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+14:14:24.906 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:14:24.907 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:14:24.908 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+14:14:24.909 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+14:14:24.950 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:14:24.951 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 545 ms
+14:14:25.018 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:14:25.020 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+14:14:25.040 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20371c96
+14:14:25.041 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+14:14:25.342 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:14:25.484 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:14:25.492 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:14:25.498 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:14:25.502 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 1.148 seconds (process running for 11.665)
+14:14:25.505 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+14:15:06.714 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+14:15:06.714 [Thread-9]    INFO  o.a.c.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+14:15:06.714 [Thread-9]    INFO  o.a.c.core.StandardService - Stopping service [Tomcat]
+14:15:06.714 [Thread-9]    INFO  o.a.c.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+14:15:06.714 [Thread-9]    INFO  o.a.c.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+14:15:06.730 [Thread-9]    INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+14:15:06.730 [Thread-9]    INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+14:15:06.808 [restartedMain] INFO  c.t.ticketingsystem.Application - Starting Application using Java 21.0.1 with PID 23096 (E:\Workspace\Basics\Java\Ticketing System\target\classes started by hsemmak in E:\Workspace\Basics\Java\Ticketing System)
+14:15:06.808 [restartedMain] INFO  c.t.ticketingsystem.Application - No active profile set, falling back to 1 default profile: "default"
+14:15:06.981 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:15:06.999 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+14:15:07.075 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+14:15:07.090 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+14:15:07.090 [restartedMain] INFO  o.a.c.core.StandardService - Starting service [Tomcat]
+14:15:07.090 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+14:15:07.106 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:15:07.106 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 298 ms
+14:15:07.138 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:15:07.138 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+14:15:07.153 [restartedMain] INFO  c.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@335f7d80
+14:15:07.153 [restartedMain] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+14:15:07.341 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:15:07.452 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:15:07.452 [restartedMain] INFO  o.a.c.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+14:15:07.452 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+14:15:07.452 [restartedMain] INFO  c.t.ticketingsystem.Application - Started Application in 0.675 seconds (process running for 53.626)
+14:15:07.452 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+14:15:30.793 [SpringApplicationShutdownHook] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+14:15:30.802 [SpringApplicationShutdownHook] INFO  c.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.

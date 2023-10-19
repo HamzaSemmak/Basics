@@ -20,7 +20,7 @@ public class User {
     private String Password;
 
     @Column(name = "role")
-    private UserRole Role;
+    private String Role;
 
     public Long getID() {
         return ID;
@@ -47,19 +47,18 @@ public class User {
         Password = passwordEncoder.encode(plainTextPassword);
     }
 
-    public UserRole getRole() {
+    public String getRole() {
         return Role;
     }
 
-    public void setRole(UserRole role) {
+    public void setRole(String role) {
         Role = role;
     }
 
     public User() {
     }
 
-    public User(Long ID, String name, String password, UserRole role) {
-        this.ID = ID;
+    public User(String name, String password, String role) {
         Name = name;
         Role = role;
         setPassword(password);
