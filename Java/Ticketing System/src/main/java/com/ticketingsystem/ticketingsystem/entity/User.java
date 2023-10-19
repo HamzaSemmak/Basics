@@ -2,6 +2,7 @@ package com.ticketingsystem.ticketingsystem.entity;
 
 import com.ticketingsystem.ticketingsystem.constante.UserRole;
 import jakarta.persistence.*;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Entity
 @Table(name = "users")
@@ -41,8 +42,9 @@ public class User {
         return Password;
     }
 
-    public void setPassword(String password) {
-        Password = password;
+    public void setPassword(String plainTextPassword) {
+        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        Password = passwordEncoder.encode(plainTextPassword);
     }
 
     public UserRole getRole() {
@@ -59,13 +61,8 @@ public class User {
     public User(Long ID, String name, String password, UserRole role) {
         this.ID = ID;
         Name = name;
-        Password = password;
         Role = role;
-    }
-
-    public User(String name, String password) {
-        Name = name;
-        Password = password;
+        setPassword(password);
     }
 
     @Override

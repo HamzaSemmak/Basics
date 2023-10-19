@@ -81,7 +81,4 @@ Comply with relevant data protection regulations (e.g., GDPR).
     # Technology Stack:
 
 Back-End: Spring Boot (Java)
-Front-End: Angular, React, or Vue.js (Choose one)
 Database: MySQL or PostgreSQL
-Authentication: Spring Security
-Notifications: Email and in-app notifications
