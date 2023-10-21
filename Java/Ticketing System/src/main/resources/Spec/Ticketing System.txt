@@ -9,21 +9,14 @@ It allows users to create, manage, and monitor tickets related to their support 
 The system is designed to enhance communication between customers and support agents while providing efficient ticket management.
 
     # Functional Specifications:
-
- - User Roles:
-Customer:
-Can create new tickets.
-Can view their own tickets.
-Can add comments and attachments to their tickets.
-Receives notifications about ticket updates.
+ - User Authentication:
+Users (customers and support agents) should be able to register, log in, and reset their passwords.
+Secure authentication and authorization mechanisms must be implemented.
  - Support Agent:
 Can view all tickets.
 Can assign and manage tickets.
 Can communicate with customers by adding comments and attachments.
 Receives notifications about assigned tickets.
- - User Authentication:
-Users (customers and support agents) should be able to register, log in, and reset their passwords.
-Secure authentication and authorization mechanisms must be implemented.
  - Ticket Management:
 Users can create new tickets with the following information:
 Title

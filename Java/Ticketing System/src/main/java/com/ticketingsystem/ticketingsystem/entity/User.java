@@ -1,6 +1,5 @@
 package com.ticketingsystem.ticketingsystem.entity;
 
-import com.ticketingsystem.ticketingsystem.constante.UserRole;
 import jakarta.persistence.*;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

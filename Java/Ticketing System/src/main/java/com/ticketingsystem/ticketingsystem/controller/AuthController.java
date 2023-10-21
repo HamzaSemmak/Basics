@@ -1,6 +1,5 @@
 package com.ticketingsystem.ticketingsystem.controller;
 
-import com.ticketingsystem.ticketingsystem.constante.UserRole;
 import com.ticketingsystem.ticketingsystem.entity.User;
 import com.ticketingsystem.ticketingsystem.service.AuthService;
 import com.ticketingsystem.ticketingsystem.service.impl.AuthServiceImpl;
