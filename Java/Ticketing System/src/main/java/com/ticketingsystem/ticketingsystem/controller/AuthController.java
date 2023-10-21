@@ -2,13 +2,13 @@ package com.ticketingsystem.ticketingsystem.controller;
 
 import com.ticketingsystem.ticketingsystem.entity.User;
 import com.ticketingsystem.ticketingsystem.service.AuthService;
-import com.ticketingsystem.ticketingsystem.service.impl.AuthServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "${proxy-config}/authentication")
@@ -81,9 +81,36 @@ public class AuthController {
      * @throws Exception If there is an issue during the password reset process.
      */
     @PostMapping(path = "/reset/password")
-    public String resetPassword(@RequestParam("username") String username) throws Exception {
-        return  "Hamza Test";
+    public String resetPassword(@RequestParam("username") String username, @RequestParam("password") String password) {
+        User user = authService.getUserByName(username);
+        try {
+            if(user != null) {
+                if(password.isEmpty()) {
+                    return "Error : password is empty.";
+                }
+                else if(password.length() < 8) {
+                    return "Error : password must be at least 8";
+                }
+                else {
+                    User newUser = authService.resetPassword(user, password);
+                    return "Password it's rested successfully. " + newUser.toString();
+                }
+            }
+            return  "user invalid, Please try again.";
+        }
+        catch(Exception e) {
+            return "Exception: " + e.getMessage();
+        }
     }
 
-
+    /**
+     * Retrieve the currently authenticated user.
+     *
+     * @return The user object representing the currently authenticated user.
+     * @throws Exception if no user is authenticated.
+     */
+    @GetMapping(path = "/user")
+    public Optional<User> User(@RequestParam("id") Long ID) throws Exception {
+        return authService.getUserByID(ID);
+    }
 }
