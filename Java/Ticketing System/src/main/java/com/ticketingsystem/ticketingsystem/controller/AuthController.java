@@ -24,7 +24,7 @@ public class AuthController {
      *
      * @param username The username of the user.
      * @param password The user's password.
-     * @return void.
+     * @return String.
       */
     @GetMapping(path = "/login")
     public String login(@RequestParam("username") String username, @RequestParam("password") String password) throws Exception

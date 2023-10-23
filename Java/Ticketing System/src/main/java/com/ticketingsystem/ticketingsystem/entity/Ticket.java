@@ -52,8 +52,7 @@ public class Ticket {
     public Ticket() {
     }
 
-    public Ticket(Long ID, String title, String description, String category, String priority, String status, User createdBy, User assignedTo) {
-        this.ID = ID;
+    public Ticket(String title, String description, String category, String priority, String status, User createdBy, User assignedTo) {
         Title = title;
         Description = description;
         Category = category;
