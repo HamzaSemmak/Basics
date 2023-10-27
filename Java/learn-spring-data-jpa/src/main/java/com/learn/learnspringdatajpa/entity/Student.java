@@ -47,4 +47,6 @@ public class Student {
     @Column(name = "guardian_mobile")
     private String guardianMobile;
 
+
+
 }
