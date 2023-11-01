@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
 import java.util.UUID;
 
 @Slf4j
@@ -53,27 +54,31 @@ public class RegistrationController {
     }
 
     @PostMapping(path = "/restPassword")
-    public String resetPassword(@RequestBody PasswordModel passwordModel, HttpServletRequest request)
+    public String resetPassword(@RequestParam("email") String email, HttpServletRequest request)
     {
-        User user = userService.findUserByEmial(passwordModel.getEmail());
-        String url = "";
+        User user = userService.findUserByEmial(email);
         if(user != null) {
             String token = UUID.randomUUID().toString();
             userService.createPasswordResetTokenForUser(user, token);
-            url = passwordResetTokenMail(user, applicationUrl(request), token);
+            return passwordResetTokenMail(user, applicationUrl(request), token);
         }
-        return url;
+        return "invalid email";
     }
 
     @PostMapping(path = "/savePassword")
-    public String savePassword(@RequestParam("token") String token, @RequestBody PasswordModel passwordModel)
+    public String savePassword(@RequestParam("token") String token, @RequestBody PasswordModel passwordModel) throws Exception
     {
         String result = userService.validatePasswordResetToken(token);
-        if(result.equalsIgnoreCase("valid")) {
-            return result;
+        if(!result.equalsIgnoreCase("valid")) {
+            return "Invalid token";
         }
-
-        return "invalid";
+        Optional<User> user = userService.findUserByPasswordResetToken(token);
+        if(user.isPresent()) {
+            userService.changePassword(user.get(), passwordModel.getNewPassword());
+            return "Password rest successfully";
+        } else {
+            return "Invalid password, Please Try again";
+        }
     }
 
     private String passwordResetTokenMail(User user, String applicationUrl, String token) {

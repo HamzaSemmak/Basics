@@ -14,9 +14,11 @@ public class WebSecurityConfig {
 
     private static final String[] LISTS_URLS = {
             "/hello",
-            "register",
+            "/register",
             "/verifyRegistration*",
-            "/resendVerifyToken*"
+            "/resendVerifyToken*",
+            "/restPassword",
+            "/savePassword*"
     };
 
     @Bean
