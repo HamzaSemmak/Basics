@@ -49,8 +49,8 @@ public class RegistrationController {
     {
         VerificationToken verificationToken = userService.generateNewVerificationToken(token);
         User user = verificationToken.getUser();
-        resendVerificationTokenMail(user, applicationUrl(request), verificationToken);
-        return "verification link Sent";
+        String url = resendVerificationTokenMail(user, applicationUrl(request), verificationToken);
+        return "verification link Sent, " + url;
     }
 
     @PostMapping(path = "/restPassword")
@@ -81,6 +81,17 @@ public class RegistrationController {
         }
     }
 
+    @PostMapping(path = "/changePassword")
+    public String changPassword(@RequestBody PasswordModel passwordModel)
+    {
+        User user = userService.findUserByEmial(passwordModel.getEmail());
+        if(!userService.checkIfValidOldPassword(user, passwordModel.getOldPassword())) {
+            return "Invalid old password";
+        }
+        userService.changePassword(user, passwordModel.getNewPassword());
+        return "Password Changed Successfully";
+    }
+
     private String passwordResetTokenMail(User user, String applicationUrl, String token) {
         String url = applicationUrl + "/savePassword?token=" + token;
 
@@ -88,10 +99,11 @@ public class RegistrationController {
         return url;
     }
 
-    private void resendVerificationTokenMail(User user, String applicationUrl, VerificationToken verificationToken) {
+    private String resendVerificationTokenMail(User user, String applicationUrl, VerificationToken verificationToken) {
         String url = applicationUrl + "/verifyRegistration?token=" + verificationToken.getToken();
 
         log.info("Click the link to verify your account. {}", url);
+        return url;
     }
 
     private String applicationUrl(HttpServletRequest request) {
