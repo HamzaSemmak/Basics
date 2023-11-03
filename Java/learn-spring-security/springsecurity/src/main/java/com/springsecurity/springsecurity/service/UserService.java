@@ -5,6 +5,7 @@ import com.springsecurity.springsecurity.entity.VerificationToken;
 import com.springsecurity.springsecurity.model.UserModel;
 import com.springsecurity.springsecurity.service.impl.UserServiceImpl;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface UserService {
@@ -27,4 +28,6 @@ public interface UserService {
     void changePassword(User user, String newPassword);
 
     boolean checkIfValidOldPassword(User user, String oldPassword);
+
+    List<User> usersList();
 }
