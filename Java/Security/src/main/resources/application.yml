@@ -1,0 +1,29 @@
+###################################################################
+#                                                                 #
+#                            Config                               #
+#                                                                 #
+###################################################################
+# Application
+server:
+  port: 8080
+
+###################################################################
+#                                                                 #
+#                       DB && Spring Data JPA                     #
+#                                                                 #
+###################################################################
+# DataSource Configuration
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jwt_security
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # JPA Configuration
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
