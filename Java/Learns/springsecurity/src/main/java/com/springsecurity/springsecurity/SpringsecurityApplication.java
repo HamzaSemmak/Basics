@@ -9,8 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringsecurityApplication {
 
 	public static void main(String[] args) {
-		log.info("Test lo tarik info.");
-		log.info("Test lo tarik info.");
 		SpringApplication.run(SpringsecurityApplication.class, args);
 	}
 
