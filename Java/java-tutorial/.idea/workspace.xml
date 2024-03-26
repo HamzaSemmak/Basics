@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a03a8b0-61f7-494a-9ad5-7c40057ff5a1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Angular/Point Of Sale/db/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Angular/Point Of Sale/db/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/.vs/Banking Application Dashboard/FileContentIndex/02e241be-eb72-4808-b808-cc8109e5202b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/.vs/Banking Application Dashboard/FileContentIndex/69e5ef6d-8e83-4e6e-b585-db9a2a913e4d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/.vs/Banking Application Dashboard/FileContentIndex/c8893bfd-3cc4-4b2f-ac67-ad8567053e6c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/.vs/Banking Application Dashboard/FileContentIndex/f7e5edf9-7db2-4a48-879e-bc783bef19b7.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/.vs/Banking Application Dashboard/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/.vs/Banking Application Dashboard/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/.vs/Banking Application Dashboard/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/bin/Debug/Banking Application Dashboard.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/bin/Debug/Banking Application Dashboard.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/bin/Debug/Banking Application Dashboard.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/bin/Debug/Banking Application Dashboard.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/Banking Application Dashboard.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/DesignTimeResolveAssemblyReferences.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Banking Application Dashboard/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/.vs/Log4Net/FileContentIndex/5044c97f-64b5-4240-8e20-b5abd3f19181.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/.vs/Log4Net/FileContentIndex/5193ac19-cce8-44a4-a5bb-45ae77d9ad8d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/.vs/Log4Net/FileContentIndex/8839ba39-9e40-4d92-965b-303c0cc01953.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/.vs/Log4Net/FileContentIndex/b203347f-4624-4aaa-b7f0-c7ac26594b6a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/.vs/Log4Net/FileContentIndex/read.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/.vs/Log4Net/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Log4Net/.vs/Log4Net/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/.vs/Log4Net/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Log4Net/.vs/Log4Net/v17/.wsuo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Log4Net/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/obj/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Log4Net/obj/Debug/DesignTimeResolveAssemblyReferences.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Log4Net/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/obj/Debug/Log4Net.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Log4Net/obj/Debug/Log4Net.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/Log4Net/obj/Release/Log4Net.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/Log4Net/obj/Release/Log4Net.csproj.AssemblyReference.cache" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2aRUqF7wb0DlrJn4XxFGZzsuVJU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.ISI_HamzaSemmak">
+    <configuration name="ISI_HamzaSemmak" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ISI_HamzaSemmak" />
+      <module name="java-tutorial" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="java-tutorial" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ISI_HamzaSemmak" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a03a8b0-61f7-494a-9ad5-7c40057ff5a1" name="Changes" comment="" />
+      <created>1704281074969</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704281074969</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ISI_HamzaSemmak.java</url>
+          <line>6</line>
+          <properties class="ISI_HamzaSemmak" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
