@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class log4j {
+    
     private static BufferedWriter writer;
 
     public log4j() {
